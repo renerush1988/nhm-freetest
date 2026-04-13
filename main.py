@@ -130,7 +130,7 @@ def generate_pdf(name: str, result: dict, problem: str) -> bytes:
     pdf.cell(190, 10, f"Your Natural Signature Type: {meta['emoji']} {meta['name']}", ln=True)
     pdf.set_font("Helvetica", "I", 11)
     pdf.set_text_color(100, 100, 100)
-    pdf.cell(190, 7, meta["nst"], ln=True)
+    pdf.cell(190, 7, f"Natural Signature Type — {meta['name']}", ln=True)
     pdf.ln(3)
 
     # Tagline
@@ -192,14 +192,25 @@ def generate_pdf(name: str, result: dict, problem: str) -> bytes:
             pdf.ln(1)
         pdf.ln(3)
 
-        # CTA
-        pdf.set_fill_color(240, 245, 255)
-        pdf.set_font("Helvetica", "B", 11)
-        pdf.set_text_color(15, 23, 42)
-        pdf.cell(190, 8, "Ready to go deeper?", ln=True, fill=True)
+        # CTA — Core Path
+        pdf.set_fill_color(10, 20, 50)
+        pdf.set_font("Helvetica", "B", 13)
+        pdf.set_text_color(6, 182, 212)
+        pdf.cell(190, 10, "The Core Path — Your Next Step", ln=True)
+        pdf.set_font("Helvetica", "B", 10)
+        pdf.set_text_color(30, 30, 30)
+        pdf.cell(190, 7, "30-day program · built around your Natural Signature Type", ln=True)
         pdf.set_font("Helvetica", "", 10)
         pdf.set_text_color(60, 60, 60)
         pdf.multi_cell(190, 6, plan["cta"])
+        pdf.ln(2)
+        pdf.set_font("Helvetica", "B", 10)
+        pdf.set_text_color(16, 185, 129)
+        pdf.multi_cell(190, 6,
+            "Money-Back Guarantee: Complete 6 out of 7 daily check-ins "
+            "(30 seconds, 4-5 questions) for 30 days and get a full refund "
+            "+ an exclusive upgrade offer. No risk. Just results."
+        )
         pdf.ln(3)
 
     # Disclaimer

@@ -10,7 +10,7 @@ PLANS = {
     ("lion", "weight"): {
         "headline": "Your 2-Week Fat Loss Sprint — Lion Style",
         "intro": (
-            "As a Lion (Natural Signature Type 1A), you are dopamine-driven, "
+            "As a Lion (Natural Signature Type), you are dopamine-driven, "
             "competitive, and need to see results fast. A slow, moderate approach "
             "will kill your motivation. You thrive on aggressive, short sprints — "
             "so that's exactly what we're going to do."
@@ -48,9 +48,12 @@ PLANS = {
             "Supplement tip: L-Tyrosine supports dopamine production — your key neurotransmitter.",
         ],
         "cta": (
-            "This is just the beginning. The full NeuroHealthMastery program includes "
-            "a complete 12-week periodized plan, supplement protocol, and 1-on-1 coaching "
-            "tailored specifically to your Lion profile."
+            "You've just taken the first step. Now it's time to actually change something. "
+            "The Core Path is a 30-day program built around your Natural Signature Type — "
+            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
+            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
+            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
+            "guarantee that only works if you show up."
         )
     },
 
@@ -93,9 +96,12 @@ PLANS = {
             "Supplement tip: L-Tyrosine + Magnesium Glycinate (before bed) is a powerful combo for Lions.",
         ],
         "cta": (
-            "Energy issues in Lions are almost always fixable with the right protocol. "
-            "The full program dives deep into your neurotransmitter profile and gives you "
-            "a complete energy optimization plan."
+            "You've just taken the first step. Now it's time to actually change something. "
+            "The Core Path is a 30-day program built around your Natural Signature Type — "
+            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
+            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
+            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
+            "guarantee that only works if you show up."
         )
     },
 
@@ -138,8 +144,12 @@ PLANS = {
             "Supplement tip: Caffeine + L-Tyrosine pre-workout is ideal for Lions — boosts dopamine and drive.",
         ],
         "cta": (
-            "The full NeuroHealthMastery program includes a 12-week Lion-specific training plan "
-            "with progressive overload, PR tracking, and weekly challenges designed for your type."
+            "You've just taken the first step. Now it's time to actually change something. "
+            "The Core Path is a 30-day program built around your Natural Signature Type — "
+            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
+            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
+            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
+            "guarantee that only works if you show up."
         )
     },
 
@@ -183,8 +193,12 @@ PLANS = {
             "Supplement tip: Magnesium Glycinate + Ashwagandha is the Lion's sleep stack.",
         ],
         "cta": (
-            "Sleep is the foundation of everything. The full program includes a complete "
-            "sleep and recovery protocol tailored to the Lion's high-dopamine, high-drive profile."
+            "You've just taken the first step. Now it's time to actually change something. "
+            "The Core Path is a 30-day program built around your Natural Signature Type — "
+            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
+            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
+            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
+            "guarantee that only works if you show up."
         )
     },
 
@@ -192,7 +206,7 @@ PLANS = {
     ("falcon", "weight"): {
         "headline": "Your 2-Week Fat Loss Sprint — Falcon Style",
         "intro": (
-            "As a Falcon (Natural Signature Type 1B), you're dopamine-driven, creative, "
+            "As a Falcon (Natural Signature Type), you're dopamine-driven, creative, "
             "and need variety to stay engaged. A boring diet kills you. "
             "This plan uses intermittent fasting and variety to keep you sharp and losing fat."
         ),
@@ -227,8 +241,12 @@ PLANS = {
             "Supplement tip: L-Tyrosine + Alpha-GPC is the Falcon's cognitive and fat loss stack.",
         ],
         "cta": (
-            "The full program includes a complete Falcon-specific nutrition periodization "
-            "with rotating protocols, fasting strategies, and supplement guidance."
+            "You've just taken the first step. Now it's time to actually change something. "
+            "The Core Path is a 30-day program built around your Natural Signature Type — "
+            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
+            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
+            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
+            "guarantee that only works if you show up."
         )
     },
 
@@ -269,8 +287,12 @@ PLANS = {
             "Supplement tip: Alpha-GPC + L-Tyrosine is the Falcon's energy stack.",
         ],
         "cta": (
-            "Energy optimization for Falcons is a science. The full program maps your "
-            "neurotransmitter profile and builds a complete energy protocol around it."
+            "You've just taken the first step. Now it's time to actually change something. "
+            "The Core Path is a 30-day program built around your Natural Signature Type — "
+            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
+            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
+            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
+            "guarantee that only works if you show up."
         )
     },
 
@@ -313,8 +335,12 @@ PLANS = {
             "Supplement tip: Alpha-GPC pre-workout enhances motor learning and focus for Falcons.",
         ],
         "cta": (
-            "The full program includes a 12-week Falcon-specific training plan with "
-            "rotating modalities, skill progressions, and performance benchmarks."
+            "You've just taken the first step. Now it's time to actually change something. "
+            "The Core Path is a 30-day program built around your Natural Signature Type — "
+            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
+            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
+            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
+            "guarantee that only works if you show up."
         )
     },
 
@@ -354,8 +380,12 @@ PLANS = {
             "Supplement tip: L-Theanine + Magnesium Glycinate is the Falcon's sleep stack.",
         ],
         "cta": (
-            "Sleep is where Falcons recover their acetylcholine. The full program includes "
-            "a complete sleep protocol and recovery strategy for your type."
+            "You've just taken the first step. Now it's time to actually change something. "
+            "The Core Path is a 30-day program built around your Natural Signature Type — "
+            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
+            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
+            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
+            "guarantee that only works if you show up."
         )
     },
 
@@ -363,7 +393,7 @@ PLANS = {
     ("chameleon", "weight"): {
         "headline": "Your 2-Week Fat Loss Plan — Chameleon Style",
         "intro": (
-            "As a Chameleon (Natural Signature Type 2A), you need variety to stay motivated. "
+            "As a Chameleon (Natural Signature Type), you need variety to stay motivated. "
             "The good news: almost every diet approach works for you. "
             "The bad news: you'll get bored of any single approach quickly. "
             "This plan rotates strategies to keep you engaged and losing fat."
@@ -400,8 +430,12 @@ PLANS = {
             "Supplement tip: L-Tyrosine + Rhodiola Rosea supports adrenaline sensitivity for Chameleons.",
         ],
         "cta": (
-            "The full program includes a rotating 12-week nutrition plan with carb cycling, "
-            "IF protocols, and training-based nutrition — all designed for the Chameleon's need for variety."
+            "You've just taken the first step. Now it's time to actually change something. "
+            "The Core Path is a 30-day program built around your Natural Signature Type — "
+            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
+            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
+            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
+            "guarantee that only works if you show up."
         )
     },
 
@@ -442,8 +476,12 @@ PLANS = {
             "Supplement tip: Rhodiola Rosea + L-Tyrosine is the Chameleon's energy stack.",
         ],
         "cta": (
-            "Energy management for Chameleons is all about stress and variety. "
-            "The full program includes a complete stress-management and energy protocol for your type."
+            "You've just taken the first step. Now it's time to actually change something. "
+            "The Core Path is a 30-day program built around your Natural Signature Type — "
+            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
+            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
+            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
+            "guarantee that only works if you show up."
         )
     },
 
@@ -484,8 +522,12 @@ PLANS = {
             "Supplement tip: Pre-workout with L-Tyrosine + caffeine works well for Chameleons on training days.",
         ],
         "cta": (
-            "The full program includes a 12-week rotating training plan with built-in variety, "
-            "challenges, and social accountability — designed for the Chameleon's need for change."
+            "You've just taken the first step. Now it's time to actually change something. "
+            "The Core Path is a 30-day program built around your Natural Signature Type — "
+            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
+            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
+            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
+            "guarantee that only works if you show up."
         )
     },
 
@@ -525,8 +567,12 @@ PLANS = {
             "Supplement tip: Magnesium Glycinate + Ashwagandha is ideal for Chameleons under stress.",
         ],
         "cta": (
-            "The full program includes a complete sleep and stress-management protocol "
-            "tailored to the Chameleon's unique adrenaline-sensitive nervous system."
+            "You've just taken the first step. Now it's time to actually change something. "
+            "The Core Path is a 30-day program built around your Natural Signature Type — "
+            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
+            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
+            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
+            "guarantee that only works if you show up."
         )
     },
 
@@ -534,7 +580,7 @@ PLANS = {
     ("wolf", "weight"): {
         "headline": "Your 2-Week Fat Loss Plan — Wolf Style",
         "intro": (
-            "As a Wolf (Natural Signature Type 2B), you're emotionally driven and highly sensitive. "
+            "As a Wolf (Natural Signature Type), you're emotionally driven and highly sensitive. "
             "Aggressive diets spike your cortisol, trigger emotional eating, and backfire. "
             "This plan takes a steady, sustainable approach that works with your nature, not against it."
         ),
@@ -569,8 +615,12 @@ PLANS = {
             "Supplement tip: Taurine + Magnesium Glycinate supports GABA and reduces cortisol for Wolves.",
         ],
         "cta": (
-            "The full program includes a Wolf-specific fat loss plan with emotional eating strategies, "
-            "cortisol management, and a complete supplement protocol."
+            "You've just taken the first step. Now it's time to actually change something. "
+            "The Core Path is a 30-day program built around your Natural Signature Type — "
+            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
+            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
+            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
+            "guarantee that only works if you show up."
         )
     },
 
@@ -613,8 +663,12 @@ PLANS = {
             "Supplement tip: Ashwagandha + Magnesium Glycinate + 5-HTP (low dose) is the Wolf's energy stack.",
         ],
         "cta": (
-            "Energy for Wolves is about emotional balance and cortisol management. "
-            "The full program includes a complete protocol designed for your sensitive nervous system."
+            "You've just taken the first step. Now it's time to actually change something. "
+            "The Core Path is a 30-day program built around your Natural Signature Type — "
+            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
+            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
+            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
+            "guarantee that only works if you show up."
         )
     },
 
@@ -654,8 +708,12 @@ PLANS = {
             "Supplement tip: L-Glutamine + Magnesium supports recovery and GABA for Wolves.",
         ],
         "cta": (
-            "The full program includes a Wolf-specific training plan with progressive overload, "
-            "emotional motivation strategies, and recovery protocols."
+            "You've just taken the first step. Now it's time to actually change something. "
+            "The Core Path is a 30-day program built around your Natural Signature Type — "
+            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
+            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
+            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
+            "guarantee that only works if you show up."
         )
     },
 
@@ -696,8 +754,12 @@ PLANS = {
             "Supplement tip: 5-HTP + Magnesium Glycinate + L-Theanine is the Wolf's sleep stack.",
         ],
         "cta": (
-            "Sleep is where Wolves rebuild emotionally and physically. "
-            "The full program includes a complete sleep and emotional recovery protocol for your type."
+            "You've just taken the first step. Now it's time to actually change something. "
+            "The Core Path is a 30-day program built around your Natural Signature Type — "
+            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
+            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
+            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
+            "guarantee that only works if you show up."
         )
     },
 
@@ -705,7 +767,7 @@ PLANS = {
     ("owl", "weight"): {
         "headline": "Your 2-Week Fat Loss Plan — Owl Style",
         "intro": (
-            "As an Owl (Natural Signature Type 3), you are the best at following a plan. "
+            "As an Owl (Natural Signature Type), you are the best at following a plan. "
             "You don't need motivation tricks — you need a clear, structured protocol "
             "with all the information upfront. Here it is."
         ),
@@ -737,8 +799,12 @@ PLANS = {
             "Supplement tip: Ashwagandha + 5-HTP supports serotonin and cortisol control for Owls.",
         ],
         "cta": (
-            "The full program includes a 12-week Owl-specific fat loss plan with detailed meal plans, "
-            "macro targets, and a complete cortisol management protocol."
+            "You've just taken the first step. Now it's time to actually change something. "
+            "The Core Path is a 30-day program built around your Natural Signature Type — "
+            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
+            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
+            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
+            "guarantee that only works if you show up."
         )
     },
 
@@ -780,8 +846,12 @@ PLANS = {
             "Supplement tip: Ashwagandha + Magnesium Glycinate + 5-HTP is the Owl's energy stack.",
         ],
         "cta": (
-            "Energy management for Owls is about cortisol control and routine. "
-            "The full program includes a complete protocol designed for your analytical, structure-driven profile."
+            "You've just taken the first step. Now it's time to actually change something. "
+            "The Core Path is a 30-day program built around your Natural Signature Type — "
+            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
+            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
+            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
+            "guarantee that only works if you show up."
         )
     },
 
@@ -821,8 +891,12 @@ PLANS = {
             "Supplement tip: Magnesium Glycinate + Ashwagandha supports recovery and cortisol control for Owls.",
         ],
         "cta": (
-            "The full program includes a 12-week Owl-specific training plan with "
-            "progressive overload, technique focus, and complete recovery protocols."
+            "You've just taken the first step. Now it's time to actually change something. "
+            "The Core Path is a 30-day program built around your Natural Signature Type — "
+            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
+            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
+            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
+            "guarantee that only works if you show up."
         )
     },
 
@@ -864,8 +938,12 @@ PLANS = {
             "Supplement tip: 5-HTP + Magnesium Glycinate + Ashwagandha is the Owl's sleep stack.",
         ],
         "cta": (
-            "Sleep is where Owls restore their serotonin. The full program includes "
-            "a complete sleep protocol and cortisol management plan for your type."
+            "You've just taken the first step. Now it's time to actually change something. "
+            "The Core Path is a 30-day program built around your Natural Signature Type — "
+            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
+            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
+            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
+            "guarantee that only works if you show up."
         )
     },
 }
@@ -874,7 +952,7 @@ PLANS = {
 TYPE_META = {
     "lion": {
         "name": "The Lion",
-        "nst": "Natural Signature Type 1A",
+        "nst": "Natural Signature Type — The Lion",
         "emoji": "🦁",
         "color": "#f59e0b",
         "image": "lion.png",
@@ -889,7 +967,7 @@ TYPE_META = {
     },
     "falcon": {
         "name": "The Falcon",
-        "nst": "Natural Signature Type 1B",
+        "nst": "Natural Signature Type — The Falcon",
         "emoji": "🦅",
         "color": "#3b82f6",
         "image": "falcon.png",
@@ -904,7 +982,7 @@ TYPE_META = {
     },
     "chameleon": {
         "name": "The Chameleon",
-        "nst": "Natural Signature Type 2A",
+        "nst": "Natural Signature Type — The Chameleon",
         "emoji": "🦎",
         "color": "#10b981",
         "image": "chameleon.png",
@@ -919,7 +997,7 @@ TYPE_META = {
     },
     "wolf": {
         "name": "The Wolf",
-        "nst": "Natural Signature Type 2B",
+        "nst": "Natural Signature Type — The Wolf",
         "emoji": "🐺",
         "color": "#8b5cf6",
         "image": "wolf.png",
@@ -934,7 +1012,7 @@ TYPE_META = {
     },
     "owl": {
         "name": "The Owl",
-        "nst": "Natural Signature Type 3",
+        "nst": "Natural Signature Type — The Owl",
         "emoji": "🦉",
         "color": "#6366f1",
         "image": "owl.png",
