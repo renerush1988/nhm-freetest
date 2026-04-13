@@ -16,8 +16,37 @@ from fastapi.templating import Jinja2Templates
 from fpdf import FPDF
 
 from content import PLANS, TYPE_META, PROBLEM_LABELS, ADJECTIVES
+import re
 
 BASE_DIR = Path(__file__).parent
+
+
+def strip_emoji(text: str) -> str:
+    """Sanitize text for FPDF latin-1: remove emojis, replace typographic chars."""
+    # Replace typographic dashes and special punctuation with ASCII equivalents
+    text = text.replace('\u2014', '-').replace('\u2013', '-')  # em-dash, en-dash
+    text = text.replace('\u2018', "'").replace('\u2019', "'")  # curly apostrophes
+    text = text.replace('\u201c', '"').replace('\u201d', '"')  # curly quotes
+    text = text.replace('\u2022', '-').replace('\u2026', '...')  # bullet, ellipsis
+    text = text.replace('\u00b7', '-')  # middle dot
+    # Remove emoji and other non-latin1 characters
+    emoji_pattern = re.compile(
+        "["
+        u"\U0001F600-\U0001F64F"
+        u"\U0001F300-\U0001F5FF"
+        u"\U0001F680-\U0001F6FF"
+        u"\U0001F1E0-\U0001F1FF"
+        u"\U0001F900-\U0001F9FF"
+        u"\U0001FA00-\U0001FA6F"
+        u"\U0001FA70-\U0001FAFF"
+        u"\U00002702-\U000027B0"
+        "]+", flags=re.UNICODE)
+    text = emoji_pattern.sub('', text)
+    # Final safety: encode to latin-1, replacing anything still not encodable
+    text = text.encode('latin-1', errors='replace').decode('latin-1')
+    return text.strip()
+
+
 LEADS_FILE = BASE_DIR / "leads.csv"
 
 app = FastAPI(title="NHM Free Test")
@@ -104,6 +133,7 @@ def generate_pdf(name: str, result: dict, problem: str) -> bytes:
     pdf = FPDF()
     pdf.set_auto_page_break(auto=True, margin=15)
     pdf.add_page()
+    # Use built-in core font (latin-1 safe) — all text must be sanitized via strip_emoji()
 
     # Header
     pdf.set_fill_color(15, 23, 42)
@@ -121,62 +151,62 @@ def generate_pdf(name: str, result: dict, problem: str) -> bytes:
 
     # Greeting
     pdf.set_font("Helvetica", "B", 14)
-    pdf.cell(190, 8, f"Hello {name}!", ln=True)
+    pdf.cell(190, 8, f"Hello {strip_emoji(name)}!", ln=True)
     pdf.ln(3)
 
     # Type result
     pdf.set_font("Helvetica", "B", 16)
     pdf.set_text_color(15, 23, 42)
-    pdf.cell(190, 10, f"Your Natural Signature Type: {meta['emoji']} {meta['name']}", ln=True)
+    pdf.cell(190, 10, f"Your Natural Signature Type: {strip_emoji(meta['name'])}", ln=True)
     pdf.set_font("Helvetica", "I", 11)
     pdf.set_text_color(100, 100, 100)
-    pdf.cell(190, 7, f"Natural Signature Type — {meta['name']}", ln=True)
+    pdf.cell(190, 7, f"Natural Signature Type - {strip_emoji(meta['name'])}", ln=True)
     pdf.ln(3)
 
     # Tagline
     pdf.set_font("Helvetica", "B", 12)
     pdf.set_text_color(30, 30, 30)
-    pdf.cell(190, 8, f'"{meta["tagline"]}"', ln=True)
+    pdf.cell(190, 8, f'"{ strip_emoji(meta["tagline"])}"', ln=True)
     pdf.ln(2)
 
     # Description
     pdf.set_font("Helvetica", "", 10)
     pdf.set_text_color(60, 60, 60)
-    pdf.multi_cell(190, 6, meta["description"])
+    pdf.multi_cell(190, 6, strip_emoji(meta["description"]))
     pdf.ln(4)
 
     # Problem
     pdf.set_font("Helvetica", "B", 12)
     pdf.set_text_color(15, 23, 42)
-    pdf.cell(190, 8, f"Your Main Goal: {PROBLEM_LABELS.get(problem, problem)}", ln=True)
+    pdf.cell(190, 8, f"Your Main Goal: {strip_emoji(PROBLEM_LABELS.get(problem, problem))}", ln=True)
     pdf.ln(3)
 
     if plan:
         # Plan headline
         pdf.set_font("Helvetica", "B", 14)
         pdf.set_text_color(15, 23, 42)
-        pdf.cell(190, 9, plan["headline"], ln=True)
+        pdf.cell(190, 9, strip_emoji(plan["headline"]), ln=True)
         pdf.ln(2)
 
         # Intro
         pdf.set_font("Helvetica", "", 10)
         pdf.set_text_color(60, 60, 60)
-        pdf.multi_cell(190, 6, plan["intro"])
+        pdf.multi_cell(190, 6, strip_emoji(plan["intro"]))
         pdf.ln(4)
 
         # Weeks
         for week in plan["weeks"]:
             pdf.set_font("Helvetica", "B", 12)
             pdf.set_text_color(15, 23, 42)
-            pdf.cell(190, 8, week["label"], ln=True)
+            pdf.cell(190, 8, strip_emoji(week["label"]), ln=True)
             pdf.ln(1)
             for day_label, day_text in week["days"]:
                 pdf.set_font("Helvetica", "B", 10)
                 pdf.set_text_color(30, 30, 30)
-                pdf.cell(190, 6, day_label, ln=True)
+                pdf.cell(190, 6, strip_emoji(day_label), ln=True)
                 pdf.set_font("Helvetica", "", 10)
                 pdf.set_text_color(60, 60, 60)
-                pdf.multi_cell(190, 6, day_text)
+                pdf.multi_cell(190, 6, strip_emoji(day_text))
                 pdf.ln(2)
             pdf.ln(2)
 
@@ -188,7 +218,7 @@ def generate_pdf(name: str, result: dict, problem: str) -> bytes:
         for tip in plan["tips"]:
             pdf.set_font("Helvetica", "", 10)
             pdf.set_text_color(60, 60, 60)
-            pdf.multi_cell(190, 6, f"• {tip}")
+            pdf.multi_cell(190, 6, f"- {strip_emoji(tip)}")
             pdf.ln(1)
         pdf.ln(3)
 
@@ -196,13 +226,13 @@ def generate_pdf(name: str, result: dict, problem: str) -> bytes:
         pdf.set_fill_color(10, 20, 50)
         pdf.set_font("Helvetica", "B", 13)
         pdf.set_text_color(6, 182, 212)
-        pdf.cell(190, 10, "The Core Path — Your Next Step", ln=True)
+        pdf.cell(190, 10, "The Core Path - Your Next Step", ln=True)
         pdf.set_font("Helvetica", "B", 10)
         pdf.set_text_color(30, 30, 30)
-        pdf.cell(190, 7, "30-day program · built around your Natural Signature Type", ln=True)
+        pdf.cell(190, 7, "30-day program - built around your Natural Signature Type", ln=True)
         pdf.set_font("Helvetica", "", 10)
         pdf.set_text_color(60, 60, 60)
-        pdf.multi_cell(190, 6, plan["cta"])
+        pdf.multi_cell(190, 6, strip_emoji(plan["cta"]))
         pdf.ln(2)
         pdf.set_font("Helvetica", "B", 10)
         pdf.set_text_color(16, 185, 129)
@@ -231,7 +261,10 @@ def generate_pdf(name: str, result: dict, problem: str) -> bytes:
     pdf.cell(190, 5, "NeuroHealthMastery | neurohealthmastery.com | Generated " +
              datetime.utcnow().strftime("%Y-%m-%d"), align="C")
 
-    return bytes(pdf.output())
+    output = pdf.output()
+    if isinstance(output, bytearray):
+        return bytes(output)
+    return output
 
 
 # ── Routes ────────────────────────────────────────────────────────────────────
