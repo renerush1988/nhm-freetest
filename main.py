@@ -43,6 +43,7 @@ def strip_emoji(text: str) -> str:
         "]+", flags=re.UNICODE)
     text = emoji_pattern.sub('', text)
     # Final safety: encode to latin-1, replacing anything still not encodable
+    # This catches ALL remaining non-latin1 chars including emojis from meta fields
     text = text.encode('latin-1', errors='replace').decode('latin-1')
     return text.strip()
 
