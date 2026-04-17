@@ -927,6 +927,8 @@ PLANS_DE = {
 TYPE_META_DE = {
     "lion": {
         "nst": "Natural Signature Type — Der Löwe",
+        "color": "#f59e0b",
+        "image": "lion.png",
         "name": "Der Löwe",
         "emoji": "🦁",
         "tagline": "Natural Signature Type – Der Löwe",
@@ -942,6 +944,8 @@ TYPE_META_DE = {
     },
     "falcon": {
         "nst": "Natural Signature Type — Der Falke",
+        "color": "#3b82f6",
+        "image": "falcon.png",
         "name": "Der Falke",
         "emoji": "🦅",
         "tagline": "Natural Signature Type – Der Falke",
@@ -957,6 +961,8 @@ TYPE_META_DE = {
     },
     "chameleon": {
         "nst": "Natural Signature Type — Das Chamäleon",
+        "color": "#10b981",
+        "image": "chameleon.png",
         "name": "Das Chamäleon",
         "emoji": "🦎",
         "tagline": "Natural Signature Type – Das Chamäleon",
@@ -972,6 +978,8 @@ TYPE_META_DE = {
     },
     "wolf": {
         "nst": "Natural Signature Type — Der Wolf",
+        "color": "#8b5cf6",
+        "image": "wolf.png",
         "name": "Der Wolf",
         "emoji": "🐺",
         "tagline": "Natural Signature Type – Der Wolf",
@@ -987,6 +995,8 @@ TYPE_META_DE = {
     },
     "owl": {
         "nst": "Natural Signature Type — Die Eule",
+        "color": "#6366f1",
+        "image": "owl.png",
         "name": "Die Eule",
         "emoji": "🦉",
         "tagline": "Natural Signature Type – Die Eule",

@@ -26,7 +26,7 @@ const TRANSLATIONS = {
     problem_training: "I don't train consistently",
     problem_sleep: "I sleep poorly",
     adj_title: "Which words describe you best?",
-    adj_hint: "Choose up to 3 that feel most true for you.",
+    adj_hint: "Choose exactly 3 adjectives that describe you best. You must select 3 to continue.",
     adj_continue: "Continue →",
     email_title: "Your results are ready!",
     email_hint: "Enter your name and email to unlock your Natural Signature Type and receive your personalized free 2-week plan.",
@@ -85,7 +85,7 @@ const TRANSLATIONS = {
     problem_training: "Ich trainiere nicht regelmäßig",
     problem_sleep: "Ich schlafe schlecht",
     adj_title: "Welche Eigenschaften treffen auf dich zu?",
-    adj_hint: "Wähle bis zu 3 Adjektive, die am besten zu dir passen.",
+    adj_hint: "Wähle genau 3 Adjektive, die am besten zu dir passen. Du musst 3 auswählen, um fortzufahren.",
     adj_continue: "Weiter →",
     email_title: "Deine Ergebnisse sind bereit!",
     email_hint: "Gib deinen Namen und deine E-Mail ein, um deinen Natural Signature Type und deinen kostenlosen 2-Wochen-Plan zu erhalten.",
@@ -221,6 +221,8 @@ function renderAdjectives() {
       grid.appendChild(btn);
     });
   });
+  // Update continue button state after rendering
+  updateAdjContinueBtn();
 }
 
 // ── Init ──────────────────────────────────────────────────────────────────────
@@ -312,12 +314,37 @@ function toggleAdj(btn) {
     state.selectedAdjectives = state.selectedAdjectives.filter(a => a !== adj);
   } else {
     if (state.selectedAdjectives.length >= MAX_ADJECTIVES) {
-      btn.classList.add("disabled");
-      setTimeout(() => btn.classList.remove("disabled"), 600);
+      // Flash all selected buttons to indicate max reached
+      document.querySelectorAll(".btn-adj.selected").forEach(b => {
+        b.classList.add("shake");
+        setTimeout(() => b.classList.remove("shake"), 500);
+      });
       return;
     }
     btn.classList.add("selected");
     state.selectedAdjectives.push(adj);
+  }
+  updateAdjContinueBtn();
+}
+
+function updateAdjContinueBtn() {
+  const btn = document.getElementById("btn-adj-continue");
+  if (!btn) return;
+  const count = state.selectedAdjectives.length;
+  const needed = MAX_ADJECTIVES;
+  if (count === needed) {
+    btn.disabled = false;
+    btn.style.opacity = "1";
+    btn.style.cursor = "pointer";
+    btn.textContent = t("adj_continue");
+  } else {
+    btn.disabled = true;
+    btn.style.opacity = "0.4";
+    btn.style.cursor = "not-allowed";
+    const remaining = needed - count;
+    btn.textContent = state.lang === "de"
+      ? `Noch ${remaining} Adjektiv${remaining === 1 ? "" : "e"} wählen`
+      : `Select ${remaining} more adjective${remaining === 1 ? "" : "s"}`;
   }
 }
 
