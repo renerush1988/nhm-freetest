@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html-root">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,28 +17,38 @@
       <img src="/static/img/logo_icon.png" alt="NHM Logo" class="nav-logo-img" />
       <span class="nav-logo-text">NeuroHealth<strong>Mastery</strong></span>
     </a>
-    <span class="nav-badge">FREE TEST</span>
+    <div class="nav-right">
+      <span class="nav-badge" data-i18n="nav_badge">FREE TEST</span>
+      <!-- Language Switcher -->
+      <div class="lang-switcher">
+        <button class="lang-btn active" id="btn-lang-en" onclick="setLang('en')">🇬🇧 EN</button>
+        <button class="lang-btn" id="btn-lang-de" onclick="setLang('de')">🇩🇪 DE</button>
+      </div>
+    </div>
   </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero" id="section-hero">
   <div class="hero-inner">
-    <div class="hero-badge">100% Free · No Login Required</div>
-    <h1 class="hero-title">Discover Your<br><span class="gradient-text">Natural Signature Type</span></h1>
-    <p class="hero-sub">
+    <div class="hero-badge" data-i18n="hero_badge">100% Free · No Login Required</div>
+    <h1 class="hero-title">
+      <span data-i18n="hero_title_1">Discover Your</span><br>
+      <span class="gradient-text" data-i18n="hero_title_2">Natural Signature Type</span>
+    </h1>
+    <p class="hero-sub" data-i18n="hero_sub">
       Answer 11 questions, get your personal neuroscience-based type,<br>
       and receive a <strong>free 2-week action plan</strong> tailored to your biggest challenge.
     </p>
     <div class="hero-animals">
-      <div class="animal-chip"><img src="/static/img/lion.png" alt="Lion" /><span>Lion</span></div>
-      <div class="animal-chip"><img src="/static/img/falcon.png" alt="Falcon" /><span>Falcon</span></div>
-      <div class="animal-chip"><img src="/static/img/chameleon.png" alt="Chameleon" /><span>Chameleon</span></div>
-      <div class="animal-chip"><img src="/static/img/wolf.png" alt="Wolf" /><span>Wolf</span></div>
-      <div class="animal-chip"><img src="/static/img/owl.png" alt="Owl" /><span>Owl</span></div>
+      <div class="animal-chip"><img src="/static/img/lion.png" alt="Lion" /><span data-i18n="animal_lion">Lion</span></div>
+      <div class="animal-chip"><img src="/static/img/falcon.png" alt="Falcon" /><span data-i18n="animal_falcon">Falcon</span></div>
+      <div class="animal-chip"><img src="/static/img/chameleon.png" alt="Chameleon" /><span data-i18n="animal_chameleon">Chameleon</span></div>
+      <div class="animal-chip"><img src="/static/img/wolf.png" alt="Wolf" /><span data-i18n="animal_wolf">Wolf</span></div>
+      <div class="animal-chip"><img src="/static/img/owl.png" alt="Owl" /><span data-i18n="animal_owl">Owl</span></div>
     </div>
-    <button class="btn-primary btn-large" onclick="startQuiz()">Start Free Test →</button>
-    <p class="hero-note">Takes about 2 minutes · No registration required</p>
+    <button class="btn-primary btn-large" onclick="startQuiz()" data-i18n="start_btn">Start Free Test →</button>
+    <p class="hero-note" data-i18n="hero_note">Takes about 2 minutes · No registration required</p>
   </div>
 </section>
 
@@ -58,8 +68,8 @@
         <div class="question-number" id="q-number">Question 1 / 10</div>
         <h2 class="question-text" id="q-text"></h2>
         <div class="answer-buttons">
-          <button class="btn-answer btn-yes" onclick="answerQuestion('yes')">✓ Yes, that's me</button>
-          <button class="btn-answer btn-no" onclick="answerQuestion('no')">✗ Not really</button>
+          <button class="btn-answer btn-yes" id="btn-yes" onclick="answerQuestion('yes')">✓ Yes, that's me</button>
+          <button class="btn-answer btn-no" id="btn-no" onclick="answerQuestion('no')">✗ Not really</button>
         </div>
       </div>
     </div>
@@ -67,24 +77,24 @@
     <!-- Step 2: Main Problem (Q11) -->
     <div id="step-problem" class="hidden">
       <div class="quiz-card">
-        <div class="question-number">Question 11 / 11</div>
-        <h2 class="question-text">What is your biggest challenge right now?</h2>
+        <div class="question-number" data-i18n="q11_label">Question 11 / 11</div>
+        <h2 class="question-text" data-i18n="problem_question">What is your biggest challenge right now?</h2>
         <div class="problem-options" id="problem-options">
           <button class="btn-problem" data-problem="weight" onclick="selectProblem(this)">
             <span class="problem-icon">⚖️</span>
-            <span>I want to lose weight / can't lose fat</span>
+            <span data-i18n="problem_weight">I want to lose weight / can't lose fat</span>
           </button>
           <button class="btn-problem" data-problem="energy" onclick="selectProblem(this)">
             <span class="problem-icon">⚡</span>
-            <span>I'm constantly exhausted / have no energy</span>
+            <span data-i18n="problem_energy">I'm constantly exhausted / have no energy</span>
           </button>
           <button class="btn-problem" data-problem="training" onclick="selectProblem(this)">
             <span class="problem-icon">🏋️</span>
-            <span>I don't train consistently</span>
+            <span data-i18n="problem_training">I don't train consistently</span>
           </button>
           <button class="btn-problem" data-problem="sleep" onclick="selectProblem(this)">
             <span class="problem-icon">😴</span>
-            <span>I sleep poorly</span>
+            <span data-i18n="problem_sleep">I sleep poorly</span>
           </button>
         </div>
       </div>
@@ -93,16 +103,12 @@
     <!-- Step 3: Adjectives -->
     <div id="step-adjectives" class="hidden">
       <div class="quiz-card">
-        <h2 class="question-text">Which words describe you best?</h2>
-        <p class="question-hint">Choose up to 3 that feel most true for you.</p>
+        <h2 class="question-text" data-i18n="adj_title">Which words describe you best?</h2>
+        <p class="question-hint" data-i18n="adj_hint">Choose up to 3 that feel most true for you.</p>
         <div class="adjective-grid" id="adjective-grid">
-          {% for type, adjs in adjectives.items() %}
-            {% for adj in adjs %}
-              <button class="btn-adj" data-type="{{ type }}" data-adj="{{ adj }}" onclick="toggleAdj(this)">{{ adj }}</button>
-            {% endfor %}
-          {% endfor %}
+          <!-- Populated dynamically by JS based on language -->
         </div>
-        <button class="btn-primary mt-4" id="adj-next-btn" onclick="goToEmailCapture()">Continue →</button>
+        <button class="btn-primary mt-4" id="adj-next-btn" onclick="goToEmailCapture()" data-i18n="adj_continue">Continue →</button>
       </div>
     </div>
 
@@ -110,32 +116,32 @@
     <div id="step-email" class="hidden">
       <div class="quiz-card email-card">
         <div class="lock-icon">🔓</div>
-        <h2 class="question-text">Your results are ready!</h2>
-        <p class="question-hint">
+        <h2 class="question-text" data-i18n="email_title">Your results are ready!</h2>
+        <p class="question-hint" data-i18n="email_hint">
           Enter your name and email to unlock your <strong>Natural Signature Type</strong>
           and receive your personalized <strong>free 2-week plan</strong>.
         </p>
         <form id="email-form" onsubmit="submitQuiz(event)">
           <div class="form-group">
-            <label for="input-name">Your first name</label>
+            <label for="input-name" data-i18n="label_name">Your first name</label>
             <input type="text" id="input-name" placeholder="e.g. Alex" required autocomplete="given-name" />
           </div>
           <div class="form-group">
-            <label for="input-email">Your email address</label>
+            <label for="input-email" data-i18n="label_email">Your email address</label>
             <input type="email" id="input-email" placeholder="you@example.com" required autocomplete="email" />
           </div>
           <div class="dsgvo-check">
             <label class="checkbox-label">
               <input type="checkbox" id="dsgvo-cb" required />
               <span>
-                I have read and agree to the
-                <a href="/datenschutz" target="_blank">Privacy Policy & Disclaimer</a>.
-                <small class="dsgvo-hint">(includes medical disclaimer)</small>
+                <span data-i18n="privacy_text">I have read and agree to the</span>
+                <a href="/datenschutz" target="_blank" data-i18n="privacy_link">Privacy Policy & Disclaimer</a>.
+                <small class="dsgvo-hint" data-i18n="privacy_hint">(includes medical disclaimer)</small>
               </span>
             </label>
           </div>
-          <button type="submit" class="btn-primary btn-large btn-full" id="submit-btn">
-            Reveal My Type & Get My Free Plan →
+          <button type="submit" class="btn-primary btn-large btn-full" id="submit-btn" data-i18n="submit_btn">
+            Reveal My Type &amp; Get My Free Plan →
           </button>
         </form>
       </div>
@@ -163,18 +169,22 @@
     <!-- Strengths & Challenges -->
     <div class="result-grid">
       <div class="result-box">
-        <h3>💪 Your Strengths</h3>
+        <h3 data-i18n="strengths_title">💪 Your Strengths</h3>
         <ul id="result-strengths"></ul>
       </div>
       <div class="result-box">
-        <h3>⚠️ Your Challenges</h3>
+        <h3 data-i18n="challenges_title">⚠️ Your Challenges</h3>
         <ul id="result-challenges"></ul>
       </div>
     </div>
 
     <!-- Secondary Type -->
     <div class="secondary-type-box hidden" id="secondary-type-box">
-      <p>You also have strong traits of: <strong id="secondary-type-name"></strong> (<span id="secondary-type-nst"></span>)</p>
+      <p>
+        <span data-i18n="secondary_label">You also have strong traits of:</span>
+        <strong id="secondary-type-name"></strong>
+        (<span id="secondary-type-nst"></span>)
+      </p>
     </div>
 
     <!-- 2-Week Plan -->
@@ -185,32 +195,32 @@
       </div>
       <div id="plan-weeks"></div>
       <div class="plan-tips" id="plan-tips-section">
-        <h3>🎯 Key Tips for Your Type</h3>
+        <h3 data-i18n="tips_title">🎯 Key Tips for Your Type</h3>
         <ul id="plan-tips"></ul>
       </div>
     </div>
 
     <!-- Action Buttons -->
     <div class="action-buttons">
-      <button class="btn-primary btn-large" onclick="downloadPDF()">
+      <button class="btn-primary btn-large" onclick="downloadPDF()" data-i18n="download_btn">
         📄 Download My 2-Week Plan (PDF)
       </button>
     </div>
 
     <!-- CTA Box — Core Path -->
     <div class="cta-box" id="cta-box">
-      <div class="cta-badge">🚀 Ready for the next level?</div>
-      <h3 class="cta-title">The Core Path</h3>
-      <p class="cta-subtitle">Your 30-day transformation — built around your Natural Signature Type.</p>
+      <div class="cta-badge" data-i18n="cta_badge">🚀 Ready for the next level?</div>
+      <h3 class="cta-title" data-i18n="cta_title">The Core Path</h3>
+      <p class="cta-subtitle" data-i18n="cta_subtitle">Your 30-day transformation — built around your Natural Signature Type.</p>
       <p id="cta-text" class="cta-body"></p>
 
       <div class="cta-guarantee">
         <div class="guarantee-icon">🛡️</div>
         <div class="guarantee-text">
-          <strong>Money-Back Guarantee</strong><br>
-          Complete 6 out of 7 daily check-ins (30 seconds, 4–5 questions) for 30 days
+          <strong data-i18n="guarantee_title">Money-Back Guarantee</strong><br>
+          <span data-i18n="guarantee_text">Complete 6 out of 7 daily check-ins (30 seconds, 4–5 questions) for 30 days
           and get a <strong>full refund</strong> — plus an exclusive upgrade offer.
-          No risk. Just results.
+          No risk. Just results.</span>
         </div>
       </div>
 
@@ -218,27 +228,30 @@
         <a class="btn-primary btn-large btn-cta-main" id="core-path-btn"
            href="#"
            target="_blank">
-          🎯 Start Core Path — 49€
+          <span data-i18n="cta_btn">🎯 Start Core Path — 49€</span>
+          <small data-i18n="cta_btn_sub">Money-back guarantee included</small>
         </a>
         <a class="btn-whatsapp btn-large" id="whatsapp-btn"
-           href="https://wa.me/4915737557085?text=Hi%20René%2C%20I%20just%20completed%20the%20free%20NHM%20test%20and%20I%27d%20like%20to%20know%20more%20about%20the%20Core%20Path!"
+           href="https://wa.me/4915737557085?text=Hi%20Ren%C3%A9%2C%20I%20just%20completed%20the%20free%20NHM%20test%20and%20I%27d%20like%20to%20know%20more%20about%20the%20Core%20Path!"
            target="_blank">
-          💬 Chat with René on WhatsApp
-          <span class="whatsapp-hours">Mon–Fri · 9am–6pm CET</span>
+          💬 <span data-i18n="whatsapp_btn">Chat with René on WhatsApp</span>
+          <span class="whatsapp-hours" data-i18n="whatsapp_hours">Mon–Fri · 9am–6pm CET</span>
         </a>
       </div>
-      <p class="cta-note">Outside business hours? René will reply the next business day.</p>
+      <p class="cta-note" data-i18n="whatsapp_note">Outside business hours? René will reply the next business day.</p>
     </div>
 
     <!-- Disclaimer -->
     <div class="disclaimer-box">
-      <p><strong>Disclaimer:</strong> René Rusch is not a medical doctor. All recommendations are based on
-      professional certifications (Natural Signature Typing, Nutrition Coaching), peer-reviewed literature,
-      and years of practical experience. This does not replace medical advice.</p>
+      <p data-i18n="disclaimer">
+        <strong>Disclaimer:</strong> René Rusch is not a medical doctor. All recommendations are based on
+        professional certifications (Natural Signature Typing, Nutrition Coaching), peer-reviewed literature,
+        and years of practical experience. This does not replace medical advice.
+      </p>
     </div>
 
     <div class="restart-wrap">
-      <button class="btn-ghost" onclick="restartQuiz()">← Take the test again</button>
+      <button class="btn-ghost" onclick="restartQuiz()" data-i18n="restart_btn">← Take the test again</button>
     </div>
 
   </div>
@@ -249,10 +262,17 @@
   <div class="footer-inner">
     <img src="/static/img/logo_icon.png" alt="NHM" class="footer-logo" />
     <p>© 2025 NeuroHealthMastery · René Rusch</p>
-    <a href="/datenschutz">Privacy Policy & Disclaimer</a>
+    <a href="/datenschutz" data-i18n="privacy_link_footer">Privacy Policy & Disclaimer</a>
   </div>
 </footer>
 
+<!-- Inject server-side data for JS -->
+<script>
+  window.ADJECTIVES_EN = {{ adjectives_en | tojson }};
+  window.ADJECTIVES_DE = {{ adjectives_de | tojson }};
+  window.QUESTIONS_EN = {{ questions_en | tojson }};
+  window.QUESTIONS_DE = {{ questions_de | tojson }};
+</script>
 <script src="/static/js/quiz.js"></script>
 </body>
 </html>

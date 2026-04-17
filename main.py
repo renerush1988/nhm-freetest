@@ -1,6 +1,7 @@
 """
 main.py — NHM Free Test (Lead Magnet App)
 FastAPI backend: scoring, email capture, PDF generation
+Bilingual: English (default) + German
 """
 import os
 import json
@@ -16,6 +17,7 @@ from fastapi.templating import Jinja2Templates
 from fpdf import FPDF
 
 from content import PLANS, TYPE_META, PROBLEM_LABELS, ADJECTIVES
+from content_de import PLANS_DE, TYPE_META_DE, PROBLEM_LABELS_DE, ADJECTIVES_DE, UI_DE, QUESTIONS_DE
 import re
 
 BASE_DIR = Path(__file__).parent
@@ -23,13 +25,11 @@ BASE_DIR = Path(__file__).parent
 
 def strip_emoji(text: str) -> str:
     """Sanitize text for FPDF latin-1: remove emojis, replace typographic chars."""
-    # Replace typographic dashes and special punctuation with ASCII equivalents
-    text = text.replace('\u2014', '-').replace('\u2013', '-')  # em-dash, en-dash
-    text = text.replace('\u2018', "'").replace('\u2019', "'")  # curly apostrophes
-    text = text.replace('\u201c', '"').replace('\u201d', '"')  # curly quotes
-    text = text.replace('\u2022', '-').replace('\u2026', '...')  # bullet, ellipsis
-    text = text.replace('\u00b7', '-')  # middle dot
-    # Remove emoji and other non-latin1 characters
+    text = text.replace('\u2014', '-').replace('\u2013', '-')
+    text = text.replace('\u2018', "'").replace('\u2019', "'")
+    text = text.replace('\u201c', '"').replace('\u201d', '"')
+    text = text.replace('\u2022', '-').replace('\u2026', '...')
+    text = text.replace('\u00b7', '-')
     emoji_pattern = re.compile(
         "["
         u"\U0001F600-\U0001F64F"
@@ -42,8 +42,6 @@ def strip_emoji(text: str) -> str:
         u"\U00002702-\U000027B0"
         "]+", flags=re.UNICODE)
     text = emoji_pattern.sub('', text)
-    # Final safety: encode to latin-1, replacing anything still not encodable
-    # This catches ALL remaining non-latin1 chars including emojis from meta fields
     text = text.encode('latin-1', errors='replace').decode('latin-1')
     return text.strip()
 
@@ -55,9 +53,9 @@ app.mount("/static", StaticFiles(directory=str(BASE_DIR / "static")), name="stat
 templates = Jinja2Templates(directory=str(BASE_DIR / "templates"))
 
 
-# ── Scoring ──────────────────────────────────────────────────────────────────
+# ── Questions ─────────────────────────────────────────────────────────────────
 
-QUESTIONS = [
+QUESTIONS_EN = [
     {"id": 1, "type": "lion",      "text": "I need to see results quickly."},
     {"id": 2, "type": "lion",      "text": "I need continuous challenges, otherwise I lose motivation."},
     {"id": 3, "type": "falcon",    "text": "I quickly lose interest when things stay the same."},
@@ -70,38 +68,100 @@ QUESTIONS = [
     {"id": 10, "type": "owl",      "text": "Unexpected changes make me nervous."},
 ]
 
-PROBLEM_OPTIONS = [
+PROBLEM_OPTIONS_EN = [
     {"id": "weight",   "label": "I want to lose weight / can't lose fat"},
     {"id": "energy",   "label": "I'm constantly exhausted / have no energy"},
     {"id": "training", "label": "I don't train consistently"},
     {"id": "sleep",    "label": "I sleep poorly"},
 ]
 
+PROBLEM_OPTIONS_DE = [
+    {"id": "weight",   "label": "Ich nehme zu / kann nicht abnehmen"},
+    {"id": "energy",   "label": "Ich bin staendig erschoepft / habe keine Energie"},
+    {"id": "training", "label": "Ich trainiere nicht regelmaessig"},
+    {"id": "sleep",    "label": "Ich schlafe schlecht"},
+]
 
-def calculate_score(answers: dict, adjectives: list) -> dict:
-    """
-    answers: {question_id: "yes"/"no"}
-    adjectives: list of selected adjective strings
-    Returns dict with scores per type and winner.
-    """
+QUESTIONS_DE_LIST = [
+    {"id": 1, "type": "lion",      "text": "Ich muss schnell Ergebnisse erzielen."},
+    {"id": 2, "type": "lion",      "text": "Ich brauche kontinuierlich Herausforderungen, sonst verliere ich die Motivation."},
+    {"id": 3, "type": "falcon",    "text": "Ich verliere schnell das Interesse, wenn alles gleich bleibt."},
+    {"id": 4, "type": "falcon",    "text": "Unter Druck werde ich fokussierter und performe besser."},
+    {"id": 5, "type": "chameleon", "text": "Ich sage manchmal Ja, obwohl ich innerlich Nein meine, um Konflikte zu vermeiden."},
+    {"id": 6, "type": "chameleon", "text": "Entscheidungen fallen mir schwer, weil ich stark darauf achte, wie sie andere beeinflussen."},
+    {"id": 7, "type": "wolf",      "text": "Ich nehme Kritik sehr oft persoenlich."},
+    {"id": 8, "type": "wolf",      "text": "Ein negatives Erlebnis beschaeftigt mich den ganzen Tag."},
+    {"id": 9, "type": "owl",       "text": "Ich brauche immer einen klaren Plan."},
+    {"id": 10, "type": "owl",      "text": "Unerwartete Aenderungen machen mich nervoees."},
+]
+
+UI_EN = {
+    "title": "NeuroHealthMastery — Free Quick Test",
+    "subtitle": "Discover Your Natural Signature Type",
+    "hero_title": "Discover Your Natural Signature Type",
+    "hero_subtitle": "10 questions. 2 minutes. Your personal 2-week plan.",
+    "start_btn": "Start for free",
+    "questions_title": "Answer the following questions",
+    "yes": "Yes",
+    "no": "No",
+    "adjectives_title": "Which traits apply to you?",
+    "adjectives_subtitle": "Choose up to 3 adjectives that best describe you",
+    "problem_title": "What is your biggest challenge right now?",
+    "email_title": "Where should we send your plan?",
+    "email_name": "Your Name",
+    "email_address": "Your Email Address",
+    "email_placeholder_name": "John Doe",
+    "email_placeholder_email": "john@example.com",
+    "privacy_text": "I have read and agree to the Privacy Policy.",
+    "submit_btn": "Show My Result",
+    "result_title": "Your Natural Signature Type",
+    "secondary_label": "Secondary Type",
+    "your_problem": "Your Goal",
+    "your_plan": "Your Personal 2-Week Plan",
+    "week_label": "Week",
+    "tips_title": "Key Tips for Your Type",
+    "download_btn": "Download 2-Week Plan as PDF",
+    "cta_badge": "Ready for the next level?",
+    "cta_title": "The Core Path",
+    "cta_desc": "30-day program — built around your Natural Signature Type.",
+    "cta_guarantee": "Money-back guarantee: Complete 6 out of 7 daily check-ins (30 sec, 4-5 questions) for 30 days — get a full refund + an exclusive upgrade offer.",
+    "cta_btn": "Start Core Path — €49",
+    "cta_btn_sub": "Money-back guarantee included",
+    "whatsapp_btn": "Chat with René on WhatsApp",
+    "whatsapp_hours": "Mon–Fri · 9am–6pm CET",
+    "whatsapp_note": "Outside business hours? René will reply the next business day.",
+    "disclaimer": "Disclaimer: René Rusch is not a medical doctor. Content is based on professional certifications (incl. Natural Signature Typing and Nutrition Coaching), peer-reviewed literature, and years of practical experience. This report does not replace medical advice.",
+    "pdf_header": "Your Free Natural Signature Type Assessment",
+    "pdf_greeting": "Hello",
+    "pdf_type_label": "Your Natural Signature Type",
+    "pdf_goal_label": "Your Main Goal",
+    "pdf_tips_title": "Key Tips for Your Type",
+    "pdf_cta_title": "The Core Path - Your Next Step",
+    "pdf_cta_sub": "30-day program - built around your Natural Signature Type",
+    "pdf_guarantee": "Money-Back Guarantee: Complete 6 out of 7 daily check-ins (30 seconds, 4-5 questions) for 30 days and get a full refund + an exclusive upgrade offer. No risk. Just results.",
+    "pdf_disclaimer": "Disclaimer: Rene Rusch is not a medical doctor. The content of this report is based on professional certifications (including Natural Signature Typing and Nutrition Coaching), peer-reviewed literature, and years of practical experience. This report does not replace medical advice. Consult a qualified healthcare professional before making significant changes to your diet, training, or supplementation.",
+    "pdf_footer": "NeuroHealthMastery | neurohealthmastery.com | Generated",
+}
+
+
+# ── Scoring ──────────────────────────────────────────────────────────────────
+
+def calculate_score(answers: dict, adjectives: list, lang: str = "en") -> dict:
+    adj_map = ADJECTIVES if lang == "en" else ADJECTIVES_DE
     scores = {"lion": 0.0, "falcon": 0.0, "chameleon": 0.0, "wolf": 0.0, "owl": 0.0}
 
-    for q in QUESTIONS:
+    for q in QUESTIONS_EN:
         qid = str(q["id"])
         if answers.get(qid) == "yes":
             scores[q["type"]] += 1.0
 
-    # Adjective bonus
     for adj in adjectives:
-        for t, adjs in ADJECTIVES.items():
+        for t, adjs in adj_map.items():
             if adj in adjs:
                 scores[t] += 0.5
 
-    # Determine primary type (tiebreak order: lion > falcon > chameleon > wolf > owl)
     order = ["lion", "falcon", "chameleon", "wolf", "owl"]
     primary = max(order, key=lambda t: (scores[t], -order.index(t)))
-
-    # Secondary type
     remaining = [t for t in order if t != primary]
     secondary = max(remaining, key=lambda t: (scores[t], -order.index(t)))
     if scores[secondary] == 0:
@@ -112,29 +172,30 @@ def calculate_score(answers: dict, adjectives: list) -> dict:
 
 # ── Lead storage ─────────────────────────────────────────────────────────────
 
-def save_lead(name: str, email: str, primary_type: str, problem: str):
+def save_lead(name: str, email: str, primary_type: str, problem: str, lang: str = "en"):
     file_exists = LEADS_FILE.exists()
     with open(LEADS_FILE, "a", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         if not file_exists:
-            writer.writerow(["timestamp", "name", "email", "type", "problem"])
+            writer.writerow(["timestamp", "name", "email", "type", "problem", "lang"])
         writer.writerow([
             datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
-            name, email, primary_type, problem
+            name, email, primary_type, problem, lang
         ])
 
 
 # ── PDF Generation ───────────────────────────────────────────────────────────
 
-def generate_pdf(name: str, result: dict, problem: str) -> bytes:
+def generate_pdf(name: str, result: dict, problem: str, lang: str = "en") -> bytes:
     primary = result["primary"]
-    meta = TYPE_META[primary]
-    plan = PLANS.get((primary, problem))
+    ui = UI_EN if lang == "en" else UI_DE
+    meta = TYPE_META[primary] if lang == "en" else TYPE_META_DE[primary]
+    plan = PLANS.get((primary, problem)) if lang == "en" else PLANS_DE.get((primary, problem))
+    problem_label = PROBLEM_LABELS.get(problem, problem) if lang == "en" else PROBLEM_LABELS_DE.get(problem, problem)
 
     pdf = FPDF()
     pdf.set_auto_page_break(auto=True, margin=15)
     pdf.add_page()
-    # Use built-in core font (latin-1 safe) — all text must be sanitized via strip_emoji()
 
     # Header
     pdf.set_fill_color(15, 23, 42)
@@ -145,29 +206,29 @@ def generate_pdf(name: str, result: dict, problem: str) -> bytes:
     pdf.cell(190, 10, "NeuroHealthMastery", ln=True, align="C")
     pdf.set_font("Helvetica", "", 11)
     pdf.set_xy(10, 22)
-    pdf.cell(190, 8, "Your Free Natural Signature Type Assessment", ln=True, align="C")
+    pdf.cell(190, 8, strip_emoji(ui["pdf_header"]), ln=True, align="C")
 
     pdf.set_xy(10, 45)
     pdf.set_text_color(30, 30, 30)
 
     # Greeting
     pdf.set_font("Helvetica", "B", 14)
-    pdf.cell(190, 8, f"Hello {strip_emoji(name)}!", ln=True)
+    pdf.cell(190, 8, f"{strip_emoji(ui['pdf_greeting'])} {strip_emoji(name)}!", ln=True)
     pdf.ln(3)
 
     # Type result
     pdf.set_font("Helvetica", "B", 16)
     pdf.set_text_color(15, 23, 42)
-    pdf.cell(190, 10, f"Your Natural Signature Type: {strip_emoji(meta['name'])}", ln=True)
+    pdf.cell(190, 10, f"{strip_emoji(ui['pdf_type_label'])}: {strip_emoji(meta['name'])}", ln=True)
     pdf.set_font("Helvetica", "I", 11)
     pdf.set_text_color(100, 100, 100)
-    pdf.cell(190, 7, f"Natural Signature Type - {strip_emoji(meta['name'])}", ln=True)
+    pdf.cell(190, 7, strip_emoji(meta['nst']), ln=True)
     pdf.ln(3)
 
     # Tagline
     pdf.set_font("Helvetica", "B", 12)
     pdf.set_text_color(30, 30, 30)
-    pdf.cell(190, 8, f'"{ strip_emoji(meta["tagline"])}"', ln=True)
+    pdf.cell(190, 8, f'"{strip_emoji(meta["tagline"])}"', ln=True)
     pdf.ln(2)
 
     # Description
@@ -179,7 +240,7 @@ def generate_pdf(name: str, result: dict, problem: str) -> bytes:
     # Problem
     pdf.set_font("Helvetica", "B", 12)
     pdf.set_text_color(15, 23, 42)
-    pdf.cell(190, 8, f"Your Main Goal: {strip_emoji(PROBLEM_LABELS.get(problem, problem))}", ln=True)
+    pdf.cell(190, 8, f"{strip_emoji(ui['pdf_goal_label'])}: {strip_emoji(problem_label)}", ln=True)
     pdf.ln(3)
 
     if plan:
@@ -214,7 +275,7 @@ def generate_pdf(name: str, result: dict, problem: str) -> bytes:
         # Tips
         pdf.set_font("Helvetica", "B", 12)
         pdf.set_text_color(15, 23, 42)
-        pdf.cell(190, 8, "Key Tips for Your Type", ln=True)
+        pdf.cell(190, 8, strip_emoji(ui["pdf_tips_title"]), ln=True)
         pdf.ln(1)
         for tip in plan["tips"]:
             pdf.set_font("Helvetica", "", 10)
@@ -223,44 +284,34 @@ def generate_pdf(name: str, result: dict, problem: str) -> bytes:
             pdf.ln(1)
         pdf.ln(3)
 
-        # CTA — Core Path
-        pdf.set_fill_color(10, 20, 50)
+        # CTA
         pdf.set_font("Helvetica", "B", 13)
         pdf.set_text_color(6, 182, 212)
-        pdf.cell(190, 10, "The Core Path - Your Next Step", ln=True)
+        pdf.cell(190, 10, strip_emoji(ui["pdf_cta_title"]), ln=True)
         pdf.set_font("Helvetica", "B", 10)
         pdf.set_text_color(30, 30, 30)
-        pdf.cell(190, 7, "30-day program - built around your Natural Signature Type", ln=True)
+        pdf.cell(190, 7, strip_emoji(ui["pdf_cta_sub"]), ln=True)
         pdf.set_font("Helvetica", "", 10)
         pdf.set_text_color(60, 60, 60)
         pdf.multi_cell(190, 6, strip_emoji(plan["cta"]))
         pdf.ln(2)
         pdf.set_font("Helvetica", "B", 10)
         pdf.set_text_color(16, 185, 129)
-        pdf.multi_cell(190, 6,
-            "Money-Back Guarantee: Complete 6 out of 7 daily check-ins "
-            "(30 seconds, 4-5 questions) for 30 days and get a full refund "
-            "+ an exclusive upgrade offer. No risk. Just results."
-        )
+        pdf.multi_cell(190, 6, strip_emoji(ui["pdf_guarantee"]))
         pdf.ln(3)
 
     # Disclaimer
     pdf.set_font("Helvetica", "I", 8)
     pdf.set_text_color(150, 150, 150)
-    pdf.multi_cell(190, 5,
-        "Disclaimer: René Rusch is not a medical doctor. The content of this report is based on "
-        "professional certifications (including Natural Signature Typing and Nutrition Coaching), "
-        "peer-reviewed literature, and years of practical experience. This report does not replace "
-        "medical advice. Consult a qualified healthcare professional before making significant "
-        "changes to your diet, training, or supplementation."
-    )
+    pdf.multi_cell(190, 5, strip_emoji(ui["pdf_disclaimer"]))
 
     # Footer
     pdf.set_y(-20)
     pdf.set_font("Helvetica", "", 8)
     pdf.set_text_color(150, 150, 150)
-    pdf.cell(190, 5, "NeuroHealthMastery | neurohealthmastery.com | Generated " +
-             datetime.utcnow().strftime("%Y-%m-%d"), align="C")
+    pdf.cell(190, 5,
+        f"{strip_emoji(ui['pdf_footer'])} {datetime.utcnow().strftime('%Y-%m-%d')}",
+        align="C")
 
     output = pdf.output()
     if isinstance(output, bytearray):
@@ -274,9 +325,14 @@ def generate_pdf(name: str, result: dict, problem: str) -> bytes:
 async def index(request: Request):
     return templates.TemplateResponse("index.html", {
         "request": request,
-        "questions": QUESTIONS,
-        "problem_options": PROBLEM_OPTIONS,
-        "adjectives": ADJECTIVES,
+        "questions_en": QUESTIONS_EN,
+        "questions_de": QUESTIONS_DE_LIST,
+        "problem_options_en": PROBLEM_OPTIONS_EN,
+        "problem_options_de": PROBLEM_OPTIONS_DE,
+        "adjectives_en": ADJECTIVES,
+        "adjectives_de": ADJECTIVES_DE,
+        "ui_en": UI_EN,
+        "ui_de": UI_DE,
     })
 
 
@@ -289,19 +345,31 @@ async def submit(request: Request):
     answers = data.get("answers", {})
     selected_adjectives = data.get("adjectives", [])
     problem = data.get("problem", "")
+    lang = data.get("lang", "en")
 
     if not name or not email or not problem:
         return JSONResponse({"error": "Missing required fields"}, status_code=400)
 
-    result = calculate_score(answers, selected_adjectives)
+    result = calculate_score(answers, selected_adjectives, lang)
     primary = result["primary"]
     secondary = result["secondary"]
-    meta = TYPE_META[primary]
-    plan = PLANS.get((primary, problem))
 
-    # Save lead
+    meta_en = TYPE_META[primary]
+    meta_de = TYPE_META_DE[primary]
+    meta = meta_en if lang == "en" else meta_de
+
+    plan_en = PLANS.get((primary, problem))
+    plan_de = PLANS_DE.get((primary, problem))
+    plan = plan_en if lang == "en" else plan_de
+
+    secondary_meta_en = TYPE_META[secondary] if secondary else None
+    secondary_meta_de = TYPE_META_DE[secondary] if secondary else None
+    secondary_meta = secondary_meta_en if lang == "en" else secondary_meta_de
+
+    problem_label = PROBLEM_LABELS.get(problem, problem) if lang == "en" else PROBLEM_LABELS_DE.get(problem, problem)
+
     try:
-        save_lead(name, email, primary, problem)
+        save_lead(name, email, primary, problem, lang)
     except Exception:
         pass
 
@@ -309,6 +377,7 @@ async def submit(request: Request):
         "primary": primary,
         "secondary": secondary,
         "scores": result["scores"],
+        "lang": lang,
         "meta": {
             "name": meta["name"],
             "nst": meta["nst"],
@@ -320,8 +389,15 @@ async def submit(request: Request):
             "strengths": meta["strengths"],
             "challenges": meta["challenges"],
         },
-        "secondary_meta": TYPE_META[secondary] if secondary else None,
-        "problem_label": PROBLEM_LABELS.get(problem, problem),
+        "secondary_meta": {
+            "name": secondary_meta["name"],
+            "nst": secondary_meta["nst"],
+            "emoji": secondary_meta["emoji"],
+            "color": secondary_meta["color"],
+            "image": secondary_meta["image"],
+            "tagline": secondary_meta["tagline"],
+        } if secondary_meta else None,
+        "problem_label": problem_label,
         "plan": plan,
     })
 
@@ -332,15 +408,15 @@ async def download_pdf(request: Request):
     name = data.get("name", "User")
     result = data.get("result", {})
     problem = data.get("problem", "")
+    lang = data.get("lang", "en")
 
-    pdf_bytes = generate_pdf(name, result, problem)
+    pdf_bytes = generate_pdf(name, result, problem, lang)
 
+    filename = f"NHM_Plan_{name.replace(' ', '_')}.pdf"
     return StreamingResponse(
         io.BytesIO(pdf_bytes),
         media_type="application/pdf",
-        headers={
-            "Content-Disposition": f"attachment; filename=NHM_Free_Plan_{name.replace(' ', '_')}.pdf"
-        }
+        headers={"Content-Disposition": f"attachment; filename={filename}"}
     )
 
 
