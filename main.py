@@ -124,9 +124,9 @@ UI_EN = {
     "cta_badge": "Ready for the next level?",
     "cta_title": "The Core Path",
     "cta_desc": "30-day program — built around your Natural Signature Type.",
-    "cta_guarantee": "Money-back guarantee: Complete 6 out of 7 daily check-ins (30 sec, 4-5 questions) for 30 days — get a full refund + an exclusive upgrade offer.",
+    "cta_guarantee": "30-day money-back guarantee: Try it risk-free. Not satisfied? Full refund — no questions asked. Complete the 30 days and want more? You'll receive an exclusive offer, just for Core Path graduates.",
     "cta_btn": "Start Core Path — €49",
-    "cta_btn_sub": "Money-back guarantee included",
+    "cta_btn_sub": "30-day money-back guarantee included",
     "whatsapp_btn": "Chat with René on WhatsApp",
     "whatsapp_hours": "Mon–Fri · 9am–6pm CET",
     "whatsapp_note": "Outside business hours? René will reply the next business day.",
@@ -138,7 +138,7 @@ UI_EN = {
     "pdf_tips_title": "Key Tips for Your Type",
     "pdf_cta_title": "The Core Path - Your Next Step",
     "pdf_cta_sub": "30-day program - built around your Natural Signature Type",
-    "pdf_guarantee": "Money-Back Guarantee: Complete 6 out of 7 daily check-ins (30 seconds, 4-5 questions) for 30 days and get a full refund + an exclusive upgrade offer. No risk. Just results.",
+    "pdf_guarantee": "30-Day Money-Back Guarantee: Try The Core Path completely risk-free for 30 days. Not satisfied? You get a full refund - no questions asked. Complete the 30 days and want to go further? You will receive an exclusive offer, just for Core Path graduates.",
     "pdf_disclaimer": "Disclaimer: Rene Rusch is not a medical doctor. The content of this report is based on professional certifications (including Natural Signature Typing and Nutrition Coaching), peer-reviewed literature, and years of practical experience. This report does not replace medical advice. Consult a qualified healthcare professional before making significant changes to your diet, training, or supplementation.",
     "pdf_footer": "NeuroHealthMastery | neurohealthmastery.com | Generated",
 }
@@ -161,13 +161,24 @@ def calculate_score(answers: dict, adjectives: list, lang: str = "en") -> dict:
                 scores[t] += 0.5
 
     order = ["lion", "falcon", "chameleon", "wolf", "owl"]
+    max_score = max(scores.values())
+    # Check for tie among top types
+    tied_types = [t for t in order if scores[t] == max_score]
+    needs_tiebreaker = len(tied_types) > 1 and max_score > 0
+
     primary = max(order, key=lambda t: (scores[t], -order.index(t)))
     remaining = [t for t in order if t != primary]
     secondary = max(remaining, key=lambda t: (scores[t], -order.index(t)))
     if scores[secondary] == 0:
         secondary = None
 
-    return {"scores": scores, "primary": primary, "secondary": secondary}
+    return {
+        "scores": scores,
+        "primary": primary,
+        "secondary": secondary,
+        "needs_tiebreaker": needs_tiebreaker,
+        "tied_types": tied_types if needs_tiebreaker else []
+    }
 
 
 # ── Lead storage ─────────────────────────────────────────────────────────────
@@ -347,12 +358,27 @@ async def submit(request: Request):
     problem = data.get("problem", "")
     lang = data.get("lang", "en")
 
+    tiebreaker_choice = data.get("tiebreaker_choice", None)
+
     if not name or not email or not problem:
         return JSONResponse({"error": "Missing required fields"}, status_code=400)
 
     result = calculate_score(answers, selected_adjectives, lang)
     primary = result["primary"]
     secondary = result["secondary"]
+
+    # If tiebreaker was answered, override primary type
+    if tiebreaker_choice and tiebreaker_choice in ["lion", "falcon", "chameleon", "wolf", "owl"]:
+        primary = tiebreaker_choice
+        # Recalculate secondary: highest score among remaining types
+        order = ["lion", "falcon", "chameleon", "wolf", "owl"]
+        remaining = [t for t in order if t != primary]
+        secondary = max(remaining, key=lambda t: (result["scores"][t], -order.index(t)))
+        if result["scores"][secondary] == 0:
+            secondary = None
+        # No tiebreaker needed anymore
+        result["needs_tiebreaker"] = False
+        result["tied_types"] = []
 
     meta_en = TYPE_META[primary]
     meta_de = TYPE_META_DE[primary]
@@ -377,6 +403,8 @@ async def submit(request: Request):
         "primary": primary,
         "secondary": secondary,
         "scores": result["scores"],
+        "needs_tiebreaker": result.get("needs_tiebreaker", False),
+        "tied_types": result.get("tied_types", []),
         "lang": lang,
         "meta": {
             "name": meta["name"],

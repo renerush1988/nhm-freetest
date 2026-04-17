@@ -48,12 +48,7 @@ PLANS_DE = {
             "Supplement-Tipp: L-Tyrosin unterstützt die Dopaminproduktion – dein wichtigster Neurotransmitter.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
-            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
-            "Jeden Cent. Plus ein exklusives Upgrade-Angebot. Das ist kein Test – das ist eine "
-            "Garantie, die nur funktioniert, wenn du erscheinst."
+            "Du hast den ersten Schritt gemacht. Jetzt lass es real werden. The Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist. Teste es 30 Tage lang komplett risikofrei. Nicht zufrieden? Vollständige Rückerstattung — keine Fragen gestellt. Die 30 Tage durchgezogen und willst mehr? Als Core Path Absolvent erhältst du ein exklusives Angebot."
         )
     },
 
@@ -95,11 +90,7 @@ PLANS_DE = {
             "Supplement-Tipp: L-Tyrosin + Vitamin D3 + Zink ist der Energie-Stack des Löwen.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
-            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
-            "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
+            "Du hast den ersten Schritt gemacht. Jetzt lass es real werden. The Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist. Teste es 30 Tage lang komplett risikofrei. Nicht zufrieden? Vollständige Rückerstattung — keine Fragen gestellt. Die 30 Tage durchgezogen und willst mehr? Als Core Path Absolvent erhältst du ein exklusives Angebot."
         )
     },
 
@@ -140,11 +131,7 @@ PLANS_DE = {
             "Supplement-Tipp: L-Tyrosin + Kreatin + Koffein ist der Pre-Workout-Stack des Löwen.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
-            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
-            "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
+            "Du hast den ersten Schritt gemacht. Jetzt lass es real werden. The Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist. Teste es 30 Tage lang komplett risikofrei. Nicht zufrieden? Vollständige Rückerstattung — keine Fragen gestellt. Die 30 Tage durchgezogen und willst mehr? Als Core Path Absolvent erhältst du ein exklusives Angebot."
         )
     },
 
@@ -186,11 +173,7 @@ PLANS_DE = {
             "Supplement-Tipp: Magnesium Glycinat + L-Theanin + Ashwagandha ist der Schlaf-Stack des Löwen.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
-            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
-            "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
+            "Du hast den ersten Schritt gemacht. Jetzt lass es real werden. The Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist. Teste es 30 Tage lang komplett risikofrei. Nicht zufrieden? Vollständige Rückerstattung — keine Fragen gestellt. Die 30 Tage durchgezogen und willst mehr? Als Core Path Absolvent erhältst du ein exklusives Angebot."
         )
     },
 
@@ -232,11 +215,7 @@ PLANS_DE = {
             "Supplement-Tipp: L-Tyrosin + Koffein + Omega-3 ist der Fettabbau-Stack des Falken.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
-            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
-            "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
+            "Du hast den ersten Schritt gemacht. Jetzt lass es real werden. The Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist. Teste es 30 Tage lang komplett risikofrei. Nicht zufrieden? Vollständige Rückerstattung — keine Fragen gestellt. Die 30 Tage durchgezogen und willst mehr? Als Core Path Absolvent erhältst du ein exklusives Angebot."
         )
     },
 
@@ -277,11 +256,7 @@ PLANS_DE = {
             "Supplement-Tipp: Omega-3 + L-Tyrosin + Magnesium ist der Energie-Stack des Falken.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
-            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
-            "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
+            "Du hast den ersten Schritt gemacht. Jetzt lass es real werden. The Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist. Teste es 30 Tage lang komplett risikofrei. Nicht zufrieden? Vollständige Rückerstattung — keine Fragen gestellt. Die 30 Tage durchgezogen und willst mehr? Als Core Path Absolvent erhältst du ein exklusives Angebot."
         )
     },
 
@@ -322,11 +297,7 @@ PLANS_DE = {
             "Supplement-Tipp: L-Tyrosin + Koffein + Kreatin ist der Trainings-Stack des Falken.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
-            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
-            "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
+            "Du hast den ersten Schritt gemacht. Jetzt lass es real werden. The Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist. Teste es 30 Tage lang komplett risikofrei. Nicht zufrieden? Vollständige Rückerstattung — keine Fragen gestellt. Die 30 Tage durchgezogen und willst mehr? Als Core Path Absolvent erhältst du ein exklusives Angebot."
         )
     },
 
@@ -368,11 +339,7 @@ PLANS_DE = {
             "Supplement-Tipp: L-Theanin + Magnesium Glycinat + Melatonin (0,5 mg) ist der Schlaf-Stack des Falken.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
-            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
-            "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
+            "Du hast den ersten Schritt gemacht. Jetzt lass es real werden. The Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist. Teste es 30 Tage lang komplett risikofrei. Nicht zufrieden? Vollständige Rückerstattung — keine Fragen gestellt. Die 30 Tage durchgezogen und willst mehr? Als Core Path Absolvent erhältst du ein exklusives Angebot."
         )
     },
 
@@ -415,11 +382,7 @@ PLANS_DE = {
             "Supplement-Tipp: 5-HTP + Omega-3 + Magnesium ist der Fettabbau-Stack des Chamäleons.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
-            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
-            "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
+            "Du hast den ersten Schritt gemacht. Jetzt lass es real werden. The Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist. Teste es 30 Tage lang komplett risikofrei. Nicht zufrieden? Vollständige Rückerstattung — keine Fragen gestellt. Die 30 Tage durchgezogen und willst mehr? Als Core Path Absolvent erhältst du ein exklusives Angebot."
         )
     },
 
@@ -460,11 +423,7 @@ PLANS_DE = {
             "Supplement-Tipp: 5-HTP + Magnesium + Vitamin B6 ist der Energie-Stack des Chamäleons.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
-            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
-            "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
+            "Du hast den ersten Schritt gemacht. Jetzt lass es real werden. The Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist. Teste es 30 Tage lang komplett risikofrei. Nicht zufrieden? Vollständige Rückerstattung — keine Fragen gestellt. Die 30 Tage durchgezogen und willst mehr? Als Core Path Absolvent erhältst du ein exklusives Angebot."
         )
     },
 
@@ -505,11 +464,7 @@ PLANS_DE = {
             "Supplement-Tipp: Magnesium + Vitamin D3 + Omega-3 ist der Trainings-Stack des Chamäleons.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
-            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
-            "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
+            "Du hast den ersten Schritt gemacht. Jetzt lass es real werden. The Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist. Teste es 30 Tage lang komplett risikofrei. Nicht zufrieden? Vollständige Rückerstattung — keine Fragen gestellt. Die 30 Tage durchgezogen und willst mehr? Als Core Path Absolvent erhältst du ein exklusives Angebot."
         )
     },
 
@@ -550,11 +505,7 @@ PLANS_DE = {
             "Supplement-Tipp: 5-HTP + Magnesium Glycinat + L-Theanin ist der Schlaf-Stack des Chamäleons.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
-            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
-            "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
+            "Du hast den ersten Schritt gemacht. Jetzt lass es real werden. The Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist. Teste es 30 Tage lang komplett risikofrei. Nicht zufrieden? Vollständige Rückerstattung — keine Fragen gestellt. Die 30 Tage durchgezogen und willst mehr? Als Core Path Absolvent erhältst du ein exklusives Angebot."
         )
     },
 
@@ -597,11 +548,7 @@ PLANS_DE = {
             "Supplement-Tipp: Ashwagandha + Omega-3 + Magnesium ist der Fettabbau-Stack des Wolfes.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
-            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
-            "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
+            "Du hast den ersten Schritt gemacht. Jetzt lass es real werden. The Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist. Teste es 30 Tage lang komplett risikofrei. Nicht zufrieden? Vollständige Rückerstattung — keine Fragen gestellt. Die 30 Tage durchgezogen und willst mehr? Als Core Path Absolvent erhältst du ein exklusives Angebot."
         )
     },
 
@@ -643,11 +590,7 @@ PLANS_DE = {
             "Supplement-Tipp: Ashwagandha + Magnesium Glycinat + Vitamin D3 + B-Komplex ist der Energie-Stack des Wolfes.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
-            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
-            "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
+            "Du hast den ersten Schritt gemacht. Jetzt lass es real werden. The Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist. Teste es 30 Tage lang komplett risikofrei. Nicht zufrieden? Vollständige Rückerstattung — keine Fragen gestellt. Die 30 Tage durchgezogen und willst mehr? Als Core Path Absolvent erhältst du ein exklusives Angebot."
         )
     },
 
@@ -688,11 +631,7 @@ PLANS_DE = {
             "Supplement-Tipp: Magnesium Glycinat + Ashwagandha + Vitamin D3 ist der Trainings-Stack des Wolfes.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
-            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
-            "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
+            "Du hast den ersten Schritt gemacht. Jetzt lass es real werden. The Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist. Teste es 30 Tage lang komplett risikofrei. Nicht zufrieden? Vollständige Rückerstattung — keine Fragen gestellt. Die 30 Tage durchgezogen und willst mehr? Als Core Path Absolvent erhältst du ein exklusives Angebot."
         )
     },
 
@@ -733,11 +672,7 @@ PLANS_DE = {
             "Supplement-Tipp: Magnesium Glycinat + Ashwagandha + L-Theanin ist der Schlaf-Stack des Wolfes.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
-            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
-            "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
+            "Du hast den ersten Schritt gemacht. Jetzt lass es real werden. The Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist. Teste es 30 Tage lang komplett risikofrei. Nicht zufrieden? Vollständige Rückerstattung — keine Fragen gestellt. Die 30 Tage durchgezogen und willst mehr? Als Core Path Absolvent erhältst du ein exklusives Angebot."
         )
     },
 
@@ -778,11 +713,7 @@ PLANS_DE = {
             "Supplement-Tipp: Omega-3 + Vitamin D3 + Magnesium ist der Fettabbau-Stack der Eule.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
-            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
-            "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
+            "Du hast den ersten Schritt gemacht. Jetzt lass es real werden. The Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist. Teste es 30 Tage lang komplett risikofrei. Nicht zufrieden? Vollständige Rückerstattung — keine Fragen gestellt. Die 30 Tage durchgezogen und willst mehr? Als Core Path Absolvent erhältst du ein exklusives Angebot."
         )
     },
 
@@ -824,11 +755,7 @@ PLANS_DE = {
             "Supplement-Tipp: Magnesium L-Threonat + Omega-3 + Vitamin B12 ist der Energie-Stack der Eule.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
-            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
-            "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
+            "Du hast den ersten Schritt gemacht. Jetzt lass es real werden. The Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist. Teste es 30 Tage lang komplett risikofrei. Nicht zufrieden? Vollständige Rückerstattung — keine Fragen gestellt. Die 30 Tage durchgezogen und willst mehr? Als Core Path Absolvent erhältst du ein exklusives Angebot."
         )
     },
 
@@ -869,11 +796,7 @@ PLANS_DE = {
             "Supplement-Tipp: Kreatin + Magnesium + Omega-3 ist der Trainings-Stack der Eule.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
-            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
-            "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
+            "Du hast den ersten Schritt gemacht. Jetzt lass es real werden. The Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist. Teste es 30 Tage lang komplett risikofrei. Nicht zufrieden? Vollständige Rückerstattung — keine Fragen gestellt. Die 30 Tage durchgezogen und willst mehr? Als Core Path Absolvent erhältst du ein exklusives Angebot."
         )
     },
 
@@ -914,11 +837,7 @@ PLANS_DE = {
             "Supplement-Tipp: Magnesium L-Threonat + L-Theanin + Melatonin (0,5 mg) ist der Schlaf-Stack der Eule.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
-            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
-            "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
+            "Du hast den ersten Schritt gemacht. Jetzt lass es real werden. The Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist. Teste es 30 Tage lang komplett risikofrei. Nicht zufrieden? Vollständige Rückerstattung — keine Fragen gestellt. Die 30 Tage durchgezogen und willst mehr? Als Core Path Absolvent erhältst du ein exklusives Angebot."
         )
     },
 }
@@ -1077,7 +996,7 @@ UI_DE = {
     "daily_actions": "Tägliche Maßnahmen",
     "pro_tip": "Profi-Tipp",
     "guarantee_title": "Geld-zurück-Garantie",
-    "guarantee_text": "Schließe 6 von 7 täglichen Check-ins (je 30 Sek., 4–5 Fragen) für 30 Tage ab — und erhalte dein Geld vollständig zurück plus ein exklusives Upgrade-Angebot.",
+    "guarantee_text": "Teste The Core Path 30 Tage lang komplett risikofrei. Nicht zufrieden? Vollst\u00e4ndige R\u00fcckerstattung \u2014 keine Fragen gestellt. Die 30 Tage durchgezogen und willst mehr? Als Core Path Absolvent erh\u00e4ltst du ein exklusives Angebot.",
     "privacy_link": "Datenschutzerklärung",
     "hero_title": "Entdecke deinen Natural Signature Type",
     "hero_subtitle": "10 Fragen. 2 Minuten. Dein persönlicher 2-Wochen-Plan.",
@@ -1095,9 +1014,9 @@ UI_DE = {
     "tips_title": "Wichtige Tipps für deinen Typ",
     "cta_badge": "Bereit für den nächsten Level?",
     "cta_desc": "30-Tage-Programm — abgestimmt auf deinen Natural Signature Type.",
-    "cta_guarantee": "Geld-zurück-Garantie: Schließe 6 von 7 täglichen Check-ins (30 Sek., 4–5 Fragen) für 30 Tage ab — und erhalte dein Geld vollständig zurück plus ein exklusives Upgrade-Angebot.",
-    "cta_btn": "Core Path starten — 49€",
-    "cta_btn_sub": "Geld-zurück-Garantie inklusive",
+    "cta_guarantee": "30 Tage Geld-zur\u00fcck-Garantie: Teste The Core Path 30 Tage lang komplett risikofrei. Nicht zufrieden? Vollst\u00e4ndige R\u00fcckerstattung \u2014 keine Fragen gestellt. Die 30 Tage durchgezogen und willst mehr? Als Core Path Absolvent erh\u00e4ltst du ein exklusives Angebot.",
+    "cta_btn": "Core Path starten \u2014 49\u20ac",
+    "cta_btn_sub": "30 Tage Geld-zur\u00fcck-Garantie inklusive",
     "pdf_header": "Deine kostenlose Natural Signature Type Auswertung",
     "pdf_greeting": "Hallo",
     "pdf_type_label": "Dein Natural Signature Type",
@@ -1105,7 +1024,7 @@ UI_DE = {
     "pdf_tips_title": "Wichtige Tipps für deinen Typ",
     "pdf_cta_title": "The Core Path - Dein nächster Schritt",
     "pdf_cta_sub": "30-Tage-Programm - abgestimmt auf deinen Natural Signature Type",
-    "pdf_guarantee": "Geld-zurück-Garantie: Schließe 6 von 7 täglichen Check-ins (30 Sekunden, 4-5 Fragen) für 30 Tage ab und erhalte dein Geld vollständig zurück plus ein exklusives Upgrade-Angebot. Kein Risiko. Nur Ergebnisse.",
+    "pdf_guarantee": "30 Tage Geld-zur\u00fcck-Garantie: Teste The Core Path 30 Tage lang komplett risikofrei. Nicht zufrieden? Du erh\u00e4ltst dein Geld vollst\u00e4ndig zur\u00fcck - keine Fragen gestellt. Die 30 Tage durchgezogen und willst mehr? Als Core Path Absolvent erh\u00e4ltst du ein exklusives Angebot.",
     "pdf_disclaimer": "Hinweis: Rene Rusch ist kein Arzt. Die Inhalte dieses Berichts basieren auf professionellen Zertifikaten (inkl. Natural Signature Typing und Ernaehrungscoaching), wissenschaftlicher Fachliteratur und jahrelanger praktischer Erfahrung. Dieser Bericht ersetzt keine aerztliche Beratung. Konsultiere einen qualifizierten Gesundheitsexperten, bevor du wesentliche Aenderungen an deiner Ernaehrung, deinem Training oder deiner Supplementierung vornimmst.",
     "pdf_footer": "NeuroHealthMastery | neurohealthmastery.com | Erstellt am",
 }

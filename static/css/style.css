@@ -507,3 +507,47 @@ body {
   .action-buttons { flex-direction: column; }
   .btn-large { width: 100%; text-align: center; }
 }
+
+/* ── Tiebreaker Step ─────────────────────────────────────── */
+.tiebreaker-card {
+  text-align: center;
+}
+.tiebreaker-icon {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+.tiebreaker-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+.tiebreaker-question {
+  font-size: 1.1rem;
+  color: var(--text);
+  margin-bottom: 28px;
+  line-height: 1.5;
+}
+.tiebreaker-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.btn-tiebreaker {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+.btn-tiebreaker:hover {
+  border-color: var(--accent);
+  background: rgba(6,182,212,0.08);
+  color: var(--accent);
+  transform: translateX(4px);
+}

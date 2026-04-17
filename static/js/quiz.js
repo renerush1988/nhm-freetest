@@ -45,9 +45,9 @@ const TRANSLATIONS = {
     cta_title: "The Core Path",
     cta_subtitle: "Your 30-day transformation — built around your Natural Signature Type.",
     guarantee_title: "Money-Back Guarantee",
-    guarantee_text: "Complete 6 out of 7 daily check-ins (30 seconds, 4–5 questions) for 30 days and get a full refund — plus an exclusive upgrade offer. No risk. Just results.",
+    guarantee_text: "Try The Core Path completely risk-free for 30 days. Not satisfied? Full refund — no questions asked. Complete the 30 days and want more? You'll receive an exclusive offer, just for Core Path graduates.",
     cta_btn: "🎯 Start Core Path — 49€",
-    cta_btn_sub: "Money-back guarantee included",
+    cta_btn_sub: "30-day money-back guarantee included",
     whatsapp_btn: "Chat with René on WhatsApp",
     whatsapp_hours: "Mon–Fri · 9am–6pm CET",
     whatsapp_note: "Outside business hours? René will reply the next business day.",
@@ -64,6 +64,13 @@ const TRANSLATIONS = {
     error_pdf: "Could not generate PDF. Please try again.",
     generating_pdf: "Generating PDF...",
     whatsapp_msg: "Hi René, I just completed the free NHM test and I'd like to know more about the Core Path!",
+    tiebreaker_title: "One final question",
+    tiebreaker_question: "When you face a challenge, what's your first instinct?",
+    tiebreaker_lion: "Take charge and act immediately",
+    tiebreaker_falcon: "Analyse quickly and find the fastest route",
+    tiebreaker_chameleon: "Adapt and find a flexible solution",
+    tiebreaker_wolf: "Consult others and build a plan together",
+    tiebreaker_owl: "Research thoroughly before taking any step",
   },
   de: {
     nav_badge: "KOSTENLOSER TEST",
@@ -104,9 +111,9 @@ const TRANSLATIONS = {
     cta_title: "The Core Path",
     cta_subtitle: "Deine 30-Tage-Transformation — abgestimmt auf deinen Natural Signature Type.",
     guarantee_title: "Geld-zurück-Garantie",
-    guarantee_text: "Absolviere 6 von 7 täglichen Check-ins (30 Sekunden, 4–5 Fragen) für 30 Tage und erhalte eine vollständige Rückerstattung — plus ein exklusives Upgrade-Angebot. Kein Risiko. Nur Ergebnisse.",
+    guarantee_text: "Teste The Core Path 30 Tage lang komplett risikofrei. Nicht zufrieden? Vollständige Rückerstattung — keine Fragen gestellt. Die 30 Tage durchgezogen und willst mehr? Als Core Path Absolvent erhältst du ein exklusives Angebot.",
     cta_btn: "🎯 Core Path starten — 49€",
-    cta_btn_sub: "Geld-zurück-Garantie inklusive",
+    cta_btn_sub: "30 Tage Geld-zurück-Garantie inklusive",
     whatsapp_btn: "Mit René auf WhatsApp chatten",
     whatsapp_hours: "Mo–Fr · 9–18 Uhr",
     whatsapp_note: "Außerhalb der Geschäftszeiten? René antwortet am nächsten Werktag.",
@@ -123,6 +130,13 @@ const TRANSLATIONS = {
     error_pdf: "PDF konnte nicht erstellt werden. Bitte versuche es erneut.",
     generating_pdf: "PDF wird erstellt...",
     whatsapp_msg: "Hallo René, ich habe gerade den kostenlosen NHM-Test gemacht und möchte mehr über den Core Path erfahren!",
+    tiebreaker_title: "Eine letzte Frage",
+    tiebreaker_question: "Wenn du vor einer Herausforderung stehst, was ist dein erster Instinkt?",
+    tiebreaker_lion: "Die Initiative ergreifen und sofort handeln",
+    tiebreaker_falcon: "Schnell analysieren und den schnellsten Weg finden",
+    tiebreaker_chameleon: "Mich anpassen und eine flexible Lösung finden",
+    tiebreaker_wolf: "Andere einbeziehen und gemeinsam einen Plan entwickeln",
+    tiebreaker_owl: "Gründlich recherchieren, bevor ich einen Schritt mache",
   }
 };
 
@@ -136,6 +150,7 @@ const state = {
   name: "",
   email: "",
   result: null,
+  pendingResultData: null,  // holds server response while tiebreaker is shown
 };
 
 // ── Language Switching ────────────────────────────────────────────────────────
@@ -147,16 +162,16 @@ function setLang(lang) {
   document.getElementById("btn-lang-en").classList.toggle("active", lang === "en");
   document.getElementById("btn-lang-de").classList.toggle("active", lang === "de");
 
-  const t = TRANSLATIONS[lang];
+  const tr = TRANSLATIONS[lang];
 
   // Update all data-i18n elements
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.getAttribute("data-i18n");
-    if (t[key] !== undefined) {
+    if (tr[key] !== undefined) {
       if (key === "disclaimer") {
-        el.innerHTML = t[key];
+        el.innerHTML = tr[key];
       } else {
-        el.textContent = t[key];
+        el.textContent = tr[key];
       }
     }
   });
@@ -168,7 +183,7 @@ function setLang(lang) {
   // Update WhatsApp link
   const waBtn = document.getElementById("whatsapp-btn");
   if (waBtn) {
-    const msg = encodeURIComponent(t.whatsapp_msg);
+    const msg = encodeURIComponent(tr.whatsapp_msg);
     waBtn.href = `https://wa.me/4915737557085?text=${msg}`;
   }
 
@@ -181,7 +196,7 @@ function setLang(lang) {
     const qTextEl = document.getElementById("q-text");
     if (qTextEl) qTextEl.textContent = q.text;
     const qNumEl = document.getElementById("q-number");
-    if (qNumEl) qNumEl.textContent = `${t.q_of} ${state.currentQuestion + 1} ${t.q_of_10}`;
+    if (qNumEl) qNumEl.textContent = `${tr.q_of} ${state.currentQuestion + 1} ${tr.q_of_10}`;
   }
 
   // Update progress label
@@ -383,7 +398,14 @@ async function submitQuiz(e) {
     if (!res.ok) throw new Error("Server error");
     const data = await res.json();
     state.result = data;
-    showResult(data);
+
+    if (data.needs_tiebreaker && data.tied_types && data.tied_types.length > 1) {
+      // Show tiebreaker step instead of result
+      state.pendingResultData = data;
+      showTiebreaker(data.tied_types);
+    } else {
+      showResult(data);
+    }
   } catch (err) {
     btn.disabled = false;
     btn.innerHTML = t("submit_btn");
@@ -391,9 +413,72 @@ async function submitQuiz(e) {
   }
 }
 
+// ── Tiebreaker ────────────────────────────────────────────────────────────────
+function showTiebreaker(tiedTypes) {
+  document.getElementById("section-quiz").classList.add("hidden");
+  const tbSection = document.getElementById("step-tiebreaker");
+  tbSection.classList.remove("hidden");
+
+  // Set translated texts
+  document.getElementById("tiebreaker-title").textContent = t("tiebreaker_title");
+  document.getElementById("tiebreaker-question").textContent = t("tiebreaker_question");
+
+  // Build buttons only for tied types
+  const container = document.getElementById("tiebreaker-options");
+  container.innerHTML = "";
+
+  const typeOrder = ["lion", "falcon", "chameleon", "wolf", "owl"];
+  typeOrder.forEach(type => {
+    if (!tiedTypes.includes(type)) return;
+    const btn = document.createElement("button");
+    btn.className = "btn-tiebreaker";
+    btn.dataset.type = type;
+    btn.textContent = t(`tiebreaker_${type}`);
+    btn.onclick = () => resolveTiebreaker(type);
+    container.appendChild(btn);
+  });
+}
+
+async function resolveTiebreaker(chosenType) {
+  // Override primary type in pending result data
+  const data = state.pendingResultData;
+
+  // Re-fetch result with tiebreaker override
+  try {
+    const res = await fetch("/submit", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: state.name,
+        email: state.email,
+        answers: state.answers,
+        adjectives: state.selectedAdjectives,
+        problem: state.selectedProblem,
+        lang: state.lang,
+        tiebreaker_choice: chosenType,
+      }),
+    });
+
+    if (!res.ok) throw new Error("Server error");
+    const newData = await res.json();
+    state.result = newData;
+
+    document.getElementById("step-tiebreaker").classList.add("hidden");
+    showResult(newData);
+  } catch (err) {
+    // Fallback: use pending data with overridden primary
+    document.getElementById("step-tiebreaker").classList.add("hidden");
+    // Patch the pending data with chosen type
+    data.primary = chosenType;
+    state.result = data;
+    showResult(data);
+  }
+}
+
 // ── Show Result ───────────────────────────────────────────────────────────────
 function showResult(data) {
   document.getElementById("section-quiz").classList.add("hidden");
+  document.getElementById("step-tiebreaker").classList.add("hidden");
   document.getElementById("section-result").classList.remove("hidden");
 
   const meta = data.meta;
@@ -501,6 +586,7 @@ function restartQuiz() {
   state.name = "";
   state.email = "";
   state.result = null;
+  state.pendingResultData = null;
 
   document.getElementById("section-result").classList.add("hidden");
   document.getElementById("section-hero").classList.remove("hidden");
@@ -508,6 +594,7 @@ function restartQuiz() {
   document.getElementById("step-problem").classList.add("hidden");
   document.getElementById("step-adjectives").classList.add("hidden");
   document.getElementById("step-email").classList.add("hidden");
+  document.getElementById("step-tiebreaker").classList.add("hidden");
   document.getElementById("secondary-type-box").classList.add("hidden");
 
   document.querySelectorAll(".btn-adj").forEach(b => b.classList.remove("selected", "disabled"));

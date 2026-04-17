@@ -48,12 +48,7 @@ PLANS = {
             "Supplement tip: L-Tyrosine supports dopamine production — your key neurotransmitter.",
         ],
         "cta": (
-            "You've just taken the first step. Now it's time to actually change something. "
-            "The Core Path is a 30-day program built around your Natural Signature Type — "
-            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
-            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
-            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
-            "guarantee that only works if you show up."
+            "You've taken the first step. Now let's make it real. The Core Path is a 30-day program built around your Natural Signature Type. Try it completely risk-free for 30 days. Not satisfied? Full refund — no questions asked. Complete the 30 days and want to go further? You'll receive an exclusive offer, just for Core Path graduates."
         )
     },
 
@@ -96,12 +91,7 @@ PLANS = {
             "Supplement tip: L-Tyrosine + Magnesium Glycinate (before bed) is a powerful combo for Lions.",
         ],
         "cta": (
-            "You've just taken the first step. Now it's time to actually change something. "
-            "The Core Path is a 30-day program built around your Natural Signature Type — "
-            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
-            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
-            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
-            "guarantee that only works if you show up."
+            "You've taken the first step. Now let's make it real. The Core Path is a 30-day program built around your Natural Signature Type. Try it completely risk-free for 30 days. Not satisfied? Full refund — no questions asked. Complete the 30 days and want to go further? You'll receive an exclusive offer, just for Core Path graduates."
         )
     },
 
@@ -144,12 +134,7 @@ PLANS = {
             "Supplement tip: Caffeine + L-Tyrosine pre-workout is ideal for Lions — boosts dopamine and drive.",
         ],
         "cta": (
-            "You've just taken the first step. Now it's time to actually change something. "
-            "The Core Path is a 30-day program built around your Natural Signature Type — "
-            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
-            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
-            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
-            "guarantee that only works if you show up."
+            "You've taken the first step. Now let's make it real. The Core Path is a 30-day program built around your Natural Signature Type. Try it completely risk-free for 30 days. Not satisfied? Full refund — no questions asked. Complete the 30 days and want to go further? You'll receive an exclusive offer, just for Core Path graduates."
         )
     },
 
@@ -193,12 +178,7 @@ PLANS = {
             "Supplement tip: Magnesium Glycinate + Ashwagandha is the Lion's sleep stack.",
         ],
         "cta": (
-            "You've just taken the first step. Now it's time to actually change something. "
-            "The Core Path is a 30-day program built around your Natural Signature Type — "
-            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
-            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
-            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
-            "guarantee that only works if you show up."
+            "You've taken the first step. Now let's make it real. The Core Path is a 30-day program built around your Natural Signature Type. Try it completely risk-free for 30 days. Not satisfied? Full refund — no questions asked. Complete the 30 days and want to go further? You'll receive an exclusive offer, just for Core Path graduates."
         )
     },
 
@@ -241,12 +221,7 @@ PLANS = {
             "Supplement tip: L-Tyrosine + Alpha-GPC is the Falcon's cognitive and fat loss stack.",
         ],
         "cta": (
-            "You've just taken the first step. Now it's time to actually change something. "
-            "The Core Path is a 30-day program built around your Natural Signature Type — "
-            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
-            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
-            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
-            "guarantee that only works if you show up."
+            "You've taken the first step. Now let's make it real. The Core Path is a 30-day program built around your Natural Signature Type. Try it completely risk-free for 30 days. Not satisfied? Full refund — no questions asked. Complete the 30 days and want to go further? You'll receive an exclusive offer, just for Core Path graduates."
         )
     },
 
@@ -287,12 +262,7 @@ PLANS = {
             "Supplement tip: Alpha-GPC + L-Tyrosine is the Falcon's energy stack.",
         ],
         "cta": (
-            "You've just taken the first step. Now it's time to actually change something. "
-            "The Core Path is a 30-day program built around your Natural Signature Type — "
-            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
-            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
-            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
-            "guarantee that only works if you show up."
+            "You've taken the first step. Now let's make it real. The Core Path is a 30-day program built around your Natural Signature Type. Try it completely risk-free for 30 days. Not satisfied? Full refund — no questions asked. Complete the 30 days and want to go further? You'll receive an exclusive offer, just for Core Path graduates."
         )
     },
 
@@ -335,12 +305,7 @@ PLANS = {
             "Supplement tip: Alpha-GPC pre-workout enhances motor learning and focus for Falcons.",
         ],
         "cta": (
-            "You've just taken the first step. Now it's time to actually change something. "
-            "The Core Path is a 30-day program built around your Natural Signature Type — "
-            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
-            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
-            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
-            "guarantee that only works if you show up."
+            "You've taken the first step. Now let's make it real. The Core Path is a 30-day program built around your Natural Signature Type. Try it completely risk-free for 30 days. Not satisfied? Full refund — no questions asked. Complete the 30 days and want to go further? You'll receive an exclusive offer, just for Core Path graduates."
         )
     },
 
@@ -380,12 +345,7 @@ PLANS = {
             "Supplement tip: L-Theanine + Magnesium Glycinate is the Falcon's sleep stack.",
         ],
         "cta": (
-            "You've just taken the first step. Now it's time to actually change something. "
-            "The Core Path is a 30-day program built around your Natural Signature Type — "
-            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
-            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
-            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
-            "guarantee that only works if you show up."
+            "You've taken the first step. Now let's make it real. The Core Path is a 30-day program built around your Natural Signature Type. Try it completely risk-free for 30 days. Not satisfied? Full refund — no questions asked. Complete the 30 days and want to go further? You'll receive an exclusive offer, just for Core Path graduates."
         )
     },
 
@@ -430,12 +390,7 @@ PLANS = {
             "Supplement tip: L-Tyrosine + Rhodiola Rosea supports adrenaline sensitivity for Chameleons.",
         ],
         "cta": (
-            "You've just taken the first step. Now it's time to actually change something. "
-            "The Core Path is a 30-day program built around your Natural Signature Type — "
-            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
-            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
-            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
-            "guarantee that only works if you show up."
+            "You've taken the first step. Now let's make it real. The Core Path is a 30-day program built around your Natural Signature Type. Try it completely risk-free for 30 days. Not satisfied? Full refund — no questions asked. Complete the 30 days and want to go further? You'll receive an exclusive offer, just for Core Path graduates."
         )
     },
 
@@ -476,12 +431,7 @@ PLANS = {
             "Supplement tip: Rhodiola Rosea + L-Tyrosine is the Chameleon's energy stack.",
         ],
         "cta": (
-            "You've just taken the first step. Now it's time to actually change something. "
-            "The Core Path is a 30-day program built around your Natural Signature Type — "
-            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
-            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
-            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
-            "guarantee that only works if you show up."
+            "You've taken the first step. Now let's make it real. The Core Path is a 30-day program built around your Natural Signature Type. Try it completely risk-free for 30 days. Not satisfied? Full refund — no questions asked. Complete the 30 days and want to go further? You'll receive an exclusive offer, just for Core Path graduates."
         )
     },
 
@@ -522,12 +472,7 @@ PLANS = {
             "Supplement tip: Pre-workout with L-Tyrosine + caffeine works well for Chameleons on training days.",
         ],
         "cta": (
-            "You've just taken the first step. Now it's time to actually change something. "
-            "The Core Path is a 30-day program built around your Natural Signature Type — "
-            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
-            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
-            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
-            "guarantee that only works if you show up."
+            "You've taken the first step. Now let's make it real. The Core Path is a 30-day program built around your Natural Signature Type. Try it completely risk-free for 30 days. Not satisfied? Full refund — no questions asked. Complete the 30 days and want to go further? You'll receive an exclusive offer, just for Core Path graduates."
         )
     },
 
@@ -567,12 +512,7 @@ PLANS = {
             "Supplement tip: Magnesium Glycinate + Ashwagandha is ideal for Chameleons under stress.",
         ],
         "cta": (
-            "You've just taken the first step. Now it's time to actually change something. "
-            "The Core Path is a 30-day program built around your Natural Signature Type — "
-            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
-            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
-            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
-            "guarantee that only works if you show up."
+            "You've taken the first step. Now let's make it real. The Core Path is a 30-day program built around your Natural Signature Type. Try it completely risk-free for 30 days. Not satisfied? Full refund — no questions asked. Complete the 30 days and want to go further? You'll receive an exclusive offer, just for Core Path graduates."
         )
     },
 
@@ -615,12 +555,7 @@ PLANS = {
             "Supplement tip: Taurine + Magnesium Glycinate supports GABA and reduces cortisol for Wolves.",
         ],
         "cta": (
-            "You've just taken the first step. Now it's time to actually change something. "
-            "The Core Path is a 30-day program built around your Natural Signature Type — "
-            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
-            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
-            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
-            "guarantee that only works if you show up."
+            "You've taken the first step. Now let's make it real. The Core Path is a 30-day program built around your Natural Signature Type. Try it completely risk-free for 30 days. Not satisfied? Full refund — no questions asked. Complete the 30 days and want to go further? You'll receive an exclusive offer, just for Core Path graduates."
         )
     },
 
@@ -663,12 +598,7 @@ PLANS = {
             "Supplement tip: Ashwagandha + Magnesium Glycinate + 5-HTP (low dose) is the Wolf's energy stack.",
         ],
         "cta": (
-            "You've just taken the first step. Now it's time to actually change something. "
-            "The Core Path is a 30-day program built around your Natural Signature Type — "
-            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
-            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
-            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
-            "guarantee that only works if you show up."
+            "You've taken the first step. Now let's make it real. The Core Path is a 30-day program built around your Natural Signature Type. Try it completely risk-free for 30 days. Not satisfied? Full refund — no questions asked. Complete the 30 days and want to go further? You'll receive an exclusive offer, just for Core Path graduates."
         )
     },
 
@@ -708,12 +638,7 @@ PLANS = {
             "Supplement tip: L-Glutamine + Magnesium supports recovery and GABA for Wolves.",
         ],
         "cta": (
-            "You've just taken the first step. Now it's time to actually change something. "
-            "The Core Path is a 30-day program built around your Natural Signature Type — "
-            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
-            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
-            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
-            "guarantee that only works if you show up."
+            "You've taken the first step. Now let's make it real. The Core Path is a 30-day program built around your Natural Signature Type. Try it completely risk-free for 30 days. Not satisfied? Full refund — no questions asked. Complete the 30 days and want to go further? You'll receive an exclusive offer, just for Core Path graduates."
         )
     },
 
@@ -754,12 +679,7 @@ PLANS = {
             "Supplement tip: 5-HTP + Magnesium Glycinate + L-Theanine is the Wolf's sleep stack.",
         ],
         "cta": (
-            "You've just taken the first step. Now it's time to actually change something. "
-            "The Core Path is a 30-day program built around your Natural Signature Type — "
-            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
-            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
-            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
-            "guarantee that only works if you show up."
+            "You've taken the first step. Now let's make it real. The Core Path is a 30-day program built around your Natural Signature Type. Try it completely risk-free for 30 days. Not satisfied? Full refund — no questions asked. Complete the 30 days and want to go further? You'll receive an exclusive offer, just for Core Path graduates."
         )
     },
 
@@ -799,12 +719,7 @@ PLANS = {
             "Supplement tip: Ashwagandha + 5-HTP supports serotonin and cortisol control for Owls.",
         ],
         "cta": (
-            "You've just taken the first step. Now it's time to actually change something. "
-            "The Core Path is a 30-day program built around your Natural Signature Type — "
-            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
-            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
-            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
-            "guarantee that only works if you show up."
+            "You've taken the first step. Now let's make it real. The Core Path is a 30-day program built around your Natural Signature Type. Try it completely risk-free for 30 days. Not satisfied? Full refund — no questions asked. Complete the 30 days and want to go further? You'll receive an exclusive offer, just for Core Path graduates."
         )
     },
 
@@ -846,12 +761,7 @@ PLANS = {
             "Supplement tip: Ashwagandha + Magnesium Glycinate + 5-HTP is the Owl's energy stack.",
         ],
         "cta": (
-            "You've just taken the first step. Now it's time to actually change something. "
-            "The Core Path is a 30-day program built around your Natural Signature Type — "
-            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
-            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
-            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
-            "guarantee that only works if you show up."
+            "You've taken the first step. Now let's make it real. The Core Path is a 30-day program built around your Natural Signature Type. Try it completely risk-free for 30 days. Not satisfied? Full refund — no questions asked. Complete the 30 days and want to go further? You'll receive an exclusive offer, just for Core Path graduates."
         )
     },
 
@@ -891,12 +801,7 @@ PLANS = {
             "Supplement tip: Magnesium Glycinate + Ashwagandha supports recovery and cortisol control for Owls.",
         ],
         "cta": (
-            "You've just taken the first step. Now it's time to actually change something. "
-            "The Core Path is a 30-day program built around your Natural Signature Type — "
-            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
-            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
-            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
-            "guarantee that only works if you show up."
+            "You've taken the first step. Now let's make it real. The Core Path is a 30-day program built around your Natural Signature Type. Try it completely risk-free for 30 days. Not satisfied? Full refund — no questions asked. Complete the 30 days and want to go further? You'll receive an exclusive offer, just for Core Path graduates."
         )
     },
 
@@ -938,12 +843,7 @@ PLANS = {
             "Supplement tip: 5-HTP + Magnesium Glycinate + Ashwagandha is the Owl's sleep stack.",
         ],
         "cta": (
-            "You've just taken the first step. Now it's time to actually change something. "
-            "The Core Path is a 30-day program built around your Natural Signature Type — "
-            "every day takes less than 60 seconds: one check-in, 4-5 questions, your way. "
-            "Complete 6 out of 7 check-ins per week for 30 days and you get your money back. "
-            "Every cent. Plus an exclusive upgrade offer. That's not a trial — that's a "
-            "guarantee that only works if you show up."
+            "You've taken the first step. Now let's make it real. The Core Path is a 30-day program built around your Natural Signature Type. Try it completely risk-free for 30 days. Not satisfied? Full refund — no questions asked. Complete the 30 days and want to go further? You'll receive an exclusive offer, just for Core Path graduates."
         )
     },
 }
