@@ -77,8 +77,8 @@ PROBLEM_OPTIONS_EN = [
 
 PROBLEM_OPTIONS_DE = [
     {"id": "weight",   "label": "Ich nehme zu / kann nicht abnehmen"},
-    {"id": "energy",   "label": "Ich bin staendig erschoepft / habe keine Energie"},
-    {"id": "training", "label": "Ich trainiere nicht regelmaessig"},
+    {"id": "energy",   "label": "Ich bin ständig erschöpft / habe keine Energie"},
+    {"id": "training", "label": "Ich trainiere nicht regelmäßig"},
     {"id": "sleep",    "label": "Ich schlafe schlecht"},
 ]
 
@@ -89,10 +89,10 @@ QUESTIONS_DE_LIST = [
     {"id": 4, "type": "falcon",    "text": "Unter Druck werde ich fokussierter und performe besser."},
     {"id": 5, "type": "chameleon", "text": "Ich sage manchmal Ja, obwohl ich innerlich Nein meine, um Konflikte zu vermeiden."},
     {"id": 6, "type": "chameleon", "text": "Entscheidungen fallen mir schwer, weil ich stark darauf achte, wie sie andere beeinflussen."},
-    {"id": 7, "type": "wolf",      "text": "Ich nehme Kritik sehr oft persoenlich."},
-    {"id": 8, "type": "wolf",      "text": "Ein negatives Erlebnis beschaeftigt mich den ganzen Tag."},
+    {"id": 7, "type": "wolf",      "text": "Ich nehme Kritik sehr oft persönlich."},
+    {"id": 8, "type": "wolf",      "text": "Ein negatives Erlebnis beschäftigt mich den ganzen Tag."},
     {"id": 9, "type": "owl",       "text": "Ich brauche immer einen klaren Plan."},
-    {"id": 10, "type": "owl",      "text": "Unerwartete Aenderungen machen mich nervoees."},
+    {"id": 10, "type": "owl",      "text": "Unerwartete Änderungen machen mich nervös."},
 ]
 
 UI_EN = {
@@ -406,10 +406,17 @@ async def submit(request: Request):
 async def download_pdf(request: Request):
     data = await request.json()
     name = data.get("name", "User")
-    result = data.get("result", {})
-    problem = data.get("problem", "")
     lang = data.get("lang", "en")
-
+    problem = data.get("problem", "")
+    # Support both flat format {primary_type: ...} and nested {result: {primary: ...}}
+    if "result" in data and isinstance(data["result"], dict):
+        result = data["result"]
+    else:
+        result = {
+            "primary": data.get("primary_type", data.get("primary", "")),
+            "secondary": data.get("secondary_type", data.get("secondary", "")),
+            "primary_score": data.get("primary_score", 0),
+        }
     pdf_bytes = generate_pdf(name, result, problem, lang)
 
     filename = f"NHM_Plan_{name.replace(' ', '_')}.pdf"

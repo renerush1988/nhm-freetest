@@ -1,1097 +1,1108 @@
+# -*- coding: utf-8 -*-
 """
 content_de.py
 =============
-Alle 2-Wochen-Plan-Inhalte fuer jeden NST-Typ x Hauptproblem auf Deutsch.
+Alle 2-Wochen-Plan-Inhalte für jeden NST-Typ x Hauptproblem auf Deutsch.
 """
 
 PLANS_DE = {
-    # ─── LOEWE (1A) ───────────────────────────────────────────────────────────
+    # ─── LÖWE ────────────────────────────────────────────────────────────────
     ("lion", "weight"): {
-        "headline": "Dein 2-Wochen-Fettabbau-Sprint - Loewe-Stil",
+        "headline": "Dein 2-Wochen-Fettabbau-Sprint – Löwen-Stil",
         "intro": (
-            "Als Loewe (Natural Signature Type) bist du dopamingetrieben, "
+            "Als Löwe (Natural Signature Type) bist du dopamingetrieben, "
             "wettbewerbsorientiert und brauchst schnelle Ergebnisse. Ein langsamer, "
-            "moderater Ansatz wird deine Motivation zerstoeren. Du bluehst bei "
-            "aggressiven, kurzen Sprints auf - genau das werden wir tun."
+            "moderater Ansatz wird deine Motivation zerstören. Du blühst bei "
+            "aggressiven, kurzen Sprints auf – genau das werden wir tun."
         ),
         "weeks": [
             {
-                "label": "Woche 1 - Der aggressive Sprint",
+                "label": "Woche 1 – Der aggressive Sprint",
                 "days": [
-                    ("Tage 1-5", "Kaloriendefizit von 500-700 kcal unter deinem Erhaltungsbedarf. "
-                     "Protein hoch halten (mindestens 2g pro kg Koerpergewicht) um Muskeln zu schuetzen. "
-                     "Mahlzeiten: hauptsaechlich Protein + gesunde Fette (Eier, Fleisch, Fisch, Avocado, Nuesse). "
-                     "Kohlenhydrate minimieren - nur nach dem Training erlaubt."),
-                    ("Tage 6-7", "Refeed-Tage: Erhaltungskalorien essen. Komplexe Kohlenhydrate hinzufuegen "
-                     "(Reis, Haferflocken, Suesskartoffeln). Das setzt Leptin zurueck, unterstuetzt Dopamin "
+                    ("Tage 1–5", "Kaloriendefizit von 500–700 kcal unter deinem Erhaltungsbedarf. "
+                     "Protein hoch halten (mindestens 2 g pro kg Körpergewicht) um Muskeln zu schützen. "
+                     "Mahlzeiten: hauptsächlich Protein + gesunde Fette (Eier, Fleisch, Fisch, Avocado, Nüsse). "
+                     "Kohlenhydrate minimieren – nur nach dem Training erlaubt."),
+                    ("Tage 6–7", "Refeed-Tage: Erhaltungskalorien essen. Komplexe Kohlenhydrate hinzufügen "
+                     "(Reis, Haferflocken, Süßkartoffeln). Das setzt Leptin zurück, unterstützt Dopamin "
                      "und verhindert, dass sich dein Stoffwechsel zu schnell anpasst."),
                 ]
             },
             {
-                "label": "Woche 2 - Haerter pushen, scharf bleiben",
+                "label": "Woche 2 – Härter pushen, scharf bleiben",
                 "days": [
-                    ("Tage 8-12", "Aggressives Defizit wiederholen. Ergebnisse tracken - "
-                     "Loewen werden durch sichtbare Erfolge motiviert. Taeglich wiegen und den "
-                     "Trend notieren. L-Tyrosin hinzufuegen (500-1000mg vor dem Training) um "
-                     "Dopamin zu unterstuetzen und den Antrieb hochzuhalten."),
-                    ("Tage 13-14", "Zweiter Refeed. Fortschritt feiern. Du hast einen vollen "
-                     "2-Wochen-Sprint abgeschlossen. Die meisten sehen in diesem Zeitraum 1,5-3 kg Fettabbau."),
+                    ("Tage 8–12", "Aggressives Defizit wiederholen. Ergebnisse tracken – "
+                     "Löwen werden durch sichtbare Erfolge motiviert. Täglich wiegen und den "
+                     "Trend notieren. L-Tyrosin hinzufügen (500–1000 mg vor dem Training) um "
+                     "Dopamin zu unterstützen und den Antrieb hochzuhalten."),
+                    ("Tage 13–14", "Zweiter Refeed. Fortschritt feiern. Du hast einen vollen "
+                     "2-Wochen-Sprint abgeschlossen. Die meisten sehen in diesem Zeitraum 1,5–3 kg Fettabbau."),
                 ]
             }
         ],
         "tips": [
-            "KEIN langes, langweiliges Cardio - es toetet dein Dopamin. Waehle HIIT oder schweres Krafttraining.",
-            "Iss fuer Energie, nicht fuer Genuss. Verfuehrerische Lebensmittel aus dem Haus raeumen.",
-            "Keine Kohlenhydrate vor dem Training - sie beruhigen das ZNS und du musst aufgeladen sein.",
-            "Alles tracken. Erfolge halten dich am Laufen. Rueckschlaege motivieren dich zum Kaempfen.",
-            "Supplement-Tipp: L-Tyrosin unterstuetzt die Dopaminproduktion - dein wichtigster Neurotransmitter.",
+            "KEIN langes, langweiliges Cardio – es tötet dein Dopamin. Wähle HIIT oder schweres Krafttraining.",
+            "Iss für Energie, nicht für Genuss. Verführerische Lebensmittel aus dem Haus räumen.",
+            "Keine Kohlenhydrate vor dem Training – sie beruhigen das ZNS und du musst aufgeladen sein.",
+            "Alles tracken. Erfolge halten dich am Laufen. Rückschläge motivieren dich zum Kämpfen.",
+            "Supplement-Tipp: L-Tyrosin unterstützt die Dopaminproduktion – dein wichtigster Neurotransmitter.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu veraendern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist - "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4-5 Fragen, auf deine Art. "
-            "Schliesse 6 von 7 Check-ins pro Woche fuer 30 Tage ab und du bekommst dein Geld zurueck. "
-            "Jeden Cent. Plus ein exklusives Upgrade-Angebot. Das ist kein Test - das ist eine "
+            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
+            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
+            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
+            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
+            "Jeden Cent. Plus ein exklusives Upgrade-Angebot. Das ist kein Test – das ist eine "
             "Garantie, die nur funktioniert, wenn du erscheinst."
         )
     },
 
     ("lion", "energy"): {
-        "headline": "Dein 2-Wochen-Energie-Reset - Loewe-Stil",
+        "headline": "Dein 2-Wochen-Energie-Reset – Löwen-Stil",
         "intro": (
-            "Loewen laufen auf Dopamin. Wenn deine Energie einbricht, bedeutet das meistens, "
-            "dass Dopamin erschoepft ist - durch Uebertraining, schlechte Ernaehrung oder zu viel "
-            "Stress ohne Erholung. So laedt du in 2 Wochen wieder auf."
+            "Löwen laufen auf Dopamin. Wenn deine Energie einbricht, bedeutet das meistens, "
+            "dass Dopamin erschöpft ist – durch Übertraining, schlechte Ernährung oder zu viel "
+            "Stress ohne Erholung. So lädst du in 2 Wochen wieder auf."
         ),
         "weeks": [
             {
-                "label": "Woche 1 - Das Fundament neu aufbauen",
+                "label": "Woche 1 – Das Fundament neu aufbauen",
                 "days": [
-                    ("Tage 1-3", "Trainingsintensitaet um 30% reduzieren. Loewen hassen das, aber "
-                     "dein Nervensystem braucht es. Fokus auf Schlaf: 7-8 Stunden anstreben. "
-                     "Protein + Fett-Mahlzeiten essen um L-Tyrosin-Transport und Dopamin-Wiederaufbau zu unterstuetzen."),
-                    ("Tage 4-7", "L-Tyrosin hinzufuegen (500mg morgens, 500mg vor dem Training). "
-                     "Koffein nach 14 Uhr eliminieren. Jeden Morgen 10 Minuten in der Sonne spazieren - "
-                     "das steigert Dopamin natuerlich ohne es zu erschoepfen."),
+                    ("Tage 1–3", "Trainingsintensität um 30 % reduzieren. Löwen hassen das, aber "
+                     "dein Nervensystem braucht es. Fokus auf Schlaf: 7–8 Stunden anstreben. "
+                     "Protein + Fett-Mahlzeiten essen um L-Tyrosin-Transport und Dopamin-Wiederaufbau zu unterstützen."),
+                    ("Tage 4–7", "L-Tyrosin hinzufügen (500 mg morgens, 500 mg vor dem Training). "
+                     "Koffein nach 14 Uhr eliminieren. Jeden Morgen 10 Minuten in der Sonne spazieren – "
+                     "das steigert Dopamin natürlich ohne es zu erschöpfen."),
                 ]
             },
             {
-                "label": "Woche 2 - Wieder zuenden",
+                "label": "Woche 2 – Wieder zünden",
                 "days": [
-                    ("Tage 8-11", "Trainingsintensitaet auf 80% zurueckbringen. "
-                     "Loewen erholen sich schnell wenn Dopamin wieder aufgebaut ist. "
+                    ("Tage 8–11", "Trainingsintensität auf 80 % zurückbringen. "
+                     "Löwen erholen sich schnell wenn Dopamin wieder aufgebaut ist. "
                      "Mahlzeiten-Timing: Protein + Fett morgens, Kohlenhydrate nach dem Training."),
-                    ("Tage 12-14", "Volles Training wieder aufnehmen. Du solltest jetzt "
-                     "deutlich mehr Energie spueren. Wenn nicht: Schlaf priorisieren und Stressquellen reduzieren."),
+                    ("Tage 12–14", "Volles Training wieder aufnehmen. Du solltest jetzt "
+                     "deutlich mehr Energie spüren. Wenn nicht: Schlaf priorisieren und Stressquellen reduzieren."),
                 ]
             }
         ],
         "tips": [
-            "Dopamin-Erschoepfung ist die haeufigste Ursache fuer Energie-Absturz beim Loewen.",
-            "L-Tyrosin ist dein wichtigstes Supplement - es ist der direkte Vorlaeufer von Dopamin.",
-            "Koffein nach 14 Uhr stoert den Schlaf und erschoepft Dopamin-Rezeptoren.",
-            "Kurze, intensive Workouts laden Dopamin auf - lange, moderate Einheiten erschoepfen es.",
-            "Supplement-Tipp: L-Tyrosin + Vitamin D3 + Zink ist der Energie-Stack des Loewens.",
+            "Dopamin-Erschöpfung ist die häufigste Ursache für Energie-Absturz beim Löwen.",
+            "L-Tyrosin ist dein wichtigstes Supplement – es ist der direkte Vorläufer von Dopamin.",
+            "Koffein nach 14 Uhr stört den Schlaf und erschöpft Dopamin-Rezeptoren.",
+            "Kurze, intensive Workouts laden Dopamin auf – lange, moderate Einheiten erschöpfen es.",
+            "Supplement-Tipp: L-Tyrosin + Vitamin D3 + Zink ist der Energie-Stack des Löwen.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu veraendern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist - "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4-5 Fragen, auf deine Art. "
-            "Schliesse 6 von 7 Check-ins pro Woche fuer 30 Tage ab und du bekommst dein Geld zurueck. "
+            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
+            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
+            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
+            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
             "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
         )
     },
 
     ("lion", "training"): {
-        "headline": "Dein 2-Wochen-Trainings-Konsistenz-Plan - Loewe-Stil",
+        "headline": "Dein 2-Wochen-Trainings-Konsistenz-Plan – Löwen-Stil",
         "intro": (
-            "Loewen trainieren gerne - aber oft zu intensiv, zu oft, oder sie hoeren auf "
+            "Löwen trainieren gerne – aber oft zu intensiv, zu oft, oder sie hören auf "
             "wenn sie keine sofortigen Ergebnisse sehen. Hier ist der Plan, der zu deiner "
-            "Natur passt und dich langfristig konsistent haelt."
+            "Natur passt und dich langfristig konsistent hält."
         ),
         "weeks": [
             {
-                "label": "Woche 1 - Struktur mit Feuer",
+                "label": "Woche 1 – Struktur mit Feuer",
                 "days": [
-                    ("Tage 1-4", "4 Trainingstage: 2x Kraft (schwer, 4-6 Wiederholungen), 2x HIIT (20 Min.). "
-                     "Loewen brauchen Intensitaet und Abwechslung - aber mit Struktur. "
+                    ("Tage 1–4", "4 Trainingstage: 2x Kraft (schwer, 4–6 Wiederholungen), 2x HIIT (20 Min.). "
+                     "Löwen brauchen Intensität und Abwechslung – aber mit Struktur. "
                      "Jede Session hat ein klares Ziel: einen neuen Rekord aufstellen oder die letzte Leistung schlagen."),
-                    ("Tage 5-7", "Aktive Erholung: Spaziergang, leichtes Dehnen, Sauna. "
-                     "Loewen unterschaetzen Erholung - sie ist der Schluessel zu Fortschritt."),
+                    ("Tage 5–7", "Aktive Erholung: Spaziergang, leichtes Dehnen, Sauna. "
+                     "Löwen unterschätzen Erholung – sie ist der Schlüssel zu Fortschritt."),
                 ]
             },
             {
-                "label": "Woche 2 - Eskalieren und gewinnen",
+                "label": "Woche 2 – Eskalieren und gewinnen",
                 "days": [
-                    ("Tage 8-12", "Gewichte erhoehen oder Wiederholungen steigern. "
-                     "Loewen sind durch sichtbaren Fortschritt motiviert - tracke jede Session. "
-                     "Fuege L-Tyrosin (500mg) 30 Min. vor dem Training hinzu fuer maximalen Fokus."),
-                    ("Tage 13-14", "Erholung. Plane die naechsten 4 Wochen - "
-                     "Loewen brauchen einen klaren Gegner (Ziel) um motiviert zu bleiben."),
+                    ("Tage 8–12", "Gewichte erhöhen oder Wiederholungen steigern. "
+                     "Löwen sind durch sichtbaren Fortschritt motiviert – tracke jede Session. "
+                     "Füge L-Tyrosin (500 mg) 30 Min. vor dem Training hinzu für maximalen Fokus."),
+                    ("Tage 13–14", "Erholung. Plane die nächsten 4 Wochen – "
+                     "Löwen brauchen einen klaren Gegner (Ziel) um motiviert zu bleiben."),
                 ]
             }
         ],
         "tips": [
-            "Setze dir jede Woche ein konkretes Leistungsziel - Loewen brauchen etwas zum Besiegen.",
-            "Trainingspartner oder Wettkampf-Element steigert die Loewen-Performance um 30-40%.",
-            "Vermeide zu viele Ausdauereinheiten - sie senken Dopamin und demotivieren dich.",
-            "Tracke jeden Trainingsrekord - dein Fortschritt ist dein Treibstoff.",
-            "Supplement-Tipp: L-Tyrosin + Kreatin + Koffein ist der Pre-Workout-Stack des Loewens.",
+            "Setze dir jede Woche ein konkretes Leistungsziel – Löwen brauchen etwas zum Besiegen.",
+            "Trainingspartner oder Wettkampf-Element steigert die Löwen-Performance um 30–40 %.",
+            "Vermeide zu viele Ausdauereinheiten – sie senken Dopamin und demotivieren dich.",
+            "Tracke jeden Trainingsrekord – dein Fortschritt ist dein Treibstoff.",
+            "Supplement-Tipp: L-Tyrosin + Kreatin + Koffein ist der Pre-Workout-Stack des Löwen.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu veraendern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist - "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4-5 Fragen, auf deine Art. "
-            "Schliesse 6 von 7 Check-ins pro Woche fuer 30 Tage ab und du bekommst dein Geld zurueck. "
+            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
+            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
+            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
+            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
             "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
         )
     },
 
     ("lion", "sleep"): {
-        "headline": "Dein 2-Wochen-Schlaf-Optimierungsplan - Loewe-Stil",
+        "headline": "Dein 2-Wochen-Schlaf-Optimierungsplan – Löwen-Stil",
         "intro": (
-            "Loewen schlafen schlecht weil ihr Dopaminsystem auch nachts auf Hochtouren laeuft. "
-            "Dein Gehirn will Probleme loesen, Ziele planen und Gegner besiegen - auch um Mitternacht. "
-            "Hier ist der Plan, der dein Nervensystem herunterfaehrt ohne deine Energie zu zerstoeren."
+            "Löwen schlafen schlecht weil ihr Dopaminsystem auch nachts auf Hochtouren läuft. "
+            "Dein Gehirn will Probleme lösen, Ziele planen und Gegner besiegen – auch um Mitternacht. "
+            "Hier ist der Plan, der dein Nervensystem herunterfährt ohne deine Energie zu zerstören."
         ),
         "weeks": [
             {
-                "label": "Woche 1 - Das Nervensystem herunterfahren",
+                "label": "Woche 1 – Das Nervensystem herunterfahren",
                 "days": [
-                    ("Tage 1-4", "Kein Bildschirm 60 Minuten vor dem Schlafen. "
-                     "Loewen brauchen einen klaren 'Abschalter'. Erstelle eine kurze Abend-Routine: "
+                    ("Tage 1–4", "Kein Bildschirm 60 Minuten vor dem Schlafen. "
+                     "Löwen brauchen einen klaren 'Abschalter'. Erstelle eine kurze Abend-Routine: "
                      "10 Min. Lesen, 5 Min. Atemtechnik (4-7-8 Atmung), dann Bett. "
                      "Kein Koffein nach 13 Uhr."),
-                    ("Tage 5-7", "Magnesium Glycinat (300mg) + L-Theanin (200mg) 30 Min. vor dem Schlafen. "
-                     "Diese Kombination beruhigt das Nervensystem ohne dich am naechsten Tag traege zu machen."),
+                    ("Tage 5–7", "Magnesium Glycinat (300 mg) + L-Theanin (200 mg) 30 Min. vor dem Schlafen. "
+                     "Diese Kombination beruhigt das Nervensystem ohne dich am nächsten Tag träge zu machen."),
                 ]
             },
             {
-                "label": "Woche 2 - Tiefschlaf optimieren",
+                "label": "Woche 2 – Tiefschlaf optimieren",
                 "days": [
-                    ("Tage 8-11", "Schlaftemperatur senken (18-20 Grad). Loewen schlafen besser kuehl. "
-                     "Kohlenhydrate am Abend hinzufuegen (Reis, Haferflocken) - sie senken Dopamin "
-                     "und foerdern Serotonin fuer besseren Schlaf."),
-                    ("Tage 12-14", "Bewertung: Die meisten Loewen berichten nach 10-14 Tagen "
-                     "von deutlich tieferem Schlaf. Wenn nicht: Training spaetestens um 18 Uhr beenden."),
+                    ("Tage 8–11", "Schlaftemperatur senken (18–20 Grad). Löwen schlafen besser kühl. "
+                     "Kohlenhydrate am Abend hinzufügen (Reis, Haferflocken) – sie senken Dopamin "
+                     "und fördern Serotonin für besseren Schlaf."),
+                    ("Tage 12–14", "Bewertung: Die meisten Löwen berichten nach 10–14 Tagen "
+                     "von deutlich tieferem Schlaf. Wenn nicht: Training spätestens um 18 Uhr beenden."),
                 ]
             }
         ],
         "tips": [
-            "Dein Dopaminsystem braucht einen klaren Abschalter - eine feste Abendroutine ist Pflicht.",
-            "Magnesium Glycinat ist das effektivste Schlaf-Supplement fuer Loewen.",
-            "Kohlenhydrate am Abend sind fuer Loewen vorteilhaft - sie senken Dopamin und foerdern Schlaf.",
-            "Trainiere nicht nach 19 Uhr - spaetes Training haelt Loewen stundenlang wach.",
-            "Supplement-Tipp: Magnesium Glycinat + L-Theanin + Ashwagandha ist der Schlaf-Stack des Loewens.",
+            "Dein Dopaminsystem braucht einen klaren Abschalter – eine feste Abendroutine ist Pflicht.",
+            "Magnesium Glycinat ist das effektivste Schlaf-Supplement für Löwen.",
+            "Kohlenhydrate am Abend sind für Löwen vorteilhaft – sie senken Dopamin und fördern Schlaf.",
+            "Trainiere nicht nach 19 Uhr – Adrenalin und Dopamin halten dich wach.",
+            "Supplement-Tipp: Magnesium Glycinat + L-Theanin + Ashwagandha ist der Schlaf-Stack des Löwen.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu veraendern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist - "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4-5 Fragen, auf deine Art. "
-            "Schliesse 6 von 7 Check-ins pro Woche fuer 30 Tage ab und du bekommst dein Geld zurueck. "
+            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
+            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
+            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
+            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
             "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
         )
     },
 
-    # ─── FALKE (1B) ───────────────────────────────────────────────────────────
+    # ─── FALKE ───────────────────────────────────────────────────────────────
     ("falcon", "weight"): {
-        "headline": "Dein 2-Wochen-Fettabbau-Plan - Falken-Stil",
+        "headline": "Dein 2-Wochen-Fettabbau-Sprint – Falken-Stil",
         "intro": (
-            "Als Falke (Natural Signature Type) bist du der athletischste Typ - schnell, kreativ "
-            "und angetrieben durch Neuheit. Monotone Diaeten toeten dich. Du brauchst Abwechslung, "
-            "Herausforderung und das Gefuehl, dass etwas Neues passiert."
+            "Als Falke (Natural Signature Type) läufst du auf Dopamin und Adrenalin. "
+            "Du brauchst Abwechslung, Tempo und sofortige Ergebnisse – sonst verlierst du das Interesse. "
+            "Dieser Plan ist schnell, abwechslungsreich und auf deine Natur zugeschnitten."
         ),
         "weeks": [
             {
-                "label": "Woche 1 - Abwechslung mit Defizit",
+                "label": "Woche 1 – Schnell starten, Feuer halten",
                 "days": [
-                    ("Tage 1-5", "Kaloriendefizit 400-600 kcal. Aber: jeden Tag eine andere Ernaehrungsstrategie. "
-                     "Tag 1: Low-Carb. Tag 2: Intermittierendes Fasten. Tag 3: Normales Essen, aber kein Zucker. "
-                     "Falken brauchen Abwechslung um motiviert zu bleiben."),
-                    ("Tage 6-7", "Freie Tage: Iss was du moechtest, aber bleib im Kalorienrahmen. "
-                     "Falken brauchen Freiheit um das System langfristig durchzuhalten."),
+                    ("Tage 1–5", "Intermittierendes Fasten (16:8) kombiniert mit Kaloriendefizit (400–600 kcal). "
+                     "Falken profitieren von klaren Essensfenstern – kein endloses Zählen, nur ein Zeitfenster. "
+                     "Protein hoch (2 g/kg), Mahlzeiten variieren täglich um Langeweile zu vermeiden."),
+                    ("Tage 6–7", "Cheat-Fenster: 1 Mahlzeit nach Wahl. Falken brauchen diese Ventile "
+                     "um langfristig dabei zu bleiben. Das ist keine Schwäche – das ist Strategie."),
                 ]
             },
             {
-                "label": "Woche 2 - Neue Herausforderung",
+                "label": "Woche 2 – Intensivieren und variieren",
                 "days": [
-                    ("Tage 8-12", "Wechsle die Trainingsform: wenn du bisher Kraft trainiert hast, "
-                     "fuege Kampfsport, Klettern oder ein neues Sport-Element hinzu. "
-                     "Falken verbrennen mehr Kalorien wenn sie Spass haben. "
-                     "Alpha-GPC (300mg) vor dem Training fuer Fokus und Acetylcholin-Unterstuetzung."),
-                    ("Tage 13-14", "Bewertung und neue Herausforderung planen. "
-                     "Falken brauchen immer das naechste Ziel vor Augen."),
+                    ("Tage 8–12", "Trainingsart wechseln: andere Übungen, anderes Tempo. "
+                     "Falken verlieren bei Wiederholung die Motivation. Defizit beibehalten. "
+                     "L-Tyrosin (500 mg) + Koffein vor dem Training für maximale Energie."),
+                    ("Tage 13–14", "Ergebnisse messen. Falken brauchen sichtbaren Beweis. "
+                     "Fotos, Maße, Gewicht – alles dokumentieren. Das ist dein Treibstoff für die nächste Runde."),
                 ]
             }
         ],
         "tips": [
-            "Monotone Diaeten funktionieren fuer Falken nicht - Abwechslung ist dein Schluessel.",
-            "Neue Sportarten und Bewegungsformen halten dich motiviert und verbrennen mehr Kalorien.",
-            "Alpha-GPC unterstuetzt Acetylcholin - deinen wichtigsten Neurotransmitter fuer Fokus.",
-            "Kurze, intensive Workouts sind besser als lange, gleichfoermige Einheiten.",
-            "Supplement-Tipp: Alpha-GPC + Omega-3 + Vitamin B-Komplex ist der Falken-Stack.",
+            "Variiere deine Mahlzeiten täglich – Falken werden durch Wiederholung demotiviert.",
+            "Intermittierendes Fasten passt perfekt zum Falken – einfach, klar, effektiv.",
+            "Kein langer Ausdauersport – kurze, intensive Einheiten sind dein Element.",
+            "Tracke Ergebnisse visuell – Fotos und Maße motivieren Falken mehr als Zahlen.",
+            "Supplement-Tipp: L-Tyrosin + Koffein + Omega-3 ist der Fettabbau-Stack des Falken.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu veraendern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist - "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4-5 Fragen, auf deine Art. "
-            "Schliesse 6 von 7 Check-ins pro Woche fuer 30 Tage ab und du bekommst dein Geld zurueck. "
+            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
+            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
+            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
+            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
             "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
         )
     },
 
     ("falcon", "energy"): {
-        "headline": "Dein 2-Wochen-Energie-Reset - Falken-Stil",
+        "headline": "Dein 2-Wochen-Energie-Reset – Falken-Stil",
         "intro": (
-            "Falken erschoepfen Acetylcholin - den Neurotransmitter fuer Fokus, Kreativitaet und schnelles Lernen. "
-            "Wenn du muede und geistig leer bist, ist das meistens Acetylcholin-Mangel. "
-            "Hier ist der schnellste Weg zurueck."
+            "Falken erschöpfen sich durch zu viele Projekte, zu wenig Fokus und "
+            "ständige Reizüberflutung. Dein Dopaminsystem ist überlastet – nicht leer. "
+            "Der Unterschied ist entscheidend für die Lösung."
         ),
         "weeks": [
             {
-                "label": "Woche 1 - Acetylcholin auffuellen",
+                "label": "Woche 1 – Entlasten und fokussieren",
                 "days": [
-                    ("Tage 1-4", "Eier essen (mindestens 3-4 pro Tag) - sie sind die beste natuerliche "
-                     "Quelle fuer Cholin, den Vorlaeufer von Acetylcholin. "
-                     "Alpha-GPC (300mg morgens) hinzufuegen. Bildschirmzeit reduzieren - "
-                     "Falken erschoepfen Acetylcholin durch exzessiven Medienkonsum."),
-                    ("Tage 5-7", "Trainingsintensitaet um 40% reduzieren. Falken uebertrainieren oft "
-                     "weil sie Abwechslung suchen. Dein Nervensystem braucht jetzt Erholung, keine Stimulation."),
+                    ("Tage 1–4", "Täglich nur 3 Hauptaufgaben. Falken verzetteln sich – "
+                     "weniger ist mehr. Handybenachrichtigungen auf 2x täglich reduzieren. "
+                     "Omega-3 (2–3 g täglich) für Dopamin-Rezeptor-Gesundheit."),
+                    ("Tage 5–7", "Bewegung: 20 Min. intensive Aktivität täglich – "
+                     "das entlädt überschüssiges Adrenalin und setzt Endorphine frei. "
+                     "Kein Koffein nach 13 Uhr – Falken sind besonders empfindlich."),
                 ]
             },
             {
-                "label": "Woche 2 - Kreative Energie zurueck",
+                "label": "Woche 2 – Energie kanalisieren",
                 "days": [
-                    ("Tage 8-11", "Neue, leichte Aktivitaet einfuehren: Yoga, Schwimmen, Tanzen. "
-                     "Falken erholen sich durch Bewegung, die Spass macht - nicht durch Stillsitzen. "
-                     "Omega-3 (2-3g taeglich) unterstuetzt die Gehirnfunktion und Acetylcholin-Synthese."),
-                    ("Tage 12-14", "Volles Training wieder aufnehmen, aber mit neuer Trainingsform. "
-                     "Falken erholen sich schnell wenn Acetylcholin wieder aufgebaut ist."),
+                    ("Tage 8–11", "Ein großes Projekt pro Woche – Falken brauchen ein klares Ziel "
+                     "um ihre Energie zu bündeln. L-Tyrosin (500 mg morgens) für stabilen Dopaminspiegel."),
+                    ("Tage 12–14", "Bewertung: Fühlst du dich fokussierter? Wenn ja, behalte die "
+                     "3-Aufgaben-Regel bei. Wenn nicht: Schlaf prüfen – Falken unterschätzen Schlaf massiv."),
                 ]
             }
         ],
         "tips": [
-            "Eier sind dein wichtigstes Lebensmittel - sie liefern Cholin fuer Acetylcholin.",
-            "Alpha-GPC ist das effektivste Supplement fuer Falken-Energie.",
-            "Zu viel Bildschirmzeit erschoepft Acetylcholin schneller als Training.",
-            "Neue Aktivitaeten laden Falken auf - Routine erschoepft sie.",
-            "Supplement-Tipp: Alpha-GPC + Omega-3 + Bacopa Monnieri ist der Falken-Energie-Stack.",
+            "Reizüberflutung ist der Energie-Killer des Falken – weniger Input, mehr Output.",
+            "Omega-3 ist das wichtigste Supplement für Falken – es schützt Dopamin-Rezeptoren.",
+            "Kurze, intensive Workouts laden Falken auf – lange Einheiten erschöpfen sie.",
+            "Fokus auf ein Projekt statt viele – Falken verlieren Energie durch Verzettelung.",
+            "Supplement-Tipp: Omega-3 + L-Tyrosin + Magnesium ist der Energie-Stack des Falken.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu veraendern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist - "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4-5 Fragen, auf deine Art. "
-            "Schliesse 6 von 7 Check-ins pro Woche fuer 30 Tage ab und du bekommst dein Geld zurueck. "
+            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
+            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
+            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
+            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
             "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
         )
     },
 
     ("falcon", "training"): {
-        "headline": "Dein 2-Wochen-Trainings-Konsistenz-Plan - Falken-Stil",
+        "headline": "Dein 2-Wochen-Trainings-Konsistenz-Plan – Falken-Stil",
         "intro": (
-            "Falken starten viele Trainingsprogramme und beenden wenige. "
-            "Das Problem ist nicht Faulheit - es ist Langeweile. "
-            "Hier ist ein Plan, der Abwechslung als Strategie nutzt."
+            "Falken starten stark – und hören dann auf wenn die Neuheit nachlässt. "
+            "Das ist keine Schwäche, das ist deine Neurologie. Dieser Plan nutzt deine "
+            "Natur: Abwechslung, Tempo und klare Meilensteine halten dich dabei."
         ),
         "weeks": [
             {
-                "label": "Woche 1 - Abwechslung als System",
+                "label": "Woche 1 – Abwechslung als System",
                 "days": [
-                    ("Tage 1-4", "4 verschiedene Trainingsformen in 4 Tagen: "
-                     "Tag 1: Krafttraining. Tag 2: HIIT. Tag 3: Kampfsport/Klettern/Tanzen. Tag 4: Schwimmen. "
-                     "Falken brauchen Abwechslung - das ist kein Fehler, das ist deine Natur."),
-                    ("Tage 5-7", "Aktive Erholung mit einer neuen Aktivitaet die du noch nie probiert hast. "
-                     "Falken sind am motiviertesten wenn sie etwas Neues lernen."),
+                    ("Tage 1–4", "Kein fixer Trainingsplan – wähle täglich aus 3 Optionen: "
+                     "Kraft, HIIT oder Sport. Falken brauchen Wahlfreiheit. "
+                     "Einzige Regel: mindestens 20 Minuten Intensität täglich."),
+                    ("Tage 5–7", "Aktive Erholung oder Outdoor-Aktivität. "
+                     "Falken erholen sich besser in Bewegung als in Ruhe."),
                 ]
             },
             {
-                "label": "Woche 2 - Intensitaet steigern",
+                "label": "Woche 2 – Meilensteine setzen",
                 "days": [
-                    ("Tage 8-12", "Gleiche Abwechslung, aber Intensitaet erhoehen. "
-                     "Falken lernen schnell - du wirst in Woche 2 bereits besser sein als in Woche 1. "
-                     "Tracke deine Leistung in jeder Disziplin."),
-                    ("Tage 13-14", "Plane die naechsten 4 Wochen mit neuen Trainingsformen. "
-                     "Falken brauchen immer das naechste Abenteuer vor Augen."),
+                    ("Tage 8–12", "Wähle eine Fähigkeit die du verbessern willst "
+                     "(z.B. 10 Klimmzüge, 5 km unter 25 Min.). Falken brauchen ein Ziel zum Jagen. "
+                     "Täglich 5 Min. gezieltes Üben dieser Fähigkeit."),
+                    ("Tage 13–14", "Teste dein Ziel. Falken sind durch Leistungsbeweise motiviert. "
+                     "Plane das nächste Ziel sofort – kein Vakuum entstehen lassen."),
                 ]
             }
         ],
         "tips": [
-            "Abwechslung ist keine Schwaeche - fuer Falken ist sie die einzige Strategie die funktioniert.",
-            "Lerne alle 4-6 Wochen eine neue Sportart oder Trainingsmethode.",
-            "Trainingspartner mit aehnlicher Energie halten Falken laenger motiviert.",
-            "Tracke Fortschritt in mehreren Disziplinen - Falken brauchen viele Erfolge.",
-            "Supplement-Tipp: Alpha-GPC + Kreatin + Omega-3 ist der Trainings-Stack des Falken.",
+            "Variiere dein Training wöchentlich – Falken brauchen Neuheit um motiviert zu bleiben.",
+            "Setze dir kurzfristige Ziele (2 Wochen) statt langfristige (6 Monate).",
+            "Trainiere mit anderen – soziale Stimulation hält Falken länger dabei.",
+            "Musik oder Podcast beim Training steigert die Falken-Performance deutlich.",
+            "Supplement-Tipp: L-Tyrosin + Koffein + Kreatin ist der Trainings-Stack des Falken.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu veraendern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist - "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4-5 Fragen, auf deine Art. "
-            "Schliesse 6 von 7 Check-ins pro Woche fuer 30 Tage ab und du bekommst dein Geld zurueck. "
+            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
+            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
+            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
+            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
             "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
         )
     },
 
     ("falcon", "sleep"): {
-        "headline": "Dein 2-Wochen-Schlaf-Optimierungsplan - Falken-Stil",
+        "headline": "Dein 2-Wochen-Schlaf-Optimierungsplan – Falken-Stil",
         "intro": (
-            "Falken schlafen schlecht weil ihr Gehirn immer auf der Suche nach dem naechsten "
-            "neuen Reiz ist. Acetylcholin-Erschoepfung und ein ueberaktives kreatives Gehirn "
-            "sind die Hauptursachen. Hier ist der Loesungsplan."
+            "Falken schlafen schlecht weil ihr Gehirn ständig neue Ideen generiert "
+            "und Adrenalin auch nachts aktiv bleibt. Du brauchst einen klaren Übergang "
+            "vom aktiven in den Ruhemodus – und das ist lernbar."
         ),
         "weeks": [
             {
-                "label": "Woche 1 - Das kreative Gehirn beruhigen",
+                "label": "Woche 1 – Den Übergang schaffen",
                 "days": [
-                    ("Tage 1-4", "Kein Bildschirm 90 Minuten vor dem Schlafen - "
-                     "Falken reagieren staerker auf Blaulicht als andere Typen. "
-                     "Ersetze Bildschirm durch Lesen (Sachbuch, kein Roman - Falken brauchen Input). "
-                     "Schlafzeit festlegen: gleiche Zeit jeden Abend."),
-                    ("Tage 5-7", "L-Theanin (200mg) + Magnesium Glycinat (300mg) vor dem Schlafen. "
-                     "L-Theanin beruhigt das Gehirn ohne Serotonin zu erhoehen - "
-                     "ideal fuer Falken die Acetylcholin-dominant sind."),
+                    ("Tage 1–4", "30 Minuten vor dem Schlafen: alle Ideen aufschreiben (Brain Dump). "
+                     "Falken können nicht schlafen wenn Gedanken unfertig sind. "
+                     "Papier und Stift neben dem Bett – alles raus, dann Ruhe."),
+                    ("Tage 5–7", "L-Theanin (200 mg) + Magnesium Glycinat (300 mg) vor dem Schlafen. "
+                     "Kein Bildschirm 45 Minuten vor dem Bett. Falken reagieren stark auf Blaulicht."),
                 ]
             },
             {
-                "label": "Woche 2 - Schlafqualitaet vertiefen",
+                "label": "Woche 2 – Schlafqualität steigern",
                 "days": [
-                    ("Tage 8-11", "Abend-Routine mit kreativem Outlet: 15 Minuten Skizzieren, "
-                     "Schreiben oder Brainstorming - dann Stift weglegen und Bett. "
-                     "Falken schlafen besser wenn das Gehirn 'entleert' wurde."),
-                    ("Tage 12-14", "Bewertung: Falken sehen meist nach 7-10 Tagen Verbesserung. "
-                     "Wenn nicht: Trainingszeit auf vor 18 Uhr verlegen."),
+                    ("Tage 8–11", "Feste Schlafzeit einhalten – auch am Wochenende. "
+                     "Falken hassen Routine, aber der Schlaf-Wach-Rhythmus ist nicht verhandelbar. "
+                     "Dunkelheit und Kühle im Schlafzimmer (18–20 Grad)."),
+                    ("Tage 12–14", "Bewertung: Schläfst du schneller ein? "
+                     "Wenn ja, behalte Brain Dump + Supplements bei. "
+                     "Wenn nicht: Koffein komplett auf vor 12 Uhr begrenzen."),
                 ]
             }
         ],
         "tips": [
-            "Blaulicht-Blocker sind fuer Falken besonders wichtig - dein Gehirn reagiert staerker darauf.",
-            "Ein kreatives Abend-Outlet (Skizzieren, Schreiben) hilft dem Falken-Gehirn beim Abschalten.",
-            "L-Theanin ist das beste Schlaf-Supplement fuer Falken - es beruhigt ohne zu sedieren.",
-            "Gleiche Schlafzeit jeden Abend - auch wenn es sich unnatuerlich anfuehlt.",
-            "Supplement-Tipp: L-Theanin + Magnesium Glycinat + Omega-3 ist der Schlaf-Stack des Falken.",
+            "Brain Dump vor dem Schlafen ist die effektivste Methode für Falken – Gedanken auf Papier bringen.",
+            "L-Theanin beruhigt das aktive Falken-Gehirn ohne Schläfrigkeit zu erzeugen.",
+            "Feste Schlafzeiten sind für Falken besonders wichtig – ihr Rhythmus ist leicht störbar.",
+            "Kein Koffein nach 12 Uhr – Falken metabolisieren Koffein langsamer als andere Typen.",
+            "Supplement-Tipp: L-Theanin + Magnesium Glycinat + Melatonin (0,5 mg) ist der Schlaf-Stack des Falken.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu veraendern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist - "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4-5 Fragen, auf deine Art. "
-            "Schliesse 6 von 7 Check-ins pro Woche fuer 30 Tage ab und du bekommst dein Geld zurueck. "
+            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
+            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
+            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
+            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
             "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
         )
     },
 
-    # ─── CHAMAELEON (2A) ──────────────────────────────────────────────────────
+    # ─── CHAMÄLEON ───────────────────────────────────────────────────────────
     ("chameleon", "weight"): {
-        "headline": "Dein 2-Wochen-Fettabbau-Plan - Chamaeleon-Stil",
+        "headline": "Dein 2-Wochen-Fettabbau-Plan – Chamäleon-Stil",
         "intro": (
-            "Als Chamaeleon (Natural Signature Type) bist du sozial anpassungsfaehig und "
-            "adrenalinempfindlich. Du brauchst soziale Unterstuetzung und Abwechslung - "
-            "aber auch klare Grenzen um nicht in alte Muster zurueckzufallen."
+            "Als Chamäleon (Natural Signature Type) bist du sozial motiviert und "
+            "brauchst Harmonie in deinem Alltag. Harte Diäten erzeugen inneren Konflikt "
+            "und soziale Spannung – das sabotiert dich. Dieser Plan arbeitet mit deiner Natur, nicht dagegen."
         ),
         "weeks": [
             {
-                "label": "Woche 1 - Soziale Struktur aufbauen",
+                "label": "Woche 1 – Sanft starten, Gewohnheiten aufbauen",
                 "days": [
-                    ("Tage 1-5", "Finde einen Trainingspartner oder tritt einer Gruppe bei. "
-                     "Chamaeleons performen 40-60% besser in sozialen Settings. "
-                     "Kaloriendefizit 300-500 kcal - moderat, nicht aggressiv. "
-                     "Mahlzeiten: ausgewogen mit Protein, Kohlenhydraten und Fetten."),
-                    ("Tage 6-7", "Soziale Aktivitaet: gemeinsames Kochen, Wandern mit Freunden. "
-                     "Chamaeleons laden durch soziale Verbindung auf."),
+                    ("Tage 1–5", "Kaloriendefizit von 300–400 kcal – moderat, nicht aggressiv. "
+                     "Chamäleons brauchen einen Ansatz, der sozial kompatibel ist. "
+                     "Mahlzeiten: mediterrane Ernährung (Gemüse, Fisch, Olivenöl, Hülsenfrüchte). "
+                     "Kein Verzicht auf soziale Mahlzeiten – stattdessen klügere Auswahl treffen."),
+                    ("Tage 6–7", "Gemeinsam kochen oder essen gehen – aber bewusst wählen. "
+                     "Chamäleons essen besser wenn sie soziale Unterstützung haben."),
                 ]
             },
             {
-                "label": "Woche 2 - Grenzen setzen",
+                "label": "Woche 2 – Konsistenz durch Verbindung",
                 "days": [
-                    ("Tage 8-12", "Uebe 'Nein sagen' bei Essen: wenn andere ungesund essen, "
-                     "bleib bei deinem Plan. Chamaeleons sind anfaellig fuer sozialen Druck beim Essen. "
-                     "Phosphatidylserin (200mg) unterstuetzt Adrenalin-Regulation und reduziert "
-                     "Stress-Essen."),
-                    ("Tage 13-14", "Fortschritt mit deinem Trainingspartner feiern. "
-                     "Chamaeleons brauchen soziale Anerkennung um motiviert zu bleiben."),
+                    ("Tage 8–12", "Einen Accountability-Partner finden – jemand dem du täglich "
+                     "deine Mahlzeiten zeigst. Chamäleons performen besser mit sozialer Verantwortung. "
+                     "5-HTP (50–100 mg abends) um Serotonin zu unterstützen und emotionales Essen zu reduzieren."),
+                    ("Tage 13–14", "Fortschritt feiern – mit anderen. Chamäleons brauchen "
+                     "soziale Bestätigung um motiviert zu bleiben."),
                 ]
             }
         ],
         "tips": [
-            "Soziales Training ist fuer Chamaeleons kein Luxus - es ist Notwendigkeit.",
-            "Lerne 'Nein' zu sagen bei sozialen Essen-Situationen - das ist deine groesste Herausforderung.",
-            "Phosphatidylserin reguliert Adrenalin und reduziert Stress-Essen.",
-            "Gruppenklassen, Mannschaftssport oder Trainingspartner halten dich konsistent.",
-            "Supplement-Tipp: Phosphatidylserin + Ashwagandha + Magnesium ist der Chamaeleon-Stack.",
+            "Soziale Unterstützung ist dein stärkstes Werkzeug – finde einen Partner für deine Reise.",
+            "Vermeide isolierte Diäten – Chamäleons brauchen Gemeinschaft um durchzuhalten.",
+            "5-HTP unterstützt Serotonin und reduziert emotionales Essen – dein häufigster Fallstrick.",
+            "Mediterrane Ernährung passt perfekt zum Chamäleon – lecker, sozial kompatibel, effektiv.",
+            "Supplement-Tipp: 5-HTP + Omega-3 + Magnesium ist der Fettabbau-Stack des Chamäleons.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu veraendern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist - "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4-5 Fragen, auf deine Art. "
-            "Schliesse 6 von 7 Check-ins pro Woche fuer 30 Tage ab und du bekommst dein Geld zurueck. "
+            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
+            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
+            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
+            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
             "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
         )
     },
 
     ("chameleon", "energy"): {
-        "headline": "Dein 2-Wochen-Energie-Reset - Chamaeleon-Stil",
+        "headline": "Dein 2-Wochen-Energie-Reset – Chamäleon-Stil",
         "intro": (
-            "Chamaeleons erschoepfen Adrenalin durch zu viel soziale Anpassung und "
-            "Entscheidungsvermeidung. Wenn du muede bist, ist es meistens Adrenalin-Erschoepfung "
-            "kombiniert mit emotionalem Stress. Hier ist der Weg zurueck."
+            "Chamäleons erschöpfen sich durch emotionale Belastung und das ständige "
+            "Anpassen an andere. Dein Serotoninsystem ist überlastet. "
+            "Dieser Plan gibt dir Energie zurück durch Grenzen, Nährstoffe und Selbstfürsorge."
         ),
         "weeks": [
             {
-                "label": "Woche 1 - Adrenalin-Erschoepfung stoppen",
+                "label": "Woche 1 – Serotonin aufbauen",
                 "days": [
-                    ("Tage 1-4", "Soziale Verpflichtungen um 50% reduzieren. "
-                     "Chamaeleons sagen zu viel Ja - das erschoepft Adrenalin. "
-                     "Phosphatidylserin (200mg morgens) hinzufuegen. "
-                     "Schlaf priorisieren: 8 Stunden anstreben."),
-                    ("Tage 5-7", "Einfuehren von 'Allein-Zeit': 30 Minuten taeglich ohne soziale Interaktion. "
-                     "Chamaeleons brauchen das zur Erholung, auch wenn es sich seltsam anfuehlt."),
+                    ("Tage 1–4", "Täglich 20 Minuten alleine sein – kein Handy, keine Ablenkung. "
+                     "Chamäleons brauchen Stille um sich zu regenerieren. "
+                     "5-HTP (100 mg abends) + Magnesium (300 mg) für Serotonin-Unterstützung."),
+                    ("Tage 5–7", "Tryptophan-reiche Mahlzeiten: Truthahn, Eier, Bananen, Haferflocken. "
+                     "Diese Lebensmittel sind direkte Vorläufer von Serotonin."),
                 ]
             },
             {
-                "label": "Woche 2 - Energie neu aufbauen",
+                "label": "Woche 2 – Grenzen setzen, Energie schützen",
                 "days": [
-                    ("Tage 8-11", "Positive soziale Aktivitaeten wieder einfuehren - "
-                     "aber nur mit Menschen die dir Energie geben, nicht nehmen. "
-                     "Moderates Training (3x pro Woche, 30-45 Min.) mit Trainingspartner."),
-                    ("Tage 12-14", "Bewertung: Chamaeleons erholen sich schnell wenn Adrenalin-Erschoepfung "
-                     "gestoppt wird. Du solltest jetzt deutlich mehr Energie spueren."),
+                    ("Tage 8–11", "Täglich eine Grenze setzen – ein Nein aussprechen das du sonst "
+                     "vermieden hättest. Chamäleons verlieren Energie durch zu viel Ja-Sagen. "
+                     "Jedes Nein gibt dir Energie zurück."),
+                    ("Tage 12–14", "Bewertung: Fühlst du dich weniger erschöpft? "
+                     "Grenzen + Serotonin-Unterstützung sind die zwei wichtigsten Hebel für Chamäleons."),
                 ]
             }
         ],
         "tips": [
-            "Lerne 'Nein' zu sagen - jedes unnoetige 'Ja' kostet dich Adrenalin und Energie.",
-            "Allein-Zeit ist fuer Chamaeleons Erholung, keine Einsamkeit.",
-            "Phosphatidylserin ist das wichtigste Supplement fuer Chamaeleon-Energie.",
-            "Trenne dich von Menschen die dir Energie nehmen - das ist keine Egoismus, das ist Selbstschutz.",
-            "Supplement-Tipp: Phosphatidylserin + Rhodiola Rosea + B-Komplex ist der Energie-Stack.",
+            "Grenzen setzen ist Energie-Management – jedes Nein ist ein Ja zu dir selbst.",
+            "5-HTP ist das wichtigste Supplement für Chamäleons – es unterstützt Serotonin direkt.",
+            "Tryptophan-reiche Ernährung ist deine natürliche Energie-Quelle.",
+            "Allein-Zeit täglich ist keine Schwäche – es ist dein Aufladen.",
+            "Supplement-Tipp: 5-HTP + Magnesium + Vitamin B6 ist der Energie-Stack des Chamäleons.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu veraendern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist - "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4-5 Fragen, auf deine Art. "
-            "Schliesse 6 von 7 Check-ins pro Woche fuer 30 Tage ab und du bekommst dein Geld zurueck. "
+            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
+            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
+            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
+            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
             "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
         )
     },
 
     ("chameleon", "training"): {
-        "headline": "Dein 2-Wochen-Trainings-Konsistenz-Plan - Chamaeleon-Stil",
+        "headline": "Dein 2-Wochen-Trainings-Konsistenz-Plan – Chamäleon-Stil",
         "intro": (
-            "Chamaeleons trainieren am besten in Gruppen und mit sozialer Unterstuetzung. "
-            "Alleine im Fitnessstudio ist fuer dich die schlechteste Option. "
-            "Hier ist der Plan der deine soziale Natur als Vorteil nutzt."
+            "Chamäleons trainieren am besten in Gemeinschaft. Alleine ist die Motivation "
+            "schwach – mit anderen ist sie stark. Dieser Plan nutzt deine soziale Natur "
+            "als deinen größten Vorteil."
         ),
         "weeks": [
             {
-                "label": "Woche 1 - Soziales Training etablieren",
+                "label": "Woche 1 – Gemeinschaft als Fundament",
                 "days": [
-                    ("Tage 1-4", "Tritt einem Gruppentraining bei: Crossfit, Yoga, Tanzen, Mannschaftssport. "
-                     "Chamaeleons brauchen die soziale Komponente um konsistent zu bleiben. "
-                     "Finde mindestens einen Trainingspartner der dich accountable haelt."),
-                    ("Tage 5-7", "Gemeinsame Aktivitaet ausserhalb des Trainings: Wandern, Radfahren, Schwimmen. "
-                     "Chamaeleons trennen nicht zwischen Sport und sozialem Leben - das ist ein Vorteil."),
+                    ("Tage 1–4", "Gruppentraining oder Trainingspartner finden. "
+                     "Chamäleons erscheinen für andere – nutze das. "
+                     "Kursformat, Mannschaftssport oder feste Verabredung mit einem Freund."),
+                    ("Tage 5–7", "Aktive Erholung: Yoga, Spaziergang mit jemandem, leichtes Dehnen. "
+                     "Chamäleons erholen sich besser in angenehmer Gesellschaft."),
                 ]
             },
             {
-                "label": "Woche 2 - Commitment staerken",
+                "label": "Woche 2 – Routine verankern",
                 "days": [
-                    ("Tage 8-12", "Melde dich fuer einen Kurs oder ein Event an (4-6 Wochen im Voraus). "
-                     "Chamaeleons halten Commitments gegenueber anderen besser als gegenueber sich selbst. "
-                     "Nutze das als Strategie."),
-                    ("Tage 13-14", "Feiere mit deiner Trainingsgruppe. "
-                     "Soziale Anerkennung ist dein starkster Motivator."),
+                    ("Tage 8–12", "Feste Trainingszeiten mit anderen vereinbaren. "
+                     "Chamäleons halten Termine mit anderen besser ein als Termine mit sich selbst. "
+                     "Magnesium (300 mg) nach dem Training für Muskelregeneration."),
+                    ("Tage 13–14", "Fortschritt mit deinem Trainingspartner besprechen. "
+                     "Plane die nächsten 2 Wochen gemeinsam – Chamäleons bleiben durch Verbindlichkeit dabei."),
                 ]
             }
         ],
         "tips": [
-            "Gruppentraining ist fuer Chamaeleons kein Kompromiss - es ist die beste Option.",
-            "Commitments gegenueber anderen halten dich konsistenter als persoenliche Ziele.",
-            "Melde dich fuer Events an: Laufwettbewerbe, Turniere, Gruppenreisen.",
-            "Trainingspartner sind fuer Chamaeleons wichtiger als das Programm selbst.",
-            "Supplement-Tipp: Phosphatidylserin + Kreatin + Vitamin D3 ist der Trainings-Stack.",
+            "Gruppentraining oder Trainingspartner ist für Chamäleons unverzichtbar.",
+            "Melde dich für Kurse an – die Verbindlichkeit hält dich dabei.",
+            "Vermeide Solo-Training wenn möglich – Chamäleons verlieren ohne soziale Stimulation die Motivation.",
+            "Teile deine Fortschritte mit anderen – soziale Bestätigung ist dein Treibstoff.",
+            "Supplement-Tipp: Magnesium + Vitamin D3 + Omega-3 ist der Trainings-Stack des Chamäleons.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu veraendern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist - "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4-5 Fragen, auf deine Art. "
-            "Schliesse 6 von 7 Check-ins pro Woche fuer 30 Tage ab und du bekommst dein Geld zurueck. "
+            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
+            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
+            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
+            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
             "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
         )
     },
 
     ("chameleon", "sleep"): {
-        "headline": "Dein 2-Wochen-Schlaf-Optimierungsplan - Chamaeleon-Stil",
+        "headline": "Dein 2-Wochen-Schlaf-Optimierungsplan – Chamäleon-Stil",
         "intro": (
-            "Chamaeleons schlafen schlecht weil sie abends noch soziale Interaktionen verarbeiten "
-            "und Adrenalin-Erschoepfung den Schlaf stoert. "
-            "Hier ist der Plan der dein Nervensystem beruhigt."
+            "Chamäleons schlafen schlecht wenn emotionale Spannungen ungelöst sind. "
+            "Dein Serotoninsystem braucht Abschluss und Harmonie bevor es sich entspannen kann. "
+            "Dieser Plan gibt dir genau das."
         ),
         "weeks": [
             {
-                "label": "Woche 1 - Soziale Reize reduzieren",
+                "label": "Woche 1 – Emotionalen Abschluss schaffen",
                 "days": [
-                    ("Tage 1-4", "Kein Social Media 60 Minuten vor dem Schlafen. "
-                     "Chamaeleons verarbeiten soziale Informationen im Schlaf - weniger Input = besserer Schlaf. "
-                     "Feste Schlafzeit: gleiche Zeit jeden Abend, auch am Wochenende."),
-                    ("Tage 5-7", "Ashwagandha (300mg) + Magnesium Glycinat (300mg) vor dem Schlafen. "
-                     "Ashwagandha reguliert Adrenalin und Cortisol - die Hauptursachen fuer Chamaeleon-Schlafprobleme."),
+                    ("Tage 1–4", "Abend-Ritual: 10 Minuten Dankbarkeits-Journal – "
+                     "3 positive Dinge des Tages aufschreiben. Chamäleons brauchen emotionalen Abschluss "
+                     "um loszulassen. Konflikte des Tages kurz reflektieren und mental abschließen."),
+                    ("Tage 5–7", "5-HTP (50 mg) + Magnesium Glycinat (300 mg) vor dem Schlafen. "
+                     "Warmes Bad oder Dusche 1 Stunde vor dem Bett – senkt die Körpertemperatur und fördert Schlaf."),
                 ]
             },
             {
-                "label": "Woche 2 - Tiefschlaf foerdern",
+                "label": "Woche 2 – Tiefschlaf durch Harmonie",
                 "days": [
-                    ("Tage 8-11", "Abend-Routine: 20 Minuten ruhiges Gespraech oder Lesen mit Partner/Freund, "
-                     "dann Stille. Chamaeleons brauchen einen sozialen 'Abschluss' bevor sie schlafen koennen."),
-                    ("Tage 12-14", "Bewertung: Die meisten Chamaeleons sehen nach 7-10 Tagen "
-                     "deutliche Verbesserung wenn Social Media reduziert wird."),
+                    ("Tage 8–11", "Keine belastenden Gespräche nach 20 Uhr. "
+                     "Chamäleons nehmen Konflikte mit ins Bett – das verhindert Tiefschlaf. "
+                     "Beruhigende Musik oder Naturgeräusche beim Einschlafen."),
+                    ("Tage 12–14", "Bewertung: Schläfst du tiefer? "
+                     "Emotionaler Abschluss + Serotonin-Unterstützung sind die Schlüssel für Chamäleons."),
                 ]
             }
         ],
         "tips": [
-            "Social Media vor dem Schlafen ist dein groesster Schlafkiller.",
-            "Ein sozialer 'Abschluss' am Abend hilft deinem Gehirn beim Abschalten.",
-            "Ashwagandha ist das effektivste Supplement fuer Chamaeleon-Schlaf.",
-            "Gleiche Schlafzeit auch am Wochenende - Chamaeleons sind empfindlich gegenueber Rhythmuswechseln.",
-            "Supplement-Tipp: Ashwagandha + Magnesium Glycinat + L-Theanin ist der Schlaf-Stack.",
+            "Emotionaler Abschluss vor dem Schlafen ist für Chamäleons wichtiger als jedes Supplement.",
+            "5-HTP fördert Serotonin und verbessert die Schlafqualität von Chamäleons deutlich.",
+            "Keine Konflikte nach 20 Uhr – dein Nervensystem kann dann nicht mehr abschalten.",
+            "Dankbarkeits-Journal ist wissenschaftlich belegt für besseren Schlaf.",
+            "Supplement-Tipp: 5-HTP + Magnesium Glycinat + L-Theanin ist der Schlaf-Stack des Chamäleons.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu veraendern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist - "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4-5 Fragen, auf deine Art. "
-            "Schliesse 6 von 7 Check-ins pro Woche fuer 30 Tage ab und du bekommst dein Geld zurueck. "
+            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
+            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
+            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
+            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
             "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
         )
     },
 
-    # ─── WOLF (2B) ────────────────────────────────────────────────────────────
+    # ─── WOLF ────────────────────────────────────────────────────────────────
     ("wolf", "weight"): {
-        "headline": "Dein 2-Wochen-Fettabbau-Plan - Wolf-Stil",
+        "headline": "Dein 2-Wochen-Fettabbau-Plan – Wolfs-Stil",
         "intro": (
-            "Als Wolf (Natural Signature Type) fuehlt du alles tief - auch Hunger, "
-            "Stress und Versuchung. Emotionales Essen ist deine groesste Herausforderung. "
-            "Hier ist ein Plan der deine Empathie und Tiefe als Staerke nutzt."
+            "Als Wolf (Natural Signature Type) bist du sensibel, tief empfindend und "
+            "reagierst stark auf Stress. Aggressive Diäten erhöhen Cortisol und sabotieren "
+            "deinen Fettabbau. Dieser Plan ist sanft, nachhaltig und auf dein Nervensystem abgestimmt."
         ),
         "weeks": [
             {
-                "label": "Woche 1 - Emotionales Essen verstehen",
+                "label": "Woche 1 – Cortisol senken, Fundament legen",
                 "days": [
-                    ("Tage 1-5", "Fuehre ein Ernaehrungstagebuch - aber notiere auch deine Stimmung "
-                     "bei jeder Mahlzeit. Woelfe essen oft aus Emotionen, nicht aus Hunger. "
-                     "Kaloriendefizit 300-400 kcal - sanft, nicht aggressiv. "
-                     "Viel Protein (1,8g/kg) um Sattigungsgefuehl zu maximieren."),
-                    ("Tage 6-7", "Reflexionstage: Was hat diese Woche gut funktioniert? "
-                     "Was hat dich zum emotionalen Essen verleitet? Woelfe lernen durch Reflexion."),
+                    ("Tage 1–5", "Kaloriendefizit von 200–300 kcal – sehr moderat. "
+                     "Wölfe reagieren auf Stress mit Cortisol-Ausschüttung, die Fettabbau blockiert. "
+                     "Mahlzeiten: entzündungshemmend (Fisch, Beeren, grünes Gemüse, Nüsse). "
+                     "Ashwagandha (300–600 mg) täglich um Cortisol zu senken."),
+                    ("Tage 6–7", "Erholung und Genuss. Wölfe brauchen Tage ohne Druck. "
+                     "Iss was dir gut tut – ohne Schuldgefühle. Das ist Teil des Plans."),
                 ]
             },
             {
-                "label": "Woche 2 - Emotionale Stabilitaet aufbauen",
+                "label": "Woche 2 – Sanft intensivieren",
                 "days": [
-                    ("Tage 8-12", "5-HTP (50mg) vor den Mahlzeiten reduziert Heisshunger und "
-                     "unterstuetzt Serotonin - deinen wichtigsten Neurotransmitter. "
-                     "Trainiere 3-4x pro Woche: Woelfe reagieren am besten auf moderates, "
-                     "rhythmisches Training (Laufen, Schwimmen, Radfahren)."),
-                    ("Tage 13-14", "Feiere jeden kleinen Fortschritt. Woelfe brauchen emotionale "
-                     "Bestaetigung um motiviert zu bleiben."),
+                    ("Tage 8–12", "Defizit leicht erhöhen (300–400 kcal). "
+                     "Wölfe können jetzt mehr tragen wenn das Nervensystem stabilisiert ist. "
+                     "Bewegung: Yoga, Schwimmen, leichtes Krafttraining – keine hochintensiven Einheiten."),
+                    ("Tage 13–14", "Fortschritt würdigen. Wölfe sind oft zu selbstkritisch – "
+                     "erkenne an was du erreicht hast, auch wenn es weniger ist als erhofft."),
                 ]
             }
         ],
         "tips": [
-            "Erkenne den Unterschied zwischen emotionalem Hunger und echtem Hunger.",
-            "5-HTP unterstuetzt Serotonin und reduziert Heisshunger - dein wichtigstes Supplement.",
-            "Rhythmisches Training (Laufen, Schwimmen) ist ideal fuer Woelfe - es beruhigt das Nervensystem.",
-            "Vermeide aggressive Diaeten - sie erhoehen Cortisol und triggern emotionales Essen.",
-            "Supplement-Tipp: 5-HTP + Magnesium Glycinat + Omega-3 ist der Wolf-Stack.",
+            "Cortisol ist dein größter Feind beim Fettabbau – Stress-Management ist Ernährungs-Management.",
+            "Ashwagandha ist das wichtigste Supplement für Wölfe – es senkt Cortisol nachweislich.",
+            "Sanfte Bewegung (Yoga, Schwimmen) ist effektiver für Wölfe als HIIT.",
+            "Entzündungshemmende Ernährung unterstützt dein sensibles Nervensystem.",
+            "Supplement-Tipp: Ashwagandha + Omega-3 + Magnesium ist der Fettabbau-Stack des Wolfes.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu veraendern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist - "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4-5 Fragen, auf deine Art. "
-            "Schliesse 6 von 7 Check-ins pro Woche fuer 30 Tage ab und du bekommst dein Geld zurueck. "
+            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
+            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
+            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
+            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
             "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
         )
     },
 
     ("wolf", "energy"): {
-        "headline": "Dein 2-Wochen-Energie-Reset - Wolf-Stil",
+        "headline": "Dein 2-Wochen-Energie-Reset – Wolfs-Stil",
         "intro": (
-            "Woelfe erschoepfen Serotonin durch emotionalen Stress, Ueberempfindlichkeit "
-            "und das staendige Tragen anderer Probleme. "
-            "Wenn deine Energie weg ist, ist es meistens Serotonin-Mangel. Hier ist der Weg zurueck."
+            "Wölfe erschöpfen sich durch emotionale Überbelastung, Grübeln und "
+            "ein hyperaktives Nervensystem. Dein Cortisol ist chronisch erhöht. "
+            "Dieser Plan senkt Cortisol, baut GABA auf und gibt dir deine Energie zurück."
         ),
         "weeks": [
             {
-                "label": "Woche 1 - Serotonin wieder aufbauen",
+                "label": "Woche 1 – Das Nervensystem beruhigen",
                 "days": [
-                    ("Tage 1-4", "Kohlenhydrate nicht eliminieren - Woelfe brauchen Kohlenhydrate "
-                     "fuer Serotonin-Produktion. Komplexe Kohlenhydrate (Haferflocken, Suesskartoffeln, Reis) "
-                     "bei jeder Mahlzeit. 5-HTP (50mg morgens) hinzufuegen."),
-                    ("Tage 5-7", "Taeglich 20-30 Minuten in der Sonne: Sonnenlicht ist der staerkste "
-                     "natuerliche Serotonin-Booster. Rhythmische Bewegung (Spaziergang, leichtes Joggen) "
-                     "unterstuetzt Serotonin-Synthese."),
+                    ("Tage 1–4", "Ashwagandha (600 mg täglich) + Magnesium Glycinat (400 mg abends). "
+                     "Diese Kombination ist klinisch belegt für Cortisol-Senkung. "
+                     "Täglich 15 Minuten Meditation oder Atemübungen – Wölfe profitieren enorm davon."),
+                    ("Tage 5–7", "Bewegung: nur sanfte Aktivitäten (Spaziergang, Yoga, Schwimmen). "
+                     "Kein HIIT – es erhöht Cortisol und macht es schlimmer."),
                 ]
             },
             {
-                "label": "Woche 2 - Emotionale Energie schuetzen",
+                "label": "Woche 2 – Energie aufbauen",
                 "days": [
-                    ("Tage 8-11", "Identifiziere und reduziere Energie-Raeuber: Menschen, Situationen "
-                     "oder Gedankenmuster die dich erschoepfen. Woelfe tragen oft zu viel von anderen. "
-                     "Setze klare Grenzen."),
-                    ("Tage 12-14", "Bewertung: Woelfe sehen nach 10-14 Tagen mit Serotonin-Unterstuetzung "
-                     "deutliche Energieverbesserung."),
+                    ("Tage 8–11", "Vitamin B-Komplex + Vitamin D3 hinzufügen. "
+                     "Wölfe sind häufig in beiden Bereichen defizitär. "
+                     "Mahlzeiten-Timing: regelmäßig essen, kein Auslassen – Blutzucker-Schwankungen "
+                     "treffen Wölfe besonders hart."),
+                    ("Tage 12–14", "Bewertung: Fühlst du dich ruhiger und energiereicher? "
+                     "Cortisol-Senkung braucht Zeit – sei geduldig mit dir."),
                 ]
             }
         ],
         "tips": [
-            "Kohlenhydrate sind fuer Woelfe kein Feind - sie sind der Treibstoff fuer Serotonin.",
-            "Sonnenlicht taeglich ist fuer Woelfe wichtiger als jedes Supplement.",
-            "5-HTP ist das effektivste Supplement fuer Wolf-Energie.",
-            "Setze Grenzen gegenueber Energie-Raeubern - das ist keine Kaltherziigkeit.",
-            "Supplement-Tipp: 5-HTP + Vitamin D3 + Omega-3 ist der Wolf-Energie-Stack.",
+            "Chronisch erhöhtes Cortisol ist die Hauptursache für Energie-Mangel beim Wolf.",
+            "Ashwagandha + Magnesium ist die effektivste Kombination für Wölfe.",
+            "Meditation ist für Wölfe kein Nice-to-have – es ist medizinisch notwendig.",
+            "Regelmäßige Mahlzeiten stabilisieren den Blutzucker und verhindern Energie-Abstürze.",
+            "Supplement-Tipp: Ashwagandha + Magnesium Glycinat + Vitamin D3 + B-Komplex ist der Energie-Stack des Wolfes.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu veraendern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist - "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4-5 Fragen, auf deine Art. "
-            "Schliesse 6 von 7 Check-ins pro Woche fuer 30 Tage ab und du bekommst dein Geld zurueck. "
+            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
+            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
+            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
+            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
             "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
         )
     },
 
     ("wolf", "training"): {
-        "headline": "Dein 2-Wochen-Trainings-Konsistenz-Plan - Wolf-Stil",
+        "headline": "Dein 2-Wochen-Trainings-Konsistenz-Plan – Wolfs-Stil",
         "intro": (
-            "Woelfe trainieren alles oder nichts. Wenn sie motiviert sind, trainieren sie zu viel. "
-            "Wenn sie einen schlechten Tag haben, trainieren sie gar nicht. "
-            "Hier ist der Plan der deine emotionale Natur als Vorteil nutzt."
+            "Wölfe meiden Training oft weil es sich wie weiterer Stress anfühlt. "
+            "Das ist ein Zeichen dass dein Nervensystem überlastet ist – nicht dass du faul bist. "
+            "Dieser Plan baut Training als Stressventil auf, nicht als Stressquelle."
         ),
         "weeks": [
             {
-                "label": "Woche 1 - Emotionale Verbindung zum Training aufbauen",
+                "label": "Woche 1 – Bewegung als Medizin",
                 "days": [
-                    ("Tage 1-4", "Waehle eine Trainingsform die dir emotional bedeutsam ist: "
-                     "Kampfsport (Selbstverteidigung), Tanzen (Ausdruck), Laufen in der Natur (Verbindung). "
-                     "Woelfe trainieren konsistent wenn das Training emotional resoniert. "
-                     "3x pro Woche, 30-45 Minuten."),
-                    ("Tage 5-7", "Erholung in der Natur: Wandern, Schwimmen im See. "
-                     "Woelfe erholen sich am besten in natuerlicher Umgebung."),
+                    ("Tage 1–4", "Täglich 20–30 Minuten sanfte Bewegung: Spaziergang in der Natur, "
+                     "Yoga oder leichtes Schwimmen. Kein Leistungsdruck. "
+                     "Wölfe brauchen Bewegung die das Nervensystem beruhigt, nicht auflädt."),
+                    ("Tage 5–7", "Erholung. Wölfe brauchen mehr Regenerationszeit als andere Typen. "
+                     "Magnesium Glycinat (400 mg) nach dem Training für Muskelentspannung."),
                 ]
             },
             {
-                "label": "Woche 2 - Konsistenz trotz schlechter Tage",
+                "label": "Woche 2 – Sanft steigern",
                 "days": [
-                    ("Tage 8-12", "Regel: An schlechten Tagen 15-Minuten-Minimum-Training. "
-                     "Nicht perfekt, aber konsequent. Woelfe neigen zum Alles-oder-Nichts-Denken - "
-                     "das Minimum bricht dieses Muster."),
-                    ("Tage 13-14", "Reflexion: Was hat dich diese Woche zum Training motiviert? "
-                     "Woelfe lernen durch emotionale Erkenntnisse."),
+                    ("Tage 8–12", "Leichtes Krafttraining hinzufügen (2x pro Woche, 30 Min.). "
+                     "Wölfe profitieren von Krafttraining für Selbstvertrauen und Stressresistenz. "
+                     "Wichtig: kein Versagen-Training – höre auf bevor es zu anstrengend wird."),
+                    ("Tage 13–14", "Bewertung: Fühlt sich Bewegung besser an? "
+                     "Wölfe berichten nach 2 Wochen sanftem Training von deutlich besserem Wohlbefinden."),
                 ]
             }
         ],
         "tips": [
-            "Waehle Training das dir emotional bedeutsam ist - nicht das was 'optimal' ist.",
-            "15-Minuten-Minimum an schlechten Tagen bricht das Alles-oder-Nichts-Muster.",
-            "Natur-Training ist fuer Woelfe besonders regenerativ.",
-            "Trainingspartner mit emotionaler Verbindung halten Woelfe konsistenter.",
-            "Supplement-Tipp: 5-HTP + Magnesium Glycinat + Ashwagandha ist der Wolf-Trainings-Stack.",
+            "Natur-Bewegung ist für Wölfe besonders wertvoll – Wald, Wasser, frische Luft.",
+            "Kein Leistungsdruck beim Training – Wölfe brauchen Bewegung als Erholung, nicht als Wettkampf.",
+            "Yoga ist für Wölfe eines der effektivsten Trainingsformen.",
+            "Trainiere alleine oder mit einem vertrauten Menschen – Wölfe mögen keine lauten Gruppen.",
+            "Supplement-Tipp: Magnesium Glycinat + Ashwagandha + Vitamin D3 ist der Trainings-Stack des Wolfes.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu veraendern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist - "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4-5 Fragen, auf deine Art. "
-            "Schliesse 6 von 7 Check-ins pro Woche fuer 30 Tage ab und du bekommst dein Geld zurueck. "
+            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
+            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
+            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
+            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
             "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
         )
     },
 
     ("wolf", "sleep"): {
-        "headline": "Dein 2-Wochen-Schlaf-Optimierungsplan - Wolf-Stil",
+        "headline": "Dein 2-Wochen-Schlaf-Optimierungsplan – Wolfs-Stil",
         "intro": (
-            "Woelfe schlafen schlecht weil sie negative Erlebnisse und Emotionen im Bett verarbeiten. "
-            "Ein einziges negatives Erlebnis kann dich stundenlang wachhalten. "
-            "Hier ist der Plan der dein emotionales Gehirn beruhigt."
+            "Wölfe schlafen schlecht weil Grübeln, Sorgen und ein überaktives Nervensystem "
+            "das Einschlafen verhindern. Dein GABA-System ist unteraktiv. "
+            "Dieser Plan beruhigt dein Gehirn auf neurologischer Ebene."
         ),
         "weeks": [
             {
-                "label": "Woche 1 - Emotionale Entladung vor dem Schlafen",
+                "label": "Woche 1 – GABA aufbauen, Grübeln stoppen",
                 "days": [
-                    ("Tage 1-4", "Fuehre ein Abend-Tagebuch: 10 Minuten schreiben was dich heute bewegt hat. "
-                     "Woelfe brauchen emotionale Entladung bevor sie schlafen koennen. "
-                     "Kein Konflikt-Gespraeche nach 20 Uhr."),
-                    ("Tage 5-7", "5-HTP (50-100mg) + Magnesium Glycinat (300mg) 30 Min. vor dem Schlafen. "
-                     "5-HTP ist der direkteste Weg Serotonin zu erhoehen - "
-                     "der wichtigste Neurotransmitter fuer Wolf-Schlaf."),
+                    ("Tage 1–4", "Magnesium Glycinat (400 mg) + Ashwagandha (300 mg) 1 Stunde vor dem Schlafen. "
+                     "Diese Kombination erhöht GABA und senkt Cortisol – die zwei Haupthebel für Wölfe. "
+                     "Atemübung vor dem Schlafen: 4 Sekunden ein, 7 halten, 8 aus (4-7-8 Methode)."),
+                    ("Tage 5–7", "Kein Grübeln im Bett erlaubt. Wenn Gedanken kommen: aufstehen, "
+                     "kurz aufschreiben, dann zurück ins Bett. Wölfe müssen Grübeln aktiv unterbrechen."),
                 ]
             },
             {
-                "label": "Woche 2 - Tiefschlaf durch Serotonin",
+                "label": "Woche 2 – Tiefschlaf durch Sicherheit",
                 "days": [
-                    ("Tage 8-11", "Kleiner Kohlenhydrat-Snack vor dem Schlafen (Banane, Haferflocken, Reiskuchen) "
-                     "- foerdert Serotonin und hilft Woelfen einzuschlafen. "
-                     "Abend-Routine: Tagebuch, Snack, Entspannungsmusik, Bett."),
-                    ("Tage 12-14", "Bewertung: Woelfe sehen nach 7-10 Tagen deutliche Verbesserung "
-                     "wenn emotionale Entladung und Serotonin-Unterstuetzung kombiniert werden."),
+                    ("Tage 8–11", "Schlafumgebung optimieren: vollständige Dunkelheit, kühle Temperatur "
+                     "(18–19 Grad), weiche Bettwäsche. Wölfe schlafen tiefer wenn sie sich sicher und geborgen fühlen. "
+                     "Entspannende Musik oder Naturgeräusche als Einschlafhilfe."),
+                    ("Tage 12–14", "Bewertung: Schläfst du schneller ein und tiefer durch? "
+                     "GABA-Unterstützung + Grübel-Unterbrechung sind die zwei Schlüssel für Wölfe."),
                 ]
             }
         ],
         "tips": [
-            "Abend-Tagebuch ist fuer Woelfe kein optionales Tool - es ist Medizin.",
-            "5-HTP ist das effektivste Schlaf-Supplement fuer Woelfe.",
-            "Kohlenhydrate vor dem Schlafen foerdern Serotonin - fuer Woelfe vorteilhaft.",
-            "Kein Konflikt oder negative Nachrichten nach 20 Uhr.",
-            "Supplement-Tipp: 5-HTP + Magnesium Glycinat + L-Theanin ist der Wolf-Schlaf-Stack.",
+            "GABA-Unterstützung durch Magnesium ist für Wölfe das effektivste Schlaf-Werkzeug.",
+            "Grübeln aktiv unterbrechen – aufschreiben und loslassen.",
+            "Sicherheit und Geborgenheit im Schlafzimmer sind für Wölfe besonders wichtig.",
+            "4-7-8 Atemtechnik ist klinisch belegt für schnelleres Einschlafen.",
+            "Supplement-Tipp: Magnesium Glycinat + Ashwagandha + L-Theanin ist der Schlaf-Stack des Wolfes.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu veraendern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist - "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4-5 Fragen, auf deine Art. "
-            "Schliesse 6 von 7 Check-ins pro Woche fuer 30 Tage ab und du bekommst dein Geld zurueck. "
+            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
+            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
+            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
+            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
             "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
         )
     },
 
-    # ─── EULE (3) ─────────────────────────────────────────────────────────────
+    # ─── EULE ────────────────────────────────────────────────────────────────
     ("owl", "weight"): {
-        "headline": "Dein 2-Wochen-Fettabbau-Plan - Eulen-Stil",
+        "headline": "Dein 2-Wochen-Fettabbau-Plan – Eulen-Stil",
         "intro": (
-            "Als Eule (Natural Signature Type) bist du der disziplinierteste Typ - "
-            "du folgst Plaenen besser als alle anderen. Deine Herausforderung ist Cortisol: "
-            "zu viel Stress sabotiert deinen Fortschritt. Hier ist der Plan der das beruecksichtigt."
+            "Als Eule (Natural Signature Type) brauchst du Struktur, Daten und einen klaren Plan. "
+            "Spontane Diäten funktionieren nicht für dich – du brauchst ein System. "
+            "Hier ist dein präziser, datengesteuerter 2-Wochen-Plan."
         ),
         "weeks": [
             {
-                "label": "Woche 1 - Struktur mit Cortisol-Kontrolle",
+                "label": "Woche 1 – Das System aufsetzen",
                 "days": [
-                    ("Tage 1-5", "Kaloriendefizit 300-400 kcal - moderat. Eulen produzieren viel Cortisol "
-                     "und aggressives Defizit erhoehte es weiter. Mahlzeiten: ausgewogen mit Kohlenhydraten "
-                     "(Serotonin-Unterstuetzung) und Protein. Feste Mahlzeiten-Zeiten - Eulen brauchen Routine."),
-                    ("Tage 6-7", "Erholungstage mit fester Routine: gleiche Schlafzeit, "
-                     "gleiche Mahlzeiten-Zeiten, leichte Bewegung."),
+                    ("Tage 1–3", "Kalorien und Makros berechnen: Erhaltungsbedarf – 400 kcal = Ziel. "
+                     "Eulen brauchen genaue Zahlen. App oder Tabelle nutzen um alles zu tracken. "
+                     "Mahlzeiten für die Woche vorplanen – Eulen performen besser mit Vorbereitung."),
+                    ("Tage 4–7", "Plan strikt einhalten. Eulen sind gut in Disziplin wenn das System klar ist. "
+                     "Täglich wiegen und in Tabelle eintragen – Eulen lieben Datenpunkte."),
                 ]
             },
             {
-                "label": "Woche 2 - Fortschritt durch Praezision",
+                "label": "Woche 2 – Optimieren und anpassen",
                 "days": [
-                    ("Tage 8-12", "Alles tracken: Kalorien, Gewicht, Schlaf, Stimmung. "
-                     "Eulen lieben Daten und werden durch Praezision motiviert. "
-                     "Ashwagandha (300mg) taeglich reduziert Cortisol und unterstuetzt Fettabbau."),
-                    ("Tage 13-14", "Daten auswerten und naechste 4 Wochen planen. "
-                     "Eulen sind energetisiert wenn sie einen klaren Plan vor sich haben."),
+                    ("Tage 8–10", "Daten der ersten Woche analysieren. Wo war der Plan schwierig? "
+                     "Eulen optimieren gerne – nutze das. Kleine Anpassungen vornehmen."),
+                    ("Tage 11–14", "Verfeinerten Plan umsetzen. Eulen werden durch Präzision motiviert – "
+                     "je genauer das System, desto besser die Compliance."),
                 ]
             }
         ],
         "tips": [
-            "Tracke alles - Daten sind dein Motivations-Treibstoff.",
-            "Aggressives Defizit erhoehte Cortisol und sabotiert deinen Fortschritt - bleib moderat.",
-            "Ashwagandha ist das wichtigste Supplement fuer Eulen - es reduziert Cortisol direkt.",
-            "Feste Mahlzeiten-Zeiten sind fuer Eulen wichtiger als die Mahlzeiten selbst.",
-            "Supplement-Tipp: Ashwagandha + Magnesium Glycinat + 5-HTP ist der Eulen-Stack.",
+            "Tracking ist für Eulen kein Aufwand – es ist Motivation. Tracke alles.",
+            "Meal Prep am Wochenende spart Zeit und verhindert schlechte Entscheidungen.",
+            "Eulen brauchen einen klaren Plan – Improvisation führt zu Scheitern.",
+            "Daten-Analyse nach Woche 1 ist Pflicht – Eulen optimieren sich durch Erkenntnisse.",
+            "Supplement-Tipp: Omega-3 + Vitamin D3 + Magnesium ist der Fettabbau-Stack der Eule.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu veraendern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist - "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4-5 Fragen, auf deine Art. "
-            "Schliesse 6 von 7 Check-ins pro Woche fuer 30 Tage ab und du bekommst dein Geld zurueck. "
+            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
+            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
+            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
+            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
             "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
         )
     },
 
     ("owl", "energy"): {
-        "headline": "Dein 2-Wochen-Energie-Reset - Eulen-Stil",
+        "headline": "Dein 2-Wochen-Energie-Reset – Eulen-Stil",
         "intro": (
-            "Eulen erschoepfen sich durch Cortisol-Ueberproduktion und Ueberanalyse. "
-            "Wenn deine Energie weg ist, ist es meistens chronischer Stress kombiniert "
-            "mit Serotonin-Mangel. Hier ist der strukturierte Weg zurueck."
+            "Eulen erschöpfen sich durch Überanalyse, Perfektionismus und "
+            "das Gefühl nie fertig zu sein. Dein GABA-System ist erschöpft durch chronischen "
+            "mentalen Stress. Dieser Plan gibt deinem Gehirn die Pause die es braucht."
         ),
         "weeks": [
             {
-                "label": "Woche 1 - Cortisol reduzieren",
+                "label": "Woche 1 – Mentale Last reduzieren",
                 "days": [
-                    ("Tage 1-4", "Feste Tagesstruktur einfuehren: Aufwachzeit, Mahlzeiten-Zeiten, "
-                     "Trainingszeit, Schlafzeit - alles fest. Eulen laden durch Vorhersehbarkeit auf. "
-                     "Kohlenhydrat-reiche Mahlzeiten (mit Protein) fuer Serotonin und Cortisol-Reduktion."),
-                    ("Tage 5-7", "Ashwagandha (300-600mg taeglich) hinzufuegen - "
-                     "das effektivste Adaptogen fuer Eulen. Es reduziert Cortisol und unterstuetzt "
-                     "das inhibitorische Neurotransmitter-Gleichgewicht."),
+                    ("Tage 1–4", "Täglich eine 'Done List' statt To-Do-Liste. "
+                     "Eulen fokussieren sich auf was noch fehlt – das erschöpft. "
+                     "Aufschreiben was du erreicht hast gibt Energie zurück. "
+                     "Magnesium L-Threonat (2 g täglich) für kognitive Erholung."),
+                    ("Tage 5–7", "Keine Entscheidungen nach 20 Uhr. Eulen grübeln abends – "
+                     "das erschöpft das Gehirn für den nächsten Tag. Klare Cut-off-Zeit einführen."),
                 ]
             },
             {
-                "label": "Woche 2 - Routine schuetzen",
+                "label": "Woche 2 – Energie durch Struktur",
                 "days": [
-                    ("Tage 8-11", "Routine beibehalten. 5-Minuten-Achtsamkeit oder Atemtechnik morgens - "
-                     "das aktiviert das parasympathische Nervensystem und reduziert den Cortisol-Spike "
-                     "den Eulen beim Aufwachen erleben."),
-                    ("Tage 12-14", "Energie bewerten. Eulen sehen typischerweise klare Verbesserung "
-                     "nach 10-14 Tagen konsistenter Routine und Cortisol-Management."),
+                    ("Tage 8–11", "Tagesstruktur optimieren: wichtigste Aufgabe morgens, "
+                     "wenn kognitive Energie am höchsten ist. Eulen sind Morgenmenschen – "
+                     "nutze das Fenster von 8–12 Uhr für Tiefenarbeit."),
+                    ("Tage 12–14", "Bewertung: Fühlst du dich weniger erschöpft? "
+                     "Mentale Entlastung + Magnesium sind die zwei Schlüssel für Eulen."),
                 ]
             }
         ],
         "tips": [
-            "Unterbrechungen deiner Routine sind dein groesster Energie-Raeuber. Schuetze sie.",
-            "Kohlenhydrat-reiche Mahlzeiten unterstuetzen Serotonin - dein wichtigster Neurotransmitter.",
-            "Vermeide Uebertraining - Eulen produzieren am meisten Cortisol und erholen sich am langsamsten.",
-            "Achtsamkeit und Atemtechniken sind fuer Eulen keine Option - sie sind Medizin.",
-            "Supplement-Tipp: Ashwagandha + Magnesium Glycinat + 5-HTP ist der Eulen-Energie-Stack.",
+            "Perfektionismus ist der Energie-Killer der Eule – gut genug ist oft besser als perfekt.",
+            "Magnesium L-Threonat überquert die Blut-Hirn-Schranke und unterstützt kognitive Erholung.",
+            "Done List statt To-Do-Liste – fokussiere auf Fortschritt, nicht auf Rückstand.",
+            "Tiefenarbeit in den Morgenstunden maximiert die Eulen-Produktivität.",
+            "Supplement-Tipp: Magnesium L-Threonat + Omega-3 + Vitamin B12 ist der Energie-Stack der Eule.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu veraendern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist - "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4-5 Fragen, auf deine Art. "
-            "Schliesse 6 von 7 Check-ins pro Woche fuer 30 Tage ab und du bekommst dein Geld zurueck. "
+            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
+            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
+            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
+            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
             "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
         )
     },
 
     ("owl", "training"): {
-        "headline": "Dein 2-Wochen-Trainings-Konsistenz-Plan - Eulen-Stil",
+        "headline": "Dein 2-Wochen-Trainings-Konsistenz-Plan – Eulen-Stil",
         "intro": (
-            "Eulen sind bereits konsistent - aber sie uebertrainieren oft oder waehlen "
-            "die falsche Trainingsart. Du brauchst keine Intensitaet. Du brauchst Struktur, "
-            "Wiederholung und technische Meisterschaft."
+            "Eulen trainieren am besten mit einem präzisen, geplanten System. "
+            "Spontanes Training funktioniert nicht – aber ein durchdachter Plan mit "
+            "klaren Metriken und Fortschritts-Tracking ist dein stärkstes Werkzeug."
         ),
         "weeks": [
             {
-                "label": "Woche 1 - Struktur zuerst",
+                "label": "Woche 1 – Das Trainings-System aufsetzen",
                 "days": [
-                    ("Tage 1-4", "3-4 Trainingstage mit einem festen, schriftlichen Programm. "
-                     "Eulen performen am besten mit Wiederholung - nutze die gleichen Uebungen 4-6 Wochen. "
-                     "Fokus auf Technik-Perfektion. Moderate Intensitaet (70-80% des Maximums). "
-                     "Lange Pausen (2-3 Minuten) - Eulen haben hohes Adrenalin und brauchen volle Erholung."),
-                    ("Tage 5-7", "Ruhe. Eulen produzieren am meisten Cortisol - "
-                     "Ruhetage sind nicht optional. Nutze sie fuer Mobilitaet, Spaziergang oder Lesen."),
+                    ("Tage 1–3", "Trainingsplan für 2 Wochen schriftlich erstellen: "
+                     "Tage, Übungen, Sets, Wiederholungen, Gewichte. "
+                     "Eulen brauchen Klarheit bevor sie starten. Kein Plan = kein Training."),
+                    ("Tage 4–7", "Plan exakt umsetzen. Eulen sind gut in Disziplin wenn das System klar ist. "
+                     "Jede Session dokumentieren – Gewichte, Wiederholungen, Befinden."),
                 ]
             },
             {
-                "label": "Woche 2 - Verfeinern und Fortschritt machen",
+                "label": "Woche 2 – Daten nutzen, optimieren",
                 "days": [
-                    ("Tage 8-12", "Gleiches Programm. Kleine Progression hinzufuegen: +2,5kg oder +1 Wiederholung. "
-                     "Eulen bauen Vertrauen durch messbaren, inkrementellen Fortschritt."),
-                    ("Tage 13-14", "Ruhe. Die naechsten 2 Wochen schriftlich planen - "
-                     "Eulen werden durch einen klaren Plan vor sich energetisiert."),
+                    ("Tage 8–10", "Daten der ersten Woche analysieren. "
+                     "Welche Übungen liefen gut? Wo gibt es Steigerungspotenzial? "
+                     "Eulen lieben diese Analyse – sie ist dein Motivations-Treibstoff."),
+                    ("Tage 11–14", "Optimierten Plan umsetzen. Eulen werden durch Präzision und "
+                     "messbare Verbesserungen motiviert – tracke jeden Fortschritt."),
                 ]
             }
         ],
         "tips": [
-            "Wechsle dein Programm NICHT jede Woche - Wiederholung ist deine Staerke.",
-            "Vermeide explosive oder hochneurologische Arbeit - sie erschoepft dein bereits gestresstes Nervensystem.",
-            "Ausdauersport (Laufen, Radfahren) ist ideal fuer Eulen - stetig, strukturiert, messbar.",
-            "Schreibe dein Programm auf. Eulen muessen den Plan sehen um ihm zu vertrauen.",
-            "Supplement-Tipp: Magnesium Glycinat + Ashwagandha unterstuetzt Erholung und Cortisol-Kontrolle.",
+            "Schriftlicher Trainingsplan ist für Eulen unverzichtbar – kein Plan, kein Training.",
+            "Jede Session dokumentieren – Eulen werden durch Daten und Fortschritt motiviert.",
+            "Vermeide spontane Trainingsänderungen – Eulen verlieren durch Unstrukturiertheit die Motivation.",
+            "Wöchentliche Analyse des Fortschritts hält Eulen langfristig dabei.",
+            "Supplement-Tipp: Kreatin + Magnesium + Omega-3 ist der Trainings-Stack der Eule.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu veraendern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist - "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4-5 Fragen, auf deine Art. "
-            "Schliesse 6 von 7 Check-ins pro Woche fuer 30 Tage ab und du bekommst dein Geld zurueck. "
+            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
+            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
+            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
+            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
             "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
         )
     },
 
     ("owl", "sleep"): {
-        "headline": "Dein 2-Wochen-Schlaf-Optimierungsplan - Eulen-Stil",
+        "headline": "Dein 2-Wochen-Schlaf-Optimierungsplan – Eulen-Stil",
         "intro": (
-            "Eulen sind chronische Ueberdenker. Wenn das Licht ausgeht, beginnt die Analyse. "
-            "Dein niedriges Serotonin und hohes Cortisol machen Schlafen schwierig - "
-            "aber mit dem richtigen Protokoll sehr loesbar."
+            "Eulen schlafen schlecht weil ihr analytisches Gehirn auch nachts aktiv ist – "
+            "Probleme lösen, Szenarien durchdenken, Pläne schmieden. "
+            "Du brauchst ein System das dein Gehirn in den Ruhemodus versetzt."
         ),
         "weeks": [
             {
-                "label": "Woche 1 - Den analytischen Geist abschalten",
+                "label": "Woche 1 – Das Schlaf-System aufsetzen",
                 "days": [
-                    ("Tage 1-4", "Erstelle eine schriftliche Abend-Routine (Eulen lieben schriftliche Protokolle). "
-                     "21 Uhr: Arbeit stoppen. 21:15 Uhr: Morgenplan detailliert aufschreiben - "
-                     "das gibt deinem Gehirn die Erlaubnis aufzuhoeren zu planen. "
-                     "21:30 Uhr: Licht dimmen, keine Bildschirme. 22 Uhr: Bett."),
-                    ("Tage 5-7", "5-HTP (50-100mg) + Magnesium Glycinat (300mg) 30 Min. vor dem Schlafen. "
-                     "Das adressiert direkt dein niedriges Serotonin und beruhigt das Nervensystem."),
+                    ("Tage 1–4", "Feste Schlafzeit und Aufwachzeit – auch am Wochenende. "
+                     "Eulen brauchen Routine als Anker. Abend-Protokoll schriftlich festhalten: "
+                     "21:30 Bildschirm aus, 22:00 Lesen, 22:30 Bett."),
+                    ("Tage 5–7", "Magnesium L-Threonat (2 g) + L-Theanin (200 mg) 1 Stunde vor dem Schlafen. "
+                     "Gedanken-Dump: alle offenen Punkte aufschreiben bevor du ins Bett gehst."),
                 ]
             },
             {
-                "label": "Woche 2 - Das System verstaerken",
+                "label": "Woche 2 – Schlafqualität messen und optimieren",
                 "days": [
-                    ("Tage 8-11", "Kleinen Kohlenhydrat-Snack vor dem Schlafen hinzufuegen "
-                     "(Reiskuchen, Banane, Haferflocken) - foerdert Serotonin und hilft Eulen schneller einzuschlafen. "
-                     "Schriftliche Routine exakt wie geplant beibehalten."),
-                    ("Tage 12-14", "Bewertung: Die meisten Eulen sehen dramatische Verbesserung "
-                     "innerhalb von 10 Tagen mit diesem Protokoll."),
+                    ("Tage 8–11", "Schlafqualität täglich bewerten (1–10). "
+                     "Eulen lieben Daten – tracke Einschlafzeit, Aufwachzeit, Schlafgefühl. "
+                     "Optimierungen basierend auf Daten vornehmen."),
+                    ("Tage 12–14", "Bewertung: Welche Maßnahmen haben am meisten geholfen? "
+                     "Eulen optimieren sich durch Erkenntnisse – nutze deine Daten für den nächsten Monat."),
                 ]
             }
         ],
         "tips": [
-            "Dein Gehirn braucht explizite Erlaubnis aufzuhoeren zu arbeiten. Der schriftliche Plan gibt das.",
-            "5-HTP ist das effektivste Supplement fuer Eulen-Schlaf - es unterstuetzt direkt Serotonin.",
-            "Kohlenhydrate vor dem Schlafen sind fuer Eulen vorteilhaft - sie foerdern Serotonin und reduzieren Cortisol.",
-            "Halte deine Schlafumgebung jede Nacht identisch - Eulen schlafen am besten mit Vorhersehbarkeit.",
-            "Supplement-Tipp: 5-HTP + Magnesium Glycinat + Ashwagandha ist der Eulen-Schlaf-Stack.",
+            "Schriftliches Abend-Protokoll ist für Eulen der effektivste Schlaf-Hack.",
+            "Gedanken-Dump vor dem Schlafen entleert das analytische Gehirn.",
+            "Magnesium L-Threonat unterstützt kognitive Erholung und verbessert die Schlafqualität.",
+            "Schlaf-Tracking motiviert Eulen – Daten machen den Fortschritt sichtbar.",
+            "Supplement-Tipp: Magnesium L-Threonat + L-Theanin + Melatonin (0,5 mg) ist der Schlaf-Stack der Eule.",
         ],
         "cta": (
-            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu veraendern. "
-            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist - "
-            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4-5 Fragen, auf deine Art. "
-            "Schliesse 6 von 7 Check-ins pro Woche fuer 30 Tage ab und du bekommst dein Geld zurueck. "
+            "Du hast gerade den ersten Schritt gemacht. Jetzt ist es Zeit, wirklich etwas zu verändern. "
+            "Der Core Path ist ein 30-Tage-Programm, das auf deinen Natural Signature Type zugeschnitten ist – "
+            "jeden Tag weniger als 60 Sekunden: ein Check-in, 4–5 Fragen, auf deine Art. "
+            "Schließe 6 von 7 Check-ins pro Woche für 30 Tage ab und du bekommst dein Geld zurück. "
             "Jeden Cent. Plus ein exklusives Upgrade-Angebot."
         )
     },
 }
 
-# Typ-Metadaten auf Deutsch
+# ─── TYPE META (Deutsch) ─────────────────────────────────────────────────────
 TYPE_META_DE = {
     "lion": {
-        "name": "Der Loewe",
-        "nst": "Natural Signature Type - Der Loewe",
+        "nst": "Natural Signature Type — Der Löwe",
+        "name": "Der Löwe",
         "emoji": "🦁",
-        "color": "#f59e0b",
-        "image": "lion.png",
-        "tagline": "Dominant. Zielstark. Gebaut um zu gewinnen.",
+        "tagline": "Natural Signature Type – Der Löwe",
         "description": (
-            "Du bist dopamingetrieben, hochgradig wettbewerbsorientiert und zielorientiert. "
-            "Du bluehst bei Herausforderungen auf, brauchst schnelle Ergebnisse und performst "
-            "am besten unter Druck. Du bist ein geborener Anfuehrer der nicht aufgibt."
+            "Du bist dopamingetrieben, wettbewerbsorientiert und brauchst Herausforderungen "
+            "um auf Hochtouren zu laufen. Du liebst es zu gewinnen, schnell Ergebnisse zu sehen "
+            "und Grenzen zu überschreiten. Deine Stärke ist dein unerschütterlicher Antrieb."
         ),
-        "strengths": ["Extrem wettbewerbsfaehig", "Hohe Stressresistenz", "Schnell ergebnisorientiert", "Natuerlicher Anfuehrer"],
-        "challenges": ["Ungeduld", "Dopamin-Erschoepfungsrisiko", "Schwierigkeiten mit Autoritaet", "Impulsivitaet"],
+        "strengths": ["Hohes Durchhaltevermögen unter Druck", "Schnelle Entscheidungsfindung",
+                      "Natürliche Führungsqualitäten", "Starke Ergebnisorientierung"],
+        "challenges": ["Ungeduld bei langsamen Prozessen", "Risiko von Übertraining",
+                       "Schwierigkeiten beim Abschalten", "Impulsive Entscheidungen unter Stress"],
     },
     "falcon": {
+        "nst": "Natural Signature Type — Der Falke",
         "name": "Der Falke",
-        "nst": "Natural Signature Type - Der Falke",
         "emoji": "🦅",
-        "color": "#3b82f6",
-        "image": "falcon.png",
-        "tagline": "Kreativ. Explosiv. Immer in Entwicklung.",
+        "tagline": "Natural Signature Type – Der Falke",
         "description": (
-            "Du bist der natuerlich athletischste Typ - schnell im Lernen, kreativ "
-            "und angetrieben durch Neuheit. Du bluehst bei Abwechslung und neuen Herausforderungen auf. "
-            "Wenn Dinge repetitiv werden, verlierst du schnell das Interesse."
+            "Du bist kreativ, schnell und brauchst ständig neue Reize. Dein Gehirn läuft "
+            "auf Dopamin und Adrenalin – Routine ist dein größter Feind. Du bringst Ideen "
+            "zum Leben und inspirierst andere durch deine Energie."
         ),
-        "strengths": ["Schnellster Lerner", "Hochgradig kreativ", "Natuerlich athletisch", "Performt unter Druck"],
-        "challenges": ["Langeweile bei Routine", "Acetylcholin-Erschoepfung", "Beginnt viel, beendet weniger", "Impulsivitaet"],
+        "strengths": ["Kreativität und Innovationskraft", "Schnelles Lernen",
+                      "Hohe Energie und Begeisterungsfähigkeit", "Anpassungsfähigkeit"],
+        "challenges": ["Schwierigkeiten mit Routine und Konsistenz", "Leicht ablenkbar",
+                       "Projekte werden begonnen aber nicht beendet", "Reizüberflutung"],
     },
     "chameleon": {
-        "name": "Das Chamaeleon",
-        "nst": "Natural Signature Type - Das Chamaeleon",
+        "nst": "Natural Signature Type — Das Chamäleon",
+        "name": "Das Chamäleon",
         "emoji": "🦎",
-        "color": "#10b981",
-        "image": "chameleon.png",
-        "tagline": "Anpassungsfaehig. Sozial. Angetrieben durch Verbindung.",
+        "tagline": "Natural Signature Type – Das Chamäleon",
         "description": (
-            "Du bist der sozial anpassungsfaehigste Typ - du liest Menschen muehelos "
-            "und passt dein Verhalten an jede Situation an. Du brauchst Abwechslung, Verbindung "
-            "und das Gefuehl gemocht und respektiert zu werden."
+            "Du bist sozial intelligent, empathisch und passt dich intuitiv an andere an. "
+            "Dein Serotoninsystem macht dich zu einem natürlichen Harmonisator. "
+            "Du bringst Menschen zusammen und schaffst ein positives Umfeld."
         ),
-        "strengths": ["Hochgradig anpassungsfaehig", "Gut im Lesen von Menschen", "Arbeitet gut in Teams", "Reagiert auf fast jeden Ansatz"],
-        "challenges": ["Unentschlossenheit", "People-Pleasing", "Adrenalin-Empfindlichkeit", "Prokrastination"],
+        "strengths": ["Hohe emotionale Intelligenz", "Natürliche Empathie",
+                      "Teamfähigkeit und Kooperation", "Soziale Flexibilität"],
+        "challenges": ["Schwierigkeiten Nein zu sagen", "Emotionales Essen unter Stress",
+                       "Eigene Bedürfnisse werden hintenangestellt", "Entscheidungsschwäche"],
     },
     "wolf": {
+        "nst": "Natural Signature Type — Der Wolf",
         "name": "Der Wolf",
-        "nst": "Natural Signature Type - Der Wolf",
         "emoji": "🐺",
-        "color": "#8b5cf6",
-        "image": "wolf.png",
-        "tagline": "Empatisch. Tief. Emotional kraftvoll.",
+        "tagline": "Natural Signature Type – Der Wolf",
         "description": (
-            "Du fuehlst alles tief - sowohl die Hoehenfluge als auch die Tiefen. "
-            "Du bist der empathischste Typ, hochgradig intuitiv und motiviert "
-            "durch emotionale Verbindung und das Gefuehl von Fortschritt."
+            "Du bist tief empfindend, intuitiv und hoch sensibel. Dein Nervensystem "
+            "nimmt mehr wahr als das der meisten anderen – das ist eine Stärke und eine Herausforderung. "
+            "Du hast tiefe Verbindungen und ein ausgeprägtes Gespür für Authentizität."
         ),
-        "strengths": ["Hoechste Empathie", "Guter Zuhoerer", "Tief motiviert wenn emotional verbunden", "Konsistent wenn es gut laeuft"],
-        "challenges": ["Emotionales Essen-Risiko", "Cortisol-Empfindlichkeit", "Nimmt Kritik persoenlich", "Alles-oder-Nichts-Denken"],
+        "strengths": ["Tiefe Empathie und Intuition", "Starke innere Werte",
+                      "Kreativität durch Tiefgründigkeit", "Loyalität und Verlässlichkeit"],
+        "challenges": ["Überempfindlichkeit gegenüber Kritik", "Chronisch erhöhtes Cortisol",
+                       "Grübeln und Überanalyse", "Schwierigkeiten mit Konflikten"],
     },
     "owl": {
+        "nst": "Natural Signature Type — Die Eule",
         "name": "Die Eule",
-        "nst": "Natural Signature Type - Die Eule",
         "emoji": "🦉",
-        "color": "#6366f1",
-        "image": "owl.png",
-        "tagline": "Strukturiert. Praezise. Gebaut fuer das lange Spiel.",
+        "tagline": "Natural Signature Type – Die Eule",
         "description": (
-            "Du bist der disziplinierteste und analytischste Typ. Du liebst Struktur, "
-            "folgst Plaenen besser als alle anderen und triffst Entscheidungen basierend auf Daten und Logik. "
-            "Ploetzliche Veraenderungen stressen dich - aber mit dem richtigen Plan bist du unaufhaltsam."
+            "Du bist analytisch, strukturiert und präzise. Dein GABA-dominantes System "
+            "macht dich zu einem natürlichen Planer und Qualitätssicherer. "
+            "Du denkst bevor du handelst und lieferst konsistent hohe Qualität."
         ),
-        "strengths": ["Bester im Befolgen eines Plans", "Detailorientiert", "Geduldig", "Ausgezeichnete Langzeit-Konsistenz"],
-        "challenges": ["Hoechster Cortisol-Produzent", "Ueberdenken", "Stress durch Veraenderung", "Niedriges Serotonin"],
+        "strengths": ["Analytisches Denken und Präzision", "Hohe Zuverlässigkeit",
+                      "Systematisches Vorgehen", "Qualitätsbewusstsein"],
+        "challenges": ["Perfektionismus und Überanalyse", "Schwierigkeiten mit Veränderungen",
+                       "Entscheidungslähmung", "Mentale Erschöpfung durch Grübeln"],
     },
 }
 
-PROBLEM_LABELS_DE = {
-    "weight": "Ich nehme zu / kann nicht abnehmen",
-    "energy": "Ich bin staendig erschoepft / habe keine Energie",
-    "training": "Ich trainiere nicht regelmaessig",
-    "sleep": "Ich schlafe schlecht",
-}
-
+# ─── ADJEKTIVE (Deutsch) ──────────────────────────────────────────────────────
 ADJECTIVES_DE = {
     "lion": ["Dominant", "Risikofreudig", "Zielstark", "Direkt", "Extrovertiert"],
-    "falcon": ["Kreativ", "Spontan", "Ideenreich", "Impulsiv", "Extrovertiert"],
-    "chameleon": ["Anpassungsfaehig", "Offen", "Vielseitig", "Sozial flexibel", "Harmonieorientiert"],
-    "wolf": ["Sensibel", "Empatisch", "Verletzlich", "Tiefgruendig", "Introvertiert"],
-    "owl": ["Strukturiert", "Routineorientiert", "Praezise", "Planorientiert", "Introvertiert"],
+    "falcon": ["Kreativ", "Spontan", "Ideenreich", "Impulsiv", "Begeisterungsfähig"],
+    "chameleon": ["Anpassungsfähig", "Offen", "Vielseitig", "Sozial flexibel", "Harmonieorientiert"],
+    "wolf": ["Sensibel", "Einfühlsam", "Verletzlich", "Tiefgründig", "Introvertiert"],
+    "owl": ["Strukturiert", "Routiniert", "Präzise", "Planorientiert", "Zuverlässig"],
 }
 
-# UI-Texte auf Deutsch
+# ─── FRAGEN (Deutsch) ─────────────────────────────────────────────────────────
+QUESTIONS_DE = [
+    {"id": 1, "type": "lion",      "text": "Ich muss schnell Ergebnisse erzielen."},
+    {"id": 2, "type": "lion",      "text": "Ich brauche kontinuierlich Herausforderungen, sonst verliere ich die Motivation."},
+    {"id": 3, "type": "falcon",    "text": "Ich verliere schnell das Interesse, wenn alles gleich bleibt."},
+    {"id": 4, "type": "falcon",    "text": "Unter Druck werde ich fokussierter und performe besser."},
+    {"id": 5, "type": "chameleon", "text": "Ich sage manchmal Ja, obwohl ich innerlich Nein meine, um Konflikte zu vermeiden."},
+    {"id": 6, "type": "chameleon", "text": "Entscheidungen fallen mir schwer, weil ich stark darauf achte, wie sie andere beeinflussen."},
+    {"id": 7, "type": "wolf",      "text": "Ich nehme Kritik sehr oft persönlich."},
+    {"id": 8, "type": "wolf",      "text": "Ein negatives Erlebnis beschäftigt mich den ganzen Tag."},
+    {"id": 9, "type": "owl",       "text": "Ich brauche immer einen klaren Plan."},
+    {"id": 10, "type": "owl",      "text": "Unerwartete Änderungen machen mich nervös."},
+]
+
+PROBLEMS_DE = [
+    {"id": "weight",   "text": "Ich nehme zu / kann nicht abnehmen"},
+    {"id": "energy",   "text": "Ich bin ständig erschöpft / habe keine Energie"},
+    {"id": "training", "text": "Ich trainiere nicht regelmäßig"},
+    {"id": "sleep",    "text": "Ich schlafe schlecht"},
+]
+
 UI_DE = {
-    "title": "NeuroHealthMastery — Kostenloser Schnelltest",
-    "subtitle": "Entdecke deinen Natural Signature Type",
+    "title": "Kostenloser Natural Signature Type Test",
+    "subtitle": "Entdecke deinen Typ in 2 Minuten",
+    "start_btn": "Test starten",
+    "yes_btn": "✓ Ja, das bin ich",
+    "no_btn": "✗ Eher nicht",
+    "question_label": "Frage",
+    "of_label": "von",
+    "adjectives_title": "Welche Eigenschaften beschreiben dich?",
+    "adjectives_subtitle": "Wähle bis zu 3 Adjektive, die am besten zu dir passen.",
+    "problem_title": "Was ist dein größtes Problem gerade?",
+    "email_title": "Fast geschafft! Wo sollen wir deinen Plan hinschicken?",
+    "name_placeholder": "Dein Vorname",
+    "email_placeholder": "Deine E-Mail-Adresse",
+    "consent_text": "Ich habe die Datenschutzerklärung gelesen und stimme zu. (inkl. Haftungsausschluss)",
+    "submit_btn": "Mein Ergebnis anzeigen →",
+    "result_title": "Dein Natural Signature Type",
+    "primary_type": "Primärtyp",
+    "secondary_type": "Sekundärtyp",
+    "your_plan": "Dein persönlicher 2-Wochen-Plan",
+    "download_btn": "2-Wochen-Plan als PDF herunterladen",
+    "cta_title": "Bereit für den nächsten Schritt?",
+    "cta_subtitle": "Du hast deinen Typ entdeckt. Jetzt ist es Zeit, wirklich etwas zu verändern.",
+    "core_path_btn": "Core Path starten — 49€",
+    "whatsapp_btn": "Mit René auf WhatsApp chatten",
+    "whatsapp_hours": "Mo–Fr · 9–18 Uhr",
+    "whatsapp_note": "Außerhalb der Geschäftszeiten? René antwortet am nächsten Werktag.",
+    "disclaimer": "Kein Arzt. Alle Empfehlungen basieren auf Fachliteratur, Zertifikaten (Ernährungscoach, Natural Signature Typing) und jahrelanger Erfahrung.",
+    "strengths_label": "Deine Stärken",
+    "challenges_label": "Deine Herausforderungen",
+    "week1_label": "Woche 1",
+    "week2_label": "Woche 2",
+    "daily_actions": "Tägliche Maßnahmen",
+    "pro_tip": "Profi-Tipp",
+    "guarantee_title": "Geld-zurück-Garantie",
+    "guarantee_text": "Schließe 6 von 7 täglichen Check-ins (je 30 Sek., 4–5 Fragen) für 30 Tage ab — und erhalte dein Geld vollständig zurück plus ein exklusives Upgrade-Angebot.",
+    "privacy_link": "Datenschutzerklärung",
     "hero_title": "Entdecke deinen Natural Signature Type",
-    "hero_subtitle": "10 Fragen. 2 Minuten. Dein persoenlicher 2-Wochen-Plan.",
-    "start_btn": "Jetzt kostenlos starten",
+    "hero_subtitle": "10 Fragen. 2 Minuten. Dein persönlicher 2-Wochen-Plan.",
     "questions_title": "Beantworte die folgenden Fragen",
     "yes": "Ja",
     "no": "Nein",
-    "adjectives_title": "Welche Eigenschaften treffen auf dich zu?",
-    "adjectives_subtitle": "Waehle bis zu 3 Adjektive die am besten zu dir passen",
-    "problem_title": "Was ist dein groesstes Problem gerade?",
-    "problem_options": {
-        "weight": "Ich nehme zu / kann nicht abnehmen",
-        "energy": "Ich bin staendig erschoepft / habe keine Energie",
-        "training": "Ich trainiere nicht regelmaessig",
-        "sleep": "Ich schlafe schlecht",
-    },
-    "email_title": "Wohin sollen wir deinen Plan schicken?",
     "email_name": "Dein Name",
     "email_address": "Deine E-Mail-Adresse",
     "email_placeholder_name": "Max Mustermann",
     "email_placeholder_email": "max@beispiel.de",
-    "privacy_text": "Ich habe die Datenschutzerklaerung gelesen und stimme zu.",
-    "submit_btn": "Mein Ergebnis anzeigen",
-    "result_title": "Dein Natural Signature Type",
-    "secondary_label": "Sekundaertyp",
+    "privacy_text": "Ich habe die Datenschutzerklärung gelesen und stimme zu.",
+    "secondary_label": "Sekundärtyp",
     "your_problem": "Dein Ziel",
-    "your_plan": "Dein persoenlicher 2-Wochen-Plan",
     "week_label": "Woche",
-    "tips_title": "Wichtige Tipps fuer deinen Typ",
-    "download_btn": "2-Wochen-Plan als PDF herunterladen",
-    "cta_badge": "Bereit fuer den naechsten Level?",
-    "cta_title": "Der Core Path",
-    "cta_desc": "30-Tage-Programm - massgeschneidert auf deinen Natural Signature Type.",
-    "cta_guarantee": "Geld-zurueck-Garantie: Schliesse 6 von 7 taeglichen Check-ins (je 30 Sek., 4-5 Fragen) fuer 30 Tage ab - erhalte eine vollstaendige Rueckerstattung + ein exklusives Upgrade-Angebot.",
-    "cta_btn": "Core Path starten - 49 EUR",
-    "cta_btn_sub": "Geld-zurueck-Garantie inklusive",
-    "whatsapp_btn": "Mit Rene auf WhatsApp chatten",
-    "whatsapp_hours": "Mo-Fr - 9-18 Uhr MEZ",
-    "whatsapp_note": "Ausserhalb der Geschaeftszeiten? Rene antwortet am naechsten Werktag.",
-    "disclaimer": "Haftungsausschluss: Rene Rusch ist kein Arzt. Die Inhalte basieren auf professionellen Zertifikaten (inkl. Natural Signature Typing und Ernaehrungscoaching), wissenschaftlicher Fachliteratur und jahrelanger praktischer Erfahrung. Dieser Bericht ersetzt keine aerztliche Beratung.",
-    "pdf_header": "Deine Kostenlose Natural Signature Type Auswertung",
+    "tips_title": "Wichtige Tipps für deinen Typ",
+    "cta_badge": "Bereit für den nächsten Level?",
+    "cta_desc": "30-Tage-Programm — abgestimmt auf deinen Natural Signature Type.",
+    "cta_guarantee": "Geld-zurück-Garantie: Schließe 6 von 7 täglichen Check-ins (30 Sek., 4–5 Fragen) für 30 Tage ab — und erhalte dein Geld vollständig zurück plus ein exklusives Upgrade-Angebot.",
+    "cta_btn": "Core Path starten — 49€",
+    "cta_btn_sub": "Geld-zurück-Garantie inklusive",
+    "pdf_header": "Deine kostenlose Natural Signature Type Auswertung",
     "pdf_greeting": "Hallo",
     "pdf_type_label": "Dein Natural Signature Type",
     "pdf_goal_label": "Dein Hauptziel",
-    "pdf_tips_title": "Wichtige Tipps fuer deinen Typ",
-    "pdf_cta_title": "Der Core Path - Dein naechster Schritt",
-    "pdf_cta_sub": "30-Tage-Programm - massgeschneidert auf deinen Natural Signature Type",
-    "pdf_guarantee": "Geld-zurueck-Garantie: Schliesse 6 von 7 taeglichen Check-ins (30 Sekunden, 4-5 Fragen) fuer 30 Tage ab und erhalte eine vollstaendige Rueckerstattung + ein exklusives Upgrade-Angebot. Kein Risiko. Nur Ergebnisse.",
-    "pdf_disclaimer": "Haftungsausschluss: Rene Rusch ist kein Arzt. Die Inhalte dieses Berichts basieren auf professionellen Zertifikaten (inkl. Natural Signature Typing und Ernaehrungscoaching), wissenschaftlicher Fachliteratur und jahrelanger praktischer Erfahrung. Dieser Bericht ersetzt keine aerztliche Beratung. Konsultiere einen qualifizierten Arzt bevor du wesentliche Aenderungen an Ernaehrung, Training oder Supplementierung vornimmst.",
+    "pdf_tips_title": "Wichtige Tipps für deinen Typ",
+    "pdf_cta_title": "The Core Path - Dein nächster Schritt",
+    "pdf_cta_sub": "30-Tage-Programm - abgestimmt auf deinen Natural Signature Type",
+    "pdf_guarantee": "Geld-zurück-Garantie: Schließe 6 von 7 täglichen Check-ins (30 Sekunden, 4-5 Fragen) für 30 Tage ab und erhalte dein Geld vollständig zurück plus ein exklusives Upgrade-Angebot. Kein Risiko. Nur Ergebnisse.",
+    "pdf_disclaimer": "Hinweis: Rene Rusch ist kein Arzt. Die Inhalte dieses Berichts basieren auf professionellen Zertifikaten (inkl. Natural Signature Typing und Ernaehrungscoaching), wissenschaftlicher Fachliteratur und jahrelanger praktischer Erfahrung. Dieser Bericht ersetzt keine aerztliche Beratung. Konsultiere einen qualifizierten Gesundheitsexperten, bevor du wesentliche Aenderungen an deiner Ernaehrung, deinem Training oder deiner Supplementierung vornimmst.",
     "pdf_footer": "NeuroHealthMastery | neurohealthmastery.com | Erstellt am",
 }
 
-# Fragen auf Deutsch
-QUESTIONS_DE = [
-    "Ich muss schnell Ergebnisse erzielen.",
-    "Ich brauche kontinuierlich Herausforderungen, sonst verliere ich die Motivation.",
-    "Ich verliere schnell das Interesse, wenn alles gleich bleibt.",
-    "Unter Druck werde ich fokussierter und performe besser.",
-    "Ich sage manchmal Ja, obwohl ich innerlich Nein meine, um Konflikte zu vermeiden.",
-    "Entscheidungen fallen mir schwer, weil ich stark darauf achte, wie sie andere beeinflussen.",
-    "Ich nehme Kritik sehr oft persoenlich.",
-    "Ein negatives Erlebnis beschaeftigt mich den ganzen Tag.",
-    "Ich brauche immer einen klaren Plan.",
-    "Unerwartete Aenderungen machen mich nervoees.",
-]
-
-PROBLEM_QUESTION_DE = "Was ist dein groesstes Problem gerade?"
+PROBLEM_LABELS_DE = {
+    "weight":   "Gewicht / Abnehmen",
+    "energy":   "Energie / Erschöpfung",
+    "training": "Training / Bewegung",
+    "sleep":    "Schlaf",
+}
